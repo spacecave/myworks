@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>世界地图</title>
+    <meta http-equiv="x-ua-compatible" content="ie=Edge,ie=10,ie=9,ie=8,Chrome=1" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="easyui/themes/bootstrap/easyui.css" type="text/css"></link>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+</head>
+<body>
+
+    <div id= "wrap">
+       
+        <!-- 国际拓扑区域 -->
+        <div id="map-holder"></div>
+
+
+         <!--页头-->
+        <div class="ctyheader">
+            
+        </div>
+        <div class="ctyheader-title"></div>
+        
+        
+        <div class="righttool">
+            <div id="breakAlarmDiv" class="rightdiv" style="margin-top:55px;cursor:pointer;">
+                <div class="title">中断电路数目</div>
+                <div class="fontplace">
+                    <div id = "AlarmCirNumb" class="fontvalue alarm" style="color:#ff0000">
+                        0
+                    </div>
+                    <div class="fontcount">
+                        条
+                    </div>
+                </div>
+            </div>
+
+            <div id="congestDiv" class="rightdiv" style="cursor:pointer;">
+                <div class="title">拥塞电路数目</div>
+                <div class="fontplace">
+                    <div id = "JamCirNumb" class="fontvalue" style="color:#ff0000">
+                        0
+                    </div>
+                    <div class="fontcount">
+                        条
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightdiv">
+                <div class="title">客户数</div>
+                <div class="fontplace">
+                    <div id = "CustomerNumb" class="fontvalue">
+                        0
+                    </div>
+                    <div class="fontcount">
+                        个
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightdiv">
+                <div class="title">国际骨干设备数</div>
+                <div class="fontplace">
+                    <div id = "DevNumb" class="fontvalue">
+                        0
+                    </div>
+                    <div class="fontcount">
+                        个
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightdiv">
+                <div id = "cover-title" class="title">覆盖国家数</div>
+                <div class="fontplace">
+                    <div id = "CountryNumb" class="fontvalue">
+                        0
+                    </div>
+                    <div class="fontcount">
+                        个
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightdiv">
+                <div class="title">互联运营商数</div>
+                <div class="fontplace">
+                    <div id = "CompNumb" class="fontvalue">
+                        0
+                    </div>
+                    <div class="fontcount">
+                        个
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightdiv">
+                <div class="title">国际出口总带宽</div>
+                <div class="fontplace">
+                    <div id = "CIBW" class="fontvalue">
+                        0
+                    </div>
+                    <div class="fontcount">
+                        Gbps
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightdiv">
+                <div id="peer-title" class="title">国际peer总带宽</div>
+                <div class="fontplace">
+                    <div id = "PeerBW" class="fontvalue">
+                        0
+                    </div>
+                    <div class="fontcount">
+                        Gbps
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightdiv">
+                <div class="title">国际客户总带宽</div>
+                <div class="fontplace">
+                    <div id = "CustomerBW" class="fontvalue">
+                        0
+                    </div>
+                    <div class="fontcount">
+                        Gbps
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="ctyheader-font">
+            <font id="cty-header-font" title = "中断电路比例超20%显示红色，拥塞电路比例超50%显示黄色">阀值说明</font>
+        </div>
+        
+        <!--页脚图表部分-->
+        <div id="footer">
+            <div id="footer-1" class="footer-div">
+                <div  class="footer-charts-title" style="background: rgba(181,97,220,0.27);"><span id="target-title-out" >163国际出口流量</span></div>
+                <div class="container-region" id="connect-chart"></div>
+            </div>
+
+            <div id="footer-2" class="footer-div" style="margin-left:1%;">
+                <div  class="footer-charts-title" style="background: rgba(160,221,29,0.27);position:relative"><span id="target-title-peer">国际Peer流速变化情况</span>
+                    <a id="viewMaxBtn" class="viewMaxBtn"></a>
+                </div>
+                <div class="container-region" id="peer-chart"></div>
+            </div>
+
+            <div id="footer-3" class="footer-div" style="float:right;">
+                <div  class="footer-charts-title" style="background: rgba(2,205,92,0.27);position:relative"><span id="target-title-cust">国际Customer流速变化情况</span>
+                    <a id="viewMaxBtn1" class="viewMaxBtn"></a>
+                </div>
+                <div class="container-region" id="custom-chart"></div>
+            </div>
+
+            
+            
+        </div>
+
+        <!-- 遮罩层拓扑 -->
+        <div id="prov-detail">
+            <div id="prov-detail-topo"></div>
+            <a id="back-prov" class="back-btn"></a>
+            <font id="pro-detail-font-1" class="pro-detail-font"></font>
+        </div>
+
+        <!-- 遮罩层拓扑 -->
+        <div id="prov-detail-cloud">
+            <div id="prov-detail-cloud-topo"></div>
+            <a id="back-prov-cloud" class="back-btn"></a>
+            <font id="pro-detail-font-2" class="pro-detail-font"></font>
+        </div>
+
+        <!-- 遮罩层拓扑第三层 -->
+        <div id="prov-detail-cloud-third">
+            <div id="prov-detail-cloud-topo-third"></div>
+            <a id="back-prov-cloud-third" class="back-btn"></a>
+            <font id="pro-detail-font-3" class="pro-detail-font"></font>
+        </div>
+        
+    </div>
+    
+    <!-- <div id = "tooltip"></div> -->
+   
+    <div id="phy-cir-window">
+        <div id="phy-cir-table"></div>
+    </div>
+    <div id="pro-win">
+        <div id="pro-topo"></div>
+    </div>
+    <div id="pro-echarts-win">
+        <div id="pro-echarts-win-div" style="width:100%;height:100%"></div>
+    </div>
+
+</body>
+    <script type="text/javascript" src="js/jquery/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="js/raphael/raphael.min.js"></script>
+    <script type="text/javascript" src="js/raphael/raphael.topo.base.js"></script>
+    <script type="text/javascript" src="js/raphael/raphael.topo.lines.js"></script>
+    <script type="text/javascript" src="js/raphael/raphael.graph.js"></script>
+    <script type="text/javascript" src="js/echarts/dist/echarts.js"></script>
+
+
+    <script type="text/javascript" src="js/topo-china-trend-chart.js"></script>
+    <script type="text/javascript" src="js/topo-world-chart.js"></script>
+    <script type="text/javascript" src="js/topo-circuit-table.js"></script>
+    <script type="text/javascript" src="js/topo-position.js"></script>
+    <script type="text/javascript" src="js/topo-province-cloud-third.js"></script>
+    <script type="text/javascript" src="js/topo-province-cloud.js"></script>
+    <script type="text/javascript" src="js/topo-province.js"></script>
+    <script type="text/javascript" src="js/topo-utils.js"></script>
+    <script type="text/javascript" src="js/world.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/mock/mock.js"></script>
+    <script type="text/javascript" src="js/mock/use-mock.js"></script>
+    <script type="text/javascript">
+        require.config({
+            paths: {
+                echarts: 'js/echarts/dist'
+            }
+        });
+    </script>
+</html>
