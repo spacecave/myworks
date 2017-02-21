@@ -11,7 +11,7 @@ $(function() {
         $('#fluxtime').html(formatTime(data.fluxtime));
        
         chartday.setOption(getFluxOption({
-            title: 'ÈÕÁ÷Á¿Í¼£¨Êı¾İ5·ÖÖÓÆ½¾ù£©',
+            title: 'æ—¥æµé‡å›¾ï¼ˆæ•°æ®5åˆ†é’Ÿå¹³å‡ï¼‰',
             flux: data.flux
         }));
     });
@@ -22,7 +22,7 @@ $(function() {
         chartweek.hideLoading();
        
         chartweek.setOption(getFluxOption({
-            title: 'ÖÜÁ÷Á¿Í¼£¨Êı¾İ5·ÖÖÓÆ½¾ù£©',
+            title: 'å‘¨æµé‡å›¾ï¼ˆæ•°æ®5åˆ†é’Ÿå¹³å‡ï¼‰',
             flux: data
         }));
     });
@@ -33,7 +33,7 @@ $(function() {
         chartmonth.hideLoading();
        
         chartmonth.setOption(getFluxOption({
-            title: 'ÔÂÁ÷Á¿Í¼£¨Êı¾İĞ¡Ê±Æ½¾ù£©',
+            title: 'æœˆæµé‡å›¾ï¼ˆæ•°æ®å°æ—¶å¹³å‡ï¼‰',
             flux: data
         }));
     });
@@ -44,7 +44,7 @@ $(function() {
         chartyear.hideLoading();
        
         chartyear.setOption(getFluxOption({
-            title: 'ÄêÁ÷Á¿Í¼£¨Êı¾İÈÕÆ½¾ù£©',
+            title: 'å¹´æµé‡å›¾ï¼ˆæ•°æ®æ—¥å¹³å‡ï¼‰',
             flux: data
         }));
     });

@@ -4,7 +4,7 @@ $(function() {
     var viewID = $('#viewID').val();
     var viewName = '';
     if ("" != viewID) {
-        // ¼ÓÔØÅäÖÃĞÅÏ¢
+        // åŠ è½½é…ç½®ä¿¡æ¯
         $.getJSON('action.jsp?action=queryFlowMonitorConfig&viewid=' + viewID, function(data) {
             $('.view-config').show();
             $('.view-tip').hide();
@@ -58,9 +58,9 @@ $(function() {
         });
     }
 
-    configWindowInit('top-config-window', 'ÅäÖÃ');
-    configWindowInit('center-config-window', 'ÅäÖÃ');
-    configWindowInit('bottom-config-window', 'ÅäÖÃ');
+    configWindowInit('top-config-window', 'é…ç½®');
+    configWindowInit('center-config-window', 'é…ç½®');
+    configWindowInit('bottom-config-window', 'é…ç½®');
     $('input[name="bg-color"]').colorpicker();
 
     $('.cirprop').combotree({
@@ -105,12 +105,12 @@ $(function() {
 
         // check
         if ('' == $('#' + configWindowID + ' [name="area-name"]').val()) {
-            alert('ÇëÌîĞ´ÇøÓòÃû³Æ£¡');
+            alert('è¯·å¡«å†™åŒºåŸŸåç§°ï¼');
             $('#' + configWindowID + ' [name="area-name"]').focus();
             return;
         }
 
-        // »ñÈ¡ÇøÓòÊı¾İ
+        // è·å–åŒºåŸŸæ•°æ®
         var areaData = {
             areaName : $('#' + configWindowID + ' [name="area-name"]').val(),
             bgColor : $('#' + configWindowID + ' [name="bg-color"]').val(),
@@ -129,7 +129,7 @@ $(function() {
             areaData.deviceNames.push($($deviceNames[i]).val());
         }
 
-        // ³ÊÏÖ&´æ´¢
+        // å‘ˆç°&å­˜å‚¨
         if ('center-level' == relLevel) {
             $('#' + relLevel + ' .view-area').css('background', areaData.bgColor);
             $('#' + relLevel + ' .view-area').data('areaData', areaData);
@@ -138,7 +138,7 @@ $(function() {
             $('#' + relLevel + ' .view-area [name="incirprop-text"]').html('<span title=' + areaData.inCirPropText + '>' + areaData.inCirPropText + '</span>');
         } else {
 
-            // Ìí¼ÓÇøÓò
+            // æ·»åŠ åŒºåŸŸ
             var areaViewID = $(this).attr('update-flag');
             if (!areaViewID) {
                 areaViewID = addAreaView(relLevel, configWindowID);
@@ -162,36 +162,36 @@ $(function() {
         var configWindowID = $(this).attr('config-window');
         var selectedDevices = $('#' + configWindowID).find('.selected-devices li');
         if (selectedDevices.length >= 2) {
-            alert('ÖĞĞÄÇøÓòÉè±¸×î¶àÑ¡ÔñÁ½¸ö£¡');
+            alert('ä¸­å¿ƒåŒºåŸŸè®¾å¤‡æœ€å¤šé€‰æ‹©ä¸¤ä¸ªï¼');
             return;
         }
         window.open('/nms/res/selDeviceView.jsp?DeviceIDItem=tempDeviceID&DeviceNameItem=tempDeviceName');
     });
 
     var msdc = new MonitorSelectDeviceChange();
-    // Ôö¼ÓÑ¡ÔñÉè±¸
+    // å¢åŠ é€‰æ‹©è®¾å¤‡
     function addSelectDevice(id, deviceID, deviceName) {
 
-        // ¼ì²éÊÇ·ñ´æÔÚ&ÊÇ·ñ´óÓÚµÈÓÚÁ½¸ö
+        // æ£€æŸ¥æ˜¯å¦å­˜åœ¨&æ˜¯å¦å¤§äºç­‰äºä¸¤ä¸ª
         var selectedDevices = $('#' + id).find('.selected-devices li');
         if (selectedDevices.length >= 2) {
-            alert('ÖĞĞÄÇøÓòÉè±¸×î¶àÑ¡ÔñÁ½¸ö£¡');
+            alert('ä¸­å¿ƒåŒºåŸŸè®¾å¤‡æœ€å¤šé€‰æ‹©ä¸¤ä¸ªï¼');
             return;
         }
         for (var i = 0, len = selectedDevices.length; i < len; i++) {
             if (deviceID == $(selectedDevices[i]).find('[name="device-id"]').val()) {
-                alert('ÒÑ´æÔÚÏàÍ¬Éè±¸');
+                alert('å·²å­˜åœ¨ç›¸åŒè®¾å¤‡');
                 return;
             }
         }
 
-        var deviceHtml = '<li><input type="hidden" name="device-id" value="' + deviceID + '" /><input type="hidden" name="device-name" value="' + deviceName + '" /><span title="µã»÷É¾³ı">' + deviceName + '</span></li>';
+        var deviceHtml = '<li><input type="hidden" name="device-id" value="' + deviceID + '" /><input type="hidden" name="device-name" value="' + deviceName + '" /><span title="ç‚¹å‡»åˆ é™¤">' + deviceName + '</span></li>';
         $('#' + id).find('.selected-devices').append(deviceHtml);
     }
     $('.config-window .selected-devices').delegate('li', 'click', function() {
         $(this).remove();
     });
-    // ³õÊ¼»¯ window
+    // åˆå§‹åŒ– window
     function configWindowInit(id, title) {
 
         var height = 230;
@@ -231,7 +231,7 @@ $(function() {
 
     function addAreaView(relLevel, configWindowID) {
         var id = new Date().getTime() + '-' + parseInt(Math.random() * 1000);
-        var html = '<div class="view-area" id=' + id + '><table><tr><td width="40%" align="right">ÇøÓòÃû³Æ£º</td><td width="60%" name="area-name" align="left"></td></tr>' + '<tr><td width="40%" align="right">ÖĞĞÄÉè±¸£º</td><td width="60%" name="devices-name" align="left"></td></tr>' + '<tr><td width="40%" align="right">ÉÏÁªµçÂ·ÊôĞÔ£º</td><td width="60%" name="upcirprop-text" align="left"></td></tr>' + '<tr><td width="40%" align="right">»¥ÁªµçÂ·ÊôĞÔ£º</td><td width="60%" name="incirprop-text" align="left"></td></tr>' + '<tr><td width="40%" align="right">ÏÂÁªµçÂ·ÊôĞÔ£º</td><td width="60%" name="downcirprop-text" align="left"></td></tr></table>' + '<span class="glyphicon glyphicon-minus delete-area-btn" rel-level="' + relLevel + '"></span><span class="glyphicon glyphicon-pencil edit-area-btn" config-window="'
+        var html = '<div class="view-area" id=' + id + '><table><tr><td width="40%" align="right">åŒºåŸŸåç§°ï¼š</td><td width="60%" name="area-name" align="left"></td></tr>' + '<tr><td width="40%" align="right">ä¸­å¿ƒè®¾å¤‡ï¼š</td><td width="60%" name="devices-name" align="left"></td></tr>' + '<tr><td width="40%" align="right">ä¸Šè”ç”µè·¯å±æ€§ï¼š</td><td width="60%" name="upcirprop-text" align="left"></td></tr>' + '<tr><td width="40%" align="right">äº’è”ç”µè·¯å±æ€§ï¼š</td><td width="60%" name="incirprop-text" align="left"></td></tr>' + '<tr><td width="40%" align="right">ä¸‹è”ç”µè·¯å±æ€§ï¼š</td><td width="60%" name="downcirprop-text" align="left"></td></tr></table>' + '<span class="glyphicon glyphicon-minus delete-area-btn" rel-level="' + relLevel + '"></span><span class="glyphicon glyphicon-pencil edit-area-btn" config-window="'
                 + configWindowID + '"></span></div>';
         $('#' + relLevel + ' .view-config').append(html);
         resizeViewConfigWidth(relLevel);
@@ -263,9 +263,9 @@ $(function() {
         $('#' + configWindowID).window('open');
     });
 
-    // ·§ÖµÇøÓòÅäÖÃ
+    // é˜€å€¼åŒºåŸŸé…ç½®
     $('#legend-config-window').window({
-        title : '&nbsp;Í¼ÀıÅäÖÃ',
+        title : '&nbsp;å›¾ä¾‹é…ç½®',
         width : 400,
         height : 200,
         modal : true,
@@ -365,9 +365,9 @@ $(function() {
     }
 
     $('#wrapper .btn-ok').click(function() {
-        var name = window.prompt('ÇëÊäÈëÊÓÍ¼µÄÃû×Ö', viewName);
+        var name = window.prompt('è¯·è¾“å…¥è§†å›¾çš„åå­—', viewName);
         if ('' == name) {
-            alert('ÊÓÍ¼µÄÃû×Ö²»ÄÜÎª¿Õ£¬ÇëÖØĞÂ±£´æ');
+            alert('è§†å›¾çš„åå­—ä¸èƒ½ä¸ºç©ºï¼Œè¯·é‡æ–°ä¿å­˜');
             return;
         }else {
         	$.ajax({
@@ -379,11 +379,11 @@ $(function() {
             	},
             	success:function(data) {
             		if(!data) {
-            			alert("ÊÓÍ¼Ğ£ÑéÒì³£");
+            			alert("è§†å›¾æ ¡éªŒå¼‚å¸¸");
             			return;
             		}
             		if(data.result == '1') {
-            			alert("ÊÓÍ¼µÄÃû×ÖÒÑ¾­±»Õ¼ÓÃ£¬Çë¸ü»»");
+            			alert("è§†å›¾çš„åå­—å·²ç»è¢«å ç”¨ï¼Œè¯·æ›´æ¢");
             			return;
             		}else {
             			var viewData = {
@@ -412,7 +412,7 @@ $(function() {
     			        	},
     			        	success:function(data) {
     			        		if ('1' == $.trim(data)) {
-    			                    alert('±£´æ³É¹¦');
+    			                    alert('ä¿å­˜æˆåŠŸ');
     			                }
     			        	}
     			        	

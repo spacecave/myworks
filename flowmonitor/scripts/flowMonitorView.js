@@ -91,13 +91,13 @@ $(function() {
 	        var maxWidth = 0;
 	        var topLevelTotalMax = 0;
 	        for (var i = 0, len = topLevel.length; i < len; i++) {
-	            // ÉÙÓÚÁ½¸öµÄ»°£¬ÖĞ¼äµÄ»¥ÁªµçÂ·±»ÕÚµ²£¬ËùÒÔ×îĞ¡Öµ¸Ä³ÉÁË4
+	            // å°‘äºä¸¤ä¸ªçš„è¯ï¼Œä¸­é—´çš„äº’è”ç”µè·¯è¢«é®æŒ¡ï¼Œæ‰€ä»¥æœ€å°å€¼æ”¹æˆäº†4
 	            topLevel[i].maxCircuitsLength = getMaxCircuitsLength(topLevel[i]) <= 2 ? 6 : getMaxCircuitsLength(topLevel[i]);
 	            topLevelTotalMax += topLevel[i].maxCircuitsLength;
 	        }
 	        var bottomLevelTotalMax = 0;
 	        for (var i = 0, len = bottomLevel.length; i < len; i++) {
-	            // ÉÙÓÚÁ½¸öµÄ»°£¬ÖĞ¼äµÄ»¥ÁªµçÂ·±»ÕÚµ²£¬ËùÒÔ×îĞ¡Öµ¸Ä³ÉÁË4
+	            // å°‘äºä¸¤ä¸ªçš„è¯ï¼Œä¸­é—´çš„äº’è”ç”µè·¯è¢«é®æŒ¡ï¼Œæ‰€ä»¥æœ€å°å€¼æ”¹æˆäº†4
 	            bottomLevel[i].maxCircuitsLength = getMaxCircuitsLength(bottomLevel[i]) <= 2 ? 6 : getMaxCircuitsLength(bottomLevel[i]);
 	            bottomLevelTotalMax += bottomLevel[i].maxCircuitsLength;
 	        }
@@ -191,7 +191,7 @@ $(function() {
     }
 
 
-    // »æÖÆÇøÓò
+    // ç»˜åˆ¶åŒºåŸŸ
     // areaData: name;type;devices;downCircuits;upCircuits;inCircuits;
     function createArea(x, y, width, height, areaData) {
 
@@ -205,9 +205,9 @@ $(function() {
             deviceIDs.push(areaData.devices[i].deviceID);
             deviceNames.push(areaData.devices[i].deviceName);
         }
-        deviceNames.sort(); // ºóÃæÅÅĞòÓÃ
+        deviceNames.sort(); // åé¢æ’åºç”¨
         
-        // »æÖÆ±³¾°
+        // ç»˜åˆ¶èƒŒæ™¯
         var xPadding = 4,
             _width = width - 2 * xPadding;
         var areaRect = canvas.rect(x + xPadding, y, _width, height, 3).attr(areaAttr);
@@ -226,7 +226,7 @@ $(function() {
                 var deviceSet = canvas.set();
                 
                 var _deviceName,_deviceShortName;
-                if(-1==circuit.circuitName.indexOf('¡¾')){
+                if(-1==circuit.circuitName.indexOf('ã€')){
                     var matchs = circuit.circuitName.match(/\[[^\[^\]]*\]/g);
                     var len = matchs.length;
                     _deviceName = matchs[len-1];
@@ -235,10 +235,10 @@ $(function() {
                     len = shortMatchs.length;
                     _deviceShortName = len>=4?shortMatchs[3]:shortMatchs[len-1];
                 }else{
-                    var matchs = circuit.circuitName.match(/¡¾.*¡¿.*/g);
+                    var matchs = circuit.circuitName.match(/ã€.*ã€‘.*/g);
                     var len = matchs.length;
                     _deviceName = matchs[len-1];
-                    var shortMatchs = _deviceName.match(/¡¾.*¡¿/g);
+                    var shortMatchs = _deviceName.match(/ã€.*ã€‘/g);
                     len = shortMatchs.length;
                     _deviceShortName = len>=4?shortMatchs[3]:shortMatchs[len-1];
                     _deviceShortName = _deviceShortName.substring(1,_deviceShortName.length-1);
@@ -337,14 +337,14 @@ $(function() {
                                         html += formatTime(params[0].name);
                                     }
                                     html += '<br>';
-                                    html += params[i].seriesName + '£º' + formatFlux(params[i].data);
+                                    html += params[i].seriesName + 'ï¼š' + formatFlux(params[i].data);
                                 }
                                 return html;
                             }
                         },
                         legend: {
                             bottom: 6,
-                            data: ['Á÷ÈëÁ÷ËÙ', 'Á÷³öÁ÷ËÙ']
+                            data: ['æµå…¥æµé€Ÿ', 'æµå‡ºæµé€Ÿ']
                         },
                         grid: {
                             left: 60,
@@ -371,11 +371,11 @@ $(function() {
                     $.getJSON('/nos/view/flowmonitor/action.jsp?action=loadCircuitHoverData&circuitID=' + circuitID, function(data) {
                         chart.hideLoading();
 
-                        $('#flux-info').html('<br>µçÂ·Ãû³Æ£º' + data.circuitname + '<br>µçÂ·´ø¿í£º' + formatFlux(data.bandwidth) + '£¬×î½ü²É¼¯Ê±¼ä£º' + formatTime(data.fluxtime) + '£¬Á÷ÈëÁ÷ËÙ£º ' + formatFlux(data.inavgvec) + '£¬Á÷³öÁ÷ËÙ£º ' + formatFlux(data.outavgvec) + '<br>');
+                        $('#flux-info').html('<br>ç”µè·¯åç§°ï¼š' + data.circuitname + '<br>ç”µè·¯å¸¦å®½ï¼š' + formatFlux(data.bandwidth) + 'ï¼Œæœ€è¿‘é‡‡é›†æ—¶é—´ï¼š' + formatTime(data.fluxtime) + 'ï¼Œæµå…¥æµé€Ÿï¼š ' + formatFlux(data.inavgvec) + 'ï¼Œæµå‡ºæµé€Ÿï¼š ' + formatFlux(data.outavgvec) + '<br>');
 
                         option.xAxis.data = data.flux.fluxtime;
                         option.series = [{
-                            name: 'Á÷ÈëÁ÷ËÙ',
+                            name: 'æµå…¥æµé€Ÿ',
                             type: 'line',
                             lineStyle: {
                                 normal: {
@@ -391,7 +391,7 @@ $(function() {
                             showSymbol: false,
                             data: data.flux.in
                         }, {
-                            name: 'Á÷³öÁ÷ËÙ',
+                            name: 'æµå‡ºæµé€Ÿ',
                             type: 'line',
                             lineStyle: {
                                 normal: {
@@ -412,7 +412,7 @@ $(function() {
                 $('#flux-holder').hide();
             });
             circuitSet.mousemove(function(e) {
-            	//½ÓÊÕÑîÓÀÆ½²ÎÊı£¬Èç¹ûÊÇµ÷ÓÃÒ³ÃæÔò¾ÓÖĞ
+            	//æ¥æ”¶æ¨æ°¸å¹³å‚æ•°ï¼Œå¦‚æœæ˜¯è°ƒç”¨é¡µé¢åˆ™å±…ä¸­
                 var bodyWidth = $('body').width();
                 var left = e.clientX - fluxHolderWidth / 2,
                     top = e.clientY - fluxHolderHeight - 6;
@@ -454,7 +454,7 @@ $(function() {
                     x: x + width - 2 * xPadding - areaViewPadding - deviceWidth / 2,
                     y: _y
                 };
-            // ¸ù¾İÁ½¶ËÉè±¸Ãû³Æ¾ö¶¨ÊÇ·ñ½«µçÂ·Á½¶ËÉè±¸¶Ôµ÷£¬ÎªÁËºóÃæÅÅĞòÓÃ
+            // æ ¹æ®ä¸¤ç«¯è®¾å¤‡åç§°å†³å®šæ˜¯å¦å°†ç”µè·¯ä¸¤ç«¯è®¾å¤‡å¯¹è°ƒï¼Œä¸ºäº†åé¢æ’åºç”¨
             createCircuit(sp, ep, inCircuit,inCircuit.adevice.deviceName>inCircuit.bdevice.deviceName);
             if(inCircuit,inCircuit.adevice.deviceName>inCircuit.bdevice.deviceName){
                 createDevice(ep, inCircuit.adevice);
@@ -465,7 +465,7 @@ $(function() {
             }
         }
 
-        // »æÖÆ inCircuits
+        // ç»˜åˆ¶ inCircuits
         var inCircuits = areaData.inCircuits;
         if (inCircuits) {
             var inCirsLen = inCircuits.length;
@@ -480,7 +480,7 @@ $(function() {
             }
         }
 
-        // »æÖÆ upCircuits
+        // ç»˜åˆ¶ upCircuits
         function createUpCircuit(_x, upCircuit) {
             var sp = {
                     x: _x
@@ -528,7 +528,7 @@ $(function() {
             }
         }
 
-        // »æÖÆ downDevices
+        // ç»˜åˆ¶ downDevices
         function createDownCircuit(_x, downCircuit) {
             var sp = {
                     x: _x
@@ -562,7 +562,7 @@ $(function() {
             }
         }
         
-        // »æÖÆÎÄ×Ö
+        // ç»˜åˆ¶æ–‡å­—
         var textY = y + height / 2;
         if ('top' == areaData.type) {
             // textY = y + height * 9 / 16;
@@ -576,7 +576,7 @@ $(function() {
         canvas.text(x + width / 2, textY, areaData.name).attr(areaTextAttr);
     }
 
-    // ¼ÓÔØµçÂ·ÀûÓÃÂÊ
+    // åŠ è½½ç”µè·¯åˆ©ç”¨ç‡
     function loadFluxRatio(callback) {
         var circuits = new Array();
         canvas.forEach(function(el) {
@@ -717,9 +717,9 @@ $(function() {
     }
     
     function getUrlParam(name) {
-        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //¹¹ÔìÒ»¸öº¬ÓĞÄ¿±ê²ÎÊıµÄÕıÔò±í´ïÊ½¶ÔÏó
-        var r = window.location.search.substr(1).match(reg);  //Æ¥ÅäÄ¿±ê²ÎÊı
-        if (r != null) return decodeURI(r[2]); return null; //·µ»Ø²ÎÊıÖµ
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //æ„é€ ä¸€ä¸ªå«æœ‰ç›®æ ‡å‚æ•°çš„æ­£åˆ™è¡¨è¾¾å¼å¯¹è±¡
+        var r = window.location.search.substr(1).match(reg);  //åŒ¹é…ç›®æ ‡å‚æ•°
+        if (r != null) return decodeURI(r[2]); return null; //è¿”å›å‚æ•°å€¼
     }
 
     $('#view-edit-btn').click(function(){
