@@ -1,0 +1,40 @@
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>流量监控视图</title>
+    <meta charset="GB2312">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.fontface.css">
+    <link rel="stylesheet" type="text/css" href="easyui/themes/bootstrap/easyui.css">
+    <link rel="stylesheet" type="text/css" href="easyui/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+  </head>
+  
+  <body style="height: 100%;overflow-x:auto;overflow-y:hidden;">
+    <div id="view">
+      <div id="canvas"></div>
+    </div>
+  
+    <div id="legend-holder">
+      <ul></ul>
+    </div>
+    <div id="flux-holder">
+      <div id="flux-info"></div>
+      <div id="flux-chart"></div>
+    </div>
+    
+
+    <script type="text/javascript" src="scripts/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="scripts/raphael.min.js"></script>
+    <script type="text/javascript" src="scripts/raphael.tooltip.js"></script>
+    <script type="text/javascript" src="scripts/raphael.extends.js"></script>
+    <script type="text/javascript" src="scripts/util.js"></script>
+    <script type="text/javascript" src="scripts/echarts.min.js"></script>
+	<script type="text/javascript" src="mock/mock.js"></script>
+	<script type="text/javascript" src="mock/use-mock.js"></script>
+    <script type="text/javascript" src="scripts/flowMonitorView.js"></script>
+  </body>
+</html>
