@@ -114,21 +114,7 @@ $(function() {
 	        _viewwidth = (canvasHeight  * 0.8 / 800 * maxWidth)<$('body').width()?$('body').width():( canvasHeight * 0.8 / 800 * maxWidth) ;
 	        
 	        var savedata = '{"width":' +  _viewwidth + ',"height":' + $canvas.height() + "}";
-	        if($('#isframe').val() == 'true') {
-	        	
-	        }else {
-	        	$.ajax({
-	            	url:'/nos/view/flowmonitor/action.jsp?action=saveWidth',
-	            	data:{
-	            		viewid : saveView,
-	            		viewData: savedata
-	            	},
-	            	success:function(data) {
-	            		console.log(data);
-	            	}
-	            	
-	            });
-	        }
+	        
 	        
 	        
 	        
@@ -455,7 +441,7 @@ $(function() {
             });
 
             circuitSet.dblclick(function() {
-                window.open('FlowDetailView.jsp?circuitID=' + this.data('circuitID'));
+                window.open('FlowDetailView.html?circuitID=' + this.data('circuitID'));
             });
         }
 
@@ -723,7 +709,7 @@ $(function() {
 						}
 					}
 					var loc = nodetext + "_" + data.text + "_" + data.id;
-					window.open('/nos/view/flowmonitor/FlowMonitorView.jsp?viewid='+encodeURI(loc));
+					window.open('/nos/view/flowmonitor/FlowMonitorView.html?viewid='+encodeURI(loc));
 				}
 			}
 	    });
@@ -737,7 +723,7 @@ $(function() {
     }
 
     $('#view-edit-btn').click(function(){
-        window.open('/nos/view/flowmonitor/FlowMonitorConfig.jsp?viewid='+viewID);
+        window.open('/nos/view/flowmonitor/FlowMonitorConfig.html?viewid='+viewID);
     });
     
     $('#view-center-btn').click(function() {
