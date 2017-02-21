@@ -96,15 +96,15 @@
             polarCoord.maxx = polarCoord.maxx > bBox.x2 ? polarCoord.maxx : bBox.x2;
             polarCoord.maxy = polarCoord.maxy > bBox.y2 ? polarCoord.maxy : bBox.y2;
         });
-        console.log('数目:' +count);
+        console.log('鏁扮洰:' +count);
         var t2 = new Date().getTime();
-        console.log('运行时间:' + (t2 - t1));
+        console.log('杩愯鏃堕棿:' + (t2 - t1));
         
         return polarCoord;
     }
 
     /**
-     * 自适应画布
+     * 鑷�傚簲鐢诲竷
      **/
     R.fn.autoFit = function() {
         var _this = this;
@@ -128,7 +128,7 @@
     };
 
     /**
-     * 滚轮放大缩小
+     * 婊氳疆鏀惧ぇ缂╁皬
      **/
     R.fn.wheelable = function() {
         var _this = this;
@@ -153,7 +153,7 @@
     };
 
     /**
-     * 画布拖动
+     * 鐢诲竷鎷栧姩
      **/
     R.fn.dragable = function() {
         var _this = this;
@@ -194,7 +194,7 @@
     };
 
     /**
-     * 箭头连线
+     * 绠ご杩炵嚎
      **/
     R.fn.lineWithArrow = function(x1, y1, x2, y2, w, aw, aa) {
 
