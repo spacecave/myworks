@@ -76,7 +76,7 @@
                 {'name': '测试组', 'dpt': '......', 'type': 'dir'},
                 {'name': '拓扑组', 'dpt': '干啥的???', 
                     'child':[
-                        {'name':'EXPERIENCE', 'type': 'file', 'contents':'拓扑组经历'}
+                        {'name':'EXPERIENCE', 'type': 'file', 'contents':'时间：2014年07月01日 -- 入职<br/>时间：2014年11月XX日 -- 转正（总算转正了，还以为会被开呢）<br/>时间：2015年05月XX日 -- 废弃（怎么突然拓扑组就没了，我怎么感觉我啥都还不会。。）'}
                     ]   
                 }   
             ]
@@ -108,13 +108,33 @@
             '设计组': {'name': '设计组', 'dpt': '所有任务的来源', 'type': 'dir'},
             '后台组': {'name': '后台组', 'dpt': '牛人聚集地', 'type': 'dir'},
             '测试组': {'name': '测试组', 'dpt': '。。。', 'type': 'dir'},
-            '统计组': {'name': '统计组', 'dpt': '我次奥，他们的拓扑画的比我们拓扑组还叼', 'type': 'dir'},
+            '统计组': {'name': '统计组', 'dpt': '我次奥，他们的拓扑画的比我们拓扑组还叼', 'type': 'dir', 
+                    'child':[
+                        {'name':'EXPERIENCE', 'type': 'file', 'contents':'时间：2015年05月XX日 -- 换组（来到了一个全新的组，但是拓扑组以前的东西都给我维护，而且还要开发新的h5，什么都不会，怎么办怎么办怎么办）<br/>时间：2015年06月12日 -- 总理演示（第一次加班到凌晨2点，为了给总理演示，然而被放鸽子）<br/>时间：2015年11月09日 -- 南京封闭开发（第一次出差，现在的工作这么简单，没挑战性啊，去南京封闭一下' }
+                    ]},
             '工单组': {'name': '工单组', 'dpt': '阿卡林', 'type': 'dir'}
+        },
+        _third = {
+            '前台组': {'name': '前台组', 'dpt': '哦，就是搞JSP的', 'type': 'dir'},
+            '设计组': {'name': '设计组', 'dpt': '哦，那个写文档的', 'type': 'dir'},
+            '后台组': {'name': '后台组', 'dpt': '...七哥，怎么就剩你一只了呀', 'type': 'dir'},
+            '测试组': {'name': '测试组', 'dpt': '妹子，好多妹子！！', 'type': 'dir'},
+            '统计组': {'name': '统计组', 'dpt': '哦，给我们出数据的', 'type': 'dir'},
+            '展现组': {'name': '展现组', 'dpt': '我们是最叼的！', 'type': 'dir', 
+                    'child':[
+                        {'name':'EXPERIENCE', 'type': 'file', 'contents':'时间：2016年03月XX日 -- 前端（原来前端有着这么多的东西，刷新了我的认知）<br/>时间：2016年12月XX日 -- 同事（这个月，走了3位小伙伴。。。）<br/>时间：2017年01月15日 -- 年会（第一次参加年会，居然中了个三等奖。。。）<br/>时间：2017年05月12日 -- 离职' }
+                    ]},
+            '架构组': {'name': '架构组', 'dpt': '听起来好高大上的样子哦', 'type': 'dir'},
+            '工单组': {'name': '工单组', 'dpt': '好可怕，天天加班哦', 'type': 'dir'}
         };
 
         if(args === 'rm 拓扑组') {
             for(var i = 0; i < now_obj.length; i ++) {
                 now_obj[i] = _second[now_obj[i].name];
+            }
+        }else if(args == 'mkdir 展现组&架构组') {
+            for(var i = 0; i < now_obj.length; i ++) {
+                now_obj[i] = _third[now_obj[i].name];
             }
         }
     }
@@ -156,18 +176,36 @@
             this.cursorBlinker();
             this.begin();
             this.intro('open README', function() {
-                this.intro('help', function() {
+               // this.intro('help', function() {
                     this.intro('cd 产品研发部', function() {
                         this.intro('ls', function(){
                             this.intro('cd 拓扑组', function(){
                                 this.intro('open EXPERIENCE', function() {
                                     this.intro('cd ..', function() {
-                                        this.intro('rm 拓扑组');
+                                        this.intro('rm 拓扑组', function() {
+                                            this.intro('ls', function() {
+                                                this.intro('cd 统计组', function() {
+                                                    this.intro('open EXPERIENCE', function() {
+                                                        this.intro('cd ..', function() {
+                                                            this.intro('mkdir 展现组&架构组', function() {
+                                                                this.intro('ls', function() {
+                                                                    this.intro('cd 展现组', function() {
+                                                                        this.intro('open EXPERIENCE', function() {
+                                                                            this.write('exit');
+                                                                        }.bind(this));
+                                                                    }.bind(this));
+                                                                }.bind(this));                                                                
+                                                            }.bind(this));
+                                                        }.bind(this));
+                                                    }.bind(this));
+                                                }.bind(this));
+                                            }.bind(this));
+                                        }.bind(this));
                                     }.bind(this));
                                 }.bind(this));
                             }.bind(this));
                         }.bind(this));
-                    }.bind(this))
+                 //   }.bind(this))
                 }.bind(this))
             }.bind(this))
         },
@@ -181,6 +219,16 @@
                     clearInterval(autoType);
                     that.specialKeysHandler(13);
                     if (callback) callback();
+                };
+            }, 250)
+        },
+        write: function(command) {
+            var i = 0;
+            var autoType = setInterval(function() {
+                document.getElementById('stdout').innerHTML += command[i];
+                i++;
+                if (i == command.length) {
+                    clearInterval(autoType);
                 };
             }, 250)
         },
@@ -244,6 +292,9 @@
                     } catch (e) {
                         output.innerHTML = `-bash: ${cmd}: command not found`;
                     }
+                }
+                if(cmd === 'exit') {
+                    path = '~';
                 }
             }
             if (output.innerHTML !== '') document.body.appendChild(output);
@@ -355,8 +406,9 @@ Commands are(case insensitive):
             profile: function() {
                 return `TODO`
             },
-            clear: function() {
+            exit: function() {
                 document.body.innerHTML = '';
+                
                 return '';
             },
             tree: function() {
@@ -364,11 +416,26 @@ Commands are(case insensitive):
             },
             mkdir: function(args) {
                 var args = args || '';
-                var _obj = {};
-                _obj.name = args;
-                _obj.type = 'dir';
-                _obj.dpt = '';
-                now_obj.push(_obj);
+                args = args.replace('&amp;', '&');
+                if(args.indexOf('&') != -1) {
+                    var _arr = args.split('&');
+                    for(var i = 0; i < _arr.length; i ++) {
+                        var _obj = {};
+                        _obj.name = _arr[i];
+                        _obj.type = 'dir';
+                        _obj.dpt = '';
+                        
+                        now_obj.push(_obj);
+                    }
+                    changedpt('mkdir ' + args);
+                }else {
+                    var _obj = {};
+                    _obj.name = args;
+                    _obj.type = 'dir';
+                    _obj.dpt = '';
+                    now_obj.push(_obj);
+                }
+                return '';
             }
         }
 
