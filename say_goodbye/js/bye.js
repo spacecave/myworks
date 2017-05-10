@@ -120,39 +120,39 @@
             this.showTime();
             this.cursorBlinker();
             this.begin();
-            // this.intro('open README', function() {
-            //    // this.intro('help', function() {
-            //         this.intro('cd 产品研发部', function() {
-            //             this.intro('ls', function(){
-            //                 this.intro('cd 拓扑组', function(){
-            //                     this.intro('open EXPERIENCE', function() {
-            //                         this.intro('cd ..', function() {
-            //                             this.intro('rm 拓扑组', function() {
-            //                                 this.intro('ls', function() {
-            //                                     this.intro('cd 统计组', function() {
-            //                                         this.intro('open EXPERIENCE', function() {
-            //                                             this.intro('cd ..', function() {
-            //                                                 this.intro('mkdir 展现组&架构组', function() {
-            //                                                     this.intro('ls', function() {
-            //                                                         this.intro('cd 展现组', function() {
-            //                                                             this.intro('open EXPERIENCE', function() {
-            //                                                                 this.write('exit');
-            //                                                             }.bind(this));
-            //                                                         }.bind(this));
-            //                                                     }.bind(this));                                                                
-            //                                                 }.bind(this));
-            //                                             }.bind(this));
-            //                                         }.bind(this));
-            //                                     }.bind(this));
-            //                                 }.bind(this));
-            //                             }.bind(this));
-            //                         }.bind(this));
-            //                     }.bind(this));
-            //                 }.bind(this));
-            //             }.bind(this));
-            //      //   }.bind(this))
-            //     }.bind(this))
-            // }.bind(this))
+            this.intro('open README', function() {
+               // this.intro('help', function() {
+                    this.intro('cd 产品研发部', function() {
+                        this.intro('ls', function(){
+                            this.intro('cd 拓扑组', function(){
+                                this.intro('open EXPERIENCE', function() {
+                                    this.intro('cd ..', function() {
+                                        this.intro('rm 拓扑组', function() {
+                                            this.intro('ls', function() {
+                                                this.intro('cd 统计组', function() {
+                                                    this.intro('open EXPERIENCE', function() {
+                                                        this.intro('cd ..', function() {
+                                                            this.intro('mkdir 展现组&架构组', function() {
+                                                                this.intro('ls', function() {
+                                                                    this.intro('cd 展现组', function() {
+                                                                        this.intro('open EXPERIENCE', function() {
+                                                                            this.write('exit');
+                                                                        }.bind(this));
+                                                                    }.bind(this));
+                                                                }.bind(this));                                                                
+                                                            }.bind(this));
+                                                        }.bind(this));
+                                                    }.bind(this));
+                                                }.bind(this));
+                                            }.bind(this));
+                                        }.bind(this));
+                                    }.bind(this));
+                                }.bind(this));
+                            }.bind(this));
+                        }.bind(this));
+                 //   }.bind(this))
+                }.bind(this))
+            }.bind(this))
         },
         intro: function(command, callback) {
             var that = this;
