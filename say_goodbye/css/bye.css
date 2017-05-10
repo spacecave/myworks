@@ -33,6 +33,10 @@ span.cv {
     padding-right: 20px;
     text-align: left;
 }
+input.content {
+    position: absolute;
+    top: -20px;
+}
 a.link, span.link {
     color: #285fd9;
     text-decoration: none;
