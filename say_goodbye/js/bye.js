@@ -268,10 +268,12 @@
                 var args = args || '';
                 if(now_obj){
                     for(var i = 0; i < now_obj.length; i ++) {
-                        if(now_obj[i].name.toLowerCase() === args && now_obj[i].type === 'file') {
-                            return now_obj[i].contents;
-                        }else if(now_obj[i].type === 'dir') {
-                            return `-bash: open ${args}: Is not a file`;
+                        if(now_obj[i].name.toLowerCase() === args) {
+                            if(now_obj[i].type === 'file') {
+                                return now_obj[i].contents;
+                            }else if(now_obj[i].type === 'dir') {
+                                return `-bash: open ${args}: Is not a file`;
+                            }                    
                         }
                     }
                 }else {
