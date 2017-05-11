@@ -377,9 +377,8 @@
                 return '';
             },
             help: function() {
-                return `
-    Commands are(case insensitive):
-    <span class="cv">open  cd  ls  mkdir  exit  help rm</span>`;
+                return `  Commands are(case insensitive):
+    <span class="cv">open  cd  ls  mkdir  exit  help  rm</span>`;
             },
             exit: function() {
                 document.body.innerHTML = '';
