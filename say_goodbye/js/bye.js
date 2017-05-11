@@ -52,7 +52,7 @@
                 '前台组': {'name': '前台组', 'dpt': '创造网管的大神组', 'type': 'dir'},
                 '设计组': {'name': '设计组', 'dpt': '所有任务的来源', 'type': 'dir'},
                 '后台组': {'name': '后台组', 'dpt': '牛人聚集地', 'type': 'dir'},
-                '测试组': {'name': '测试组', 'dpt': '。。。', 'type': 'dir'},
+                '测试组': {'name': '测试组', 'dpt': '你给我过来看下，这个代码哪里有BUG？', 'type': 'dir'},
                 '统计组': {'name': '统计组', 'dpt': '我次奥，他们的拓扑画的比我们拓扑组还叼', 'type': 'dir', 
                         'child':[
                             {'name':'EXPERIENCE', 'type': 'file', 'contents':'时间：2015年05月XX日 -- 换组（来到了一个全新的组，但是拓扑组以前的东西都给我维护，而且还要开发新的h5，什么都不会，我能怎么办啊，我也很绝望啊）<br/>时间：2015年06月12日 -- 总理演示（第一次加班到凌晨2点，为了给总理演示，然而被放鸽子）<br/>时间：2015年11月09日 -- 南京封闭开发（第一次出差，现在的工作这么简单，没挑战性啊，去南京封闭一下）' }
@@ -67,9 +67,9 @@
                 '统计组': {'name': '统计组', 'dpt': '哦，给我们出数据的', 'type': 'dir'},
                 '展现组': {'name': '展现组', 'dpt': '我们是最叼的！', 'type': 'dir', 
                         'child':[
-                            {'name':'EXPERIENCE', 'type': 'file', 'contents':'时间：2016年03月XX日 -- 前端（原来前端有着这么多的东西，刷新了我的认知）<br/>时间：2016年12月XX日 -- 同事（这个月，走了3位小伙伴。。。）<br/>时间：2017年01月15日 -- 年会（第一次参加年会，居然中了个三等奖。。。）<br/>时间：2017年05月12日 -- 离职' }
+                            {'name':'EXPERIENCE', 'type': 'file', 'contents':'时间：2016年03月XX日 -- 前端（原来前端有着这么多的东西，刷新了我的认知）<br/>时间：2016年12月XX日 -- 同事（这个月，走了3位小伙伴。。。）<br/>时间：2017年01月15日 -- 年会（第一次参加年会，居然中了个三等奖。。。）<br/>时间：2017年05月12日 -- 离职<br/>     <span class="cv">时光荏苒，毕业入中盈3年，少年已不再年少。一路走来，遇见了很多人，相识了很多人，也喷过很多人。浮云散尽，唯留恬淡，很高兴认识你们，最了不起的你们！</span>' }
                         ]},
-                '架构组': {'name': '架构组', 'dpt': '听起来好高大上的样子哦', 'type': 'dir'},
+                '架构组': {'name': '架构组', 'dpt': '没事过去瞄一下他们的电脑屏幕，总能看到你不认识的单词', 'type': 'dir'},
                 '工单组': {'name': '工单组', 'dpt': '好可怕，天天加班哦', 'type': 'dir'}
             };
 
@@ -77,7 +77,7 @@
             for(var i = 0; i < now_obj.length; i ++) {
                 now_obj[i] = _second[now_obj[i].name];
             }
-        }else if(args == 'mkdir 展现组&架构组') {
+        }else if(args == 'mkdir 展现组') {
             for(var i = 0; i < now_obj.length; i ++) {
                 now_obj[i] = _third[now_obj[i].name];
             }
@@ -128,23 +128,29 @@
                                 this.intro('open EXPERIENCE', function() {
                                     this.intro('cd ..', function() {
                                         this.intro('rm 拓扑组', function() {
-                                            this.intro('ls', function() {
-                                                this.intro('cd 统计组', function() {
-                                                    this.intro('open EXPERIENCE', function() {
-                                                        this.intro('cd ..', function() {
-                                                            this.intro('mkdir 展现组&架构组', function() {
-                                                                this.intro('ls', function() {
-                                                                    this.intro('cd 展现组', function() {
-                                                                        this.intro('open EXPERIENCE', function() {
-                                                                            this.write('exit');
+                                            this.intro('mkdir 架构组',function() {
+                                                this.intro('ls', function() {
+                                                    this.intro('cd 统计组', function() {
+                                                        this.intro('open EXPERIENCE', function() {
+                                                            this.intro('cd ..', function() {
+                                                                this.intro('mkdir 展现组', function() {
+                                                                    this.intro('ls', function() {
+                                                                        this.intro('cd 展现组', function() {
+                                                                            this.intro('open EXPERIENCE', function() {
+                                                                                this.intro('cd ..', function() {
+                                                                                    this.intro('cd ..', function() {
+                                                                                        this.write('exit');
+                                                                                    }.bind(this));
+                                                                                }.bind(this));                                                                           
+                                                                            }.bind(this));
                                                                         }.bind(this));
-                                                                    }.bind(this));
-                                                                }.bind(this));                                                                
+                                                                    }.bind(this));                                                                
+                                                                }.bind(this));
                                                             }.bind(this));
                                                         }.bind(this));
                                                     }.bind(this));
                                                 }.bind(this));
-                                            }.bind(this));
+                                            }.bind(this));    
                                         }.bind(this));
                                     }.bind(this));
                                 }.bind(this));
@@ -266,6 +272,9 @@
         commands: {
             open: function(args) {
                 var args = args || '';
+                if(args === '') {
+                    return '';
+                }
                 if(now_obj){
                     for(var i = 0; i < now_obj.length; i ++) {
                         if(now_obj[i].name.toLowerCase() === args) {
@@ -310,7 +319,9 @@
             },
             cd: function(args) {
                 var args = args || '';
-              
+                if(args === '') {
+                    return '';
+                }
                 if(args === '~') {
                     loc_path.length = 0;
                     loc_path.push(args);
@@ -351,6 +362,9 @@
             },
             rm: function(args) {
                 var args = args || '';
+                if(args === '') {
+                    return '';
+                }
                 if(Array.isArray(now_obj)) {
                     for(var i = 0; i < now_obj.length; i ++) {
                         if(now_obj[i].name === args) {
@@ -364,8 +378,8 @@
             },
             help: function() {
                 return `
-                    Commands are(case insensitive):
-                    <span class="cv">open  cd  ls  mkdir  exit  help rm</span>`;
+    Commands are(case insensitive):
+    <span class="cv">open  cd  ls  mkdir  exit  help rm</span>`;
             },
             exit: function() {
                 document.body.innerHTML = '';
@@ -381,6 +395,9 @@
             },
             mkdir: function(args) {
                 var args = args || '';
+                if(args === '') {
+                    return '';
+                }
                 args = args.replace('&amp;', '&');
                 if(args.indexOf('&') != -1) {
                     var _arr = args.split('&');
@@ -392,15 +409,23 @@
                         _obj.child = [];
                         now_obj.push(_obj);
                     }
-                    changedpt('mkdir ' + args);
+                    
                 }else {
                     var _obj = {};
                     _obj.name = args;
                     _obj.type = 'dir';
                     _obj.dpt = '';
                     _obj.child = [];
+                    
                     now_obj.push(_obj);
+
+                    if(args === '架构组') {
+                        _obj.dpt = '听起来好高大上的样子哦';
+                    }else if(args === '展现组') {
+                        changedpt('mkdir ' + args);
+                    }
                 }
+                
                 return '';
             }
         }
