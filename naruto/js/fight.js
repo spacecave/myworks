@@ -50,7 +50,9 @@
         10:''//顶尖，稳赢3场，不管对谁
     }
 
-    var fight_time = 60 * 1000;//60秒
+    var fight_time = 60;//60秒
+
+    var fight_ms = 10;//换算倍数
 
     function Player(opts) {
         this.loc = opts.loc;//阵营
@@ -92,11 +94,13 @@
         //获取—1到1的随机数
         
 
-        var levelms = A.level - B.level;
+        var levelms = A.level - B.level,
+            op_time = 0;
         
         for(var i = 0; i < 5; i ++) {
             var _special = 100 * Math.random(),
                 _prob = 50 + levelms * 10 + 10 * getrandom();
+                op_time +=  fight_time - levelms * 2 + 3*getrandom();
             if(A.winng > 0) {//当前A忍者连胜
                 _prob -= 15 * Math.random() * A.winng;
             }else if(B.winng > 0) {//当前B忍者连胜状态
@@ -117,21 +121,25 @@
 
             if(A.ngcounts === 0) {
                 B.status ++;
-                console.log(B.name + '(等级：'+B.level+') 击败了 ' + A.name  + '(等级：' + A.level + ')  剩余忍者数目:' + B.ngcounts);
+                B.time = op_time;
+                console.log(B.name + '(等级：'+B.level+') 击败了 ' + A.name  + '(等级：' + A.level + ') 剩余忍者数目:' + B.ngcounts + '  耗时:' + op_time);
+                $('#fight-log').append('<div>' + B.name + '(等级：'+B.level+') 击败了 ' + A.name  + '(等级：' + A.level + ')</div><div>  剩余忍者数目:' + B.ngcounts + '  耗时:' + parseInt(op_time) + '</div>');
                 return B;
             }else if(B.ngcounts === 0) {
                 A.status ++;
-                console.log(A.name + '(等级：'+A.level+') 击败了 ' + B.name  + '(等级：' + B.level + ')  剩余忍者数目:' + A.ngcounts);
+                A.time = op_time;
+                console.log(A.name + '(等级：'+A.level+') 击败了 ' + B.name  + '(等级：' + B.level + ') 剩余忍者数目:' + A.ngcounts + '  耗时:' + op_time);
+                $('#fight-log').append('<div>' + A.name + '(等级：'+A.level+') 击败了 ' + B.name  + '(等级：' + B.level + ')</div><div>  剩余忍者数目:' + A.ngcounts + '  耗时:' + parseInt(op_time) + '</div>');
                 return A;
             }
         }
         
     }
-    function initUI(arr) {
+    function initUI(arr, id) {
         
         var _html = new Array();
         for(var i = 0; i < arr.length; i ++) {
-            _html.push('<div class="players">');
+            _html.push('<div id="players-'+arr[i].name+'" class="players">');
             _html.push('<div class="p-left">');
             _html.push('<input type="text" class="p-left-name" value='+arr[i].name+'>');
             _html.push('<span class="p-left-level">战斗力:level'+arr[i].level+'</span>');
@@ -142,20 +150,95 @@
             _html.push('</div>');
 
         }
-        $('#fight-left').append(_html.join(''));
+        $('#' + id).append(_html.join(''));
     }
 
-   
+    function begin() {
+        var _acount = 0;
+        var _bcount = 0;
+        var _nowobj = {};
+        for(var i = 0; i < 60; i ++) {
 
-    initUI(all_star);
-    buildEnemy(aoi_sola);
-    var _acount = 0;
-    var _bcount = 0;
-    var _nowobj = {};
-    for(var i = 0; i < 60; i ++) {
+            if(_bcount === 30 || _acount === 30) {
+                break;
+            }
+            var playera,
+                playerb;
+            if(_nowobj.loc && _nowobj.loc === 'A') {
+                playera = _nowobj;
+                if(_nowobj.status === _nowobj.wincounts) {
+                    _acount ++;
+                    if(_acount === 30) {
+                        break;
+                    }
+                    playera = new Player(all_star[_acount]);
+                }
+                playerb = new Player(aoi_sola[_bcount]);
+            }else if(_nowobj.loc && _nowobj.loc === 'B') {
+                playerb = _nowobj;
+                if(_nowobj.status === _nowobj.wincounts) {
+                    _bcount ++;
+                    if(_bcount === 30) {
+                        break;
+                    }
+                    playerb = new Player(aoi_sola[_bcount]);
+                }
+                playera = new Player(all_star[_acount]);
+            }else {
+                playera = new Player(all_star[_acount]);
+                playerb = new Player(aoi_sola[_bcount]);
+            }
+            _nowobj = oppose(playera, playerb);
+            
+            if(_nowobj.loc === 'A') {
+                _bcount ++
+            }else {
+                _acount ++;
+            }
 
+            
+        }
+    }
+
+    var _acount = 4,
+        _bcount = 4;
+       // _nowobj = {};
+
+    function firstFighter() {
+        var _ap1 = new Player(all_star[0]),
+            _ap2 = new Player(all_star[1]),
+            _ap3 = new Player(all_star[2]),
+            _ap4 = new Player(all_star[3]),
+            _bp1 = new Player(aoi_sola[0]),
+            _bp2 = new Player(aoi_sola[1]),
+            _bp3 = new Player(aoi_sola[2]),
+            _bp4 = new Player(aoi_sola[3]);
+
+        var _ab1 = oppose(_ap1, _bp1),
+            _ab2 = oppose(_ap2, _bp2),
+            _ab3 = oppose(_ap3, _bp3),
+            _ab4 = oppose(_ap4, _bp4);
+
+        setTimeout(function() {
+            test(_ab1);
+        }, _ab1.time * fight_ms);
+
+        setTimeout(function() {
+            test(_ab2);
+        }, _ab2.time * fight_ms);
+
+        setTimeout(function() {
+            test(_ab3);
+        }, _ab3.time * fight_ms);
+
+        setTimeout(function() {
+            test(_ab4);
+        }, _ab4.time * fight_ms);
+    }
+
+    function test(_nowobj) {
         if(_bcount === 30 || _acount === 30) {
-            break;
+            return;
         }
         var playera,
             playerb;
@@ -164,7 +247,7 @@
             if(_nowobj.status === _nowobj.wincounts) {
                 _acount ++;
                 if(_acount === 30) {
-                    break;
+                    return;
                 }
                 playera = new Player(all_star[_acount]);
             }
@@ -174,7 +257,7 @@
             if(_nowobj.status === _nowobj.wincounts) {
                 _bcount ++;
                 if(_bcount === 30) {
-                    break;
+                    return;
                 }
                 playerb = new Player(aoi_sola[_bcount]);
             }
@@ -191,8 +274,23 @@
             _acount ++;
         }
 
-        
+        setTimeout(function() {
+            test(_nowobj);
+        }, _nowobj.time * fight_ms);
+
+
     }
+
+    
+
+    
+    buildEnemy(aoi_sola);
+    initUI(all_star, 'fight-left');
+    initUI(aoi_sola, 'fight-right');
+
+    firstFighter();
+    
+    // begin();
     
     
 
