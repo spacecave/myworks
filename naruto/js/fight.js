@@ -285,10 +285,10 @@
     initUI(all_star, 'fight-left');
     initUI(aoi_sola, 'fight-right');
 
-   // firstFighter();
+    firstFighter();
     
-    // begin();
+     //begin();
     
-    test();
+    //test();
 
 })();
