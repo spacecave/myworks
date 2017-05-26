@@ -38,6 +38,14 @@
     ],
     aoi_sola = [];
 
+    //出战顺序
+    var _acount = 4,
+        _bcount = 4;
+
+    //排序order值
+    var loc_a_area = 60,
+        loc_b_area = 60;
+
 
 
     var loc_level = {
@@ -89,13 +97,19 @@
 
     }
 
+    
 
     function oppose(A, B) {
         //获取—1到1的随机数
-        
-
         var levelms = A.level - B.level,
-            op_time = 0;
+            op_time = 0,
+            $a_area = $('#players-' + A.name),
+            $b_area = $('#players-' + B.name),
+            $a_status = $('#p-status-' + A.name),
+            $b_status= $('#p-status-' + B.name);
+
+        $a_status.html('战斗中...');
+        $b_status.html('战斗中...');
         
         for(var i = 0; i < 5; i ++) {
             var _special = 100 * Math.random(),
@@ -123,29 +137,45 @@
                 B.status ++;
                 B.time = op_time;
                 console.log(B.name + '(等级：'+B.level+') 击败了 ' + A.name  + '(等级：' + A.level + ') 剩余忍者数目:' + B.ngcounts + '  耗时:' + op_time);
-                $('#fight-log').append('<div>' + B.name + '(等级：'+B.level+') 击败了 ' + A.name  + '(等级：' + A.level + ')</div><div>  剩余忍者数目:' + B.ngcounts + '  耗时:' + parseInt(op_time) + '</div>');
+                $('#fight-log').append('<div>' + A.name + '(等级：'+A.level+') LOSS ' + B.name  + '(等级：' + B.level + ')</div><div>  剩余忍者数目:' + B.ngcounts + '  耗时:' + parseInt(op_time) + '</div>');
+               
+                $a_area.css({'order': loc_a_area -- + ''});
+                if(B.status === B.wincounts) {
+                    $b_area.css({'order': loc_b_area -- + ''});
+                    $b_status.html(B.status + '胜');
+                }
+                $a_status.html(A.status + '胜');
                 return B;
             }else if(B.ngcounts === 0) {
                 A.status ++;
                 A.time = op_time;
                 console.log(A.name + '(等级：'+A.level+') 击败了 ' + B.name  + '(等级：' + B.level + ') 剩余忍者数目:' + A.ngcounts + '  耗时:' + op_time);
-                $('#fight-log').append('<div>' + A.name + '(等级：'+A.level+') 击败了 ' + B.name  + '(等级：' + B.level + ')</div><div>  剩余忍者数目:' + A.ngcounts + '  耗时:' + parseInt(op_time) + '</div>');
+                $('#fight-log').append('<div>' + A.name + '(等级：'+A.level+') WIN ' + B.name  + '(等级：' + B.level + ')</div><div>  剩余忍者数目:' + A.ngcounts + '  耗时:' + parseInt(op_time) + '</div>');
+                $b_area.css({'order': loc_b_area -- + ''});
+                if(A.status === A.wincounts) {
+                    $a_area.css({'order': loc_a_area -- + ''});
+                    $a_status.html(A.status + '胜');
+                }
+                $b_status.html(B.status + '胜');
                 return A;
             }
         }
         
     }
+
+
     function initUI(arr, id) {
         
         var _html = new Array();
         for(var i = 0; i < arr.length; i ++) {
-            _html.push('<div id="players-'+arr[i].name+'" class="players">');
+            
+            _html.push('<div id="players-'+arr[i].name+'" class="players" style="order:'+i+'">');
             _html.push('<div class="p-left">');
             _html.push('<input type="text" class="p-left-name" value='+arr[i].name+'>');
             _html.push('<span class="p-left-level">战斗力:level'+arr[i].level+'</span>');
             _html.push('</div>');
             _html.push('<div class="p-right">');
-            _html.push('<div class="p-status">战斗中...</div>');
+            _html.push('<div id="p-status-'+arr[i].name+'" class="p-status">等待中...</div>');
             _html.push('</div>');
             _html.push('</div>');
 
@@ -153,57 +183,9 @@
         $('#' + id).append(_html.join(''));
     }
 
-    function begin() {
-        var _acount = 0;
-        var _bcount = 0;
-        var _nowobj = {};
-        for(var i = 0; i < 60; i ++) {
+    
 
-            if(_bcount === 30 || _acount === 30) {
-                break;
-            }
-            var playera,
-                playerb;
-            if(_nowobj.loc && _nowobj.loc === 'A') {
-                playera = _nowobj;
-                if(_nowobj.status === _nowobj.wincounts) {
-                    _acount ++;
-                    if(_acount === 30) {
-                        break;
-                    }
-                    playera = new Player(all_star[_acount]);
-                }
-                playerb = new Player(aoi_sola[_bcount]);
-            }else if(_nowobj.loc && _nowobj.loc === 'B') {
-                playerb = _nowobj;
-                if(_nowobj.status === _nowobj.wincounts) {
-                    _bcount ++;
-                    if(_bcount === 30) {
-                        break;
-                    }
-                    playerb = new Player(aoi_sola[_bcount]);
-                }
-                playera = new Player(all_star[_acount]);
-            }else {
-                playera = new Player(all_star[_acount]);
-                playerb = new Player(aoi_sola[_bcount]);
-            }
-            _nowobj = oppose(playera, playerb);
-            
-            if(_nowobj.loc === 'A') {
-                _bcount ++
-            }else {
-                _acount ++;
-            }
-
-            
-        }
-    }
-
-    var _acount = 4,
-        _bcount = 4;
-       // _nowobj = {};
-
+    
     function firstFighter() {
         var _ap1 = new Player(all_star[0]),
             _ap2 = new Player(all_star[1]),
@@ -219,24 +201,25 @@
             _ab3 = oppose(_ap3, _bp3),
             _ab4 = oppose(_ap4, _bp4);
 
+
         setTimeout(function() {
-            test(_ab1);
+            fighting(_ab1);
         }, _ab1.time * fight_ms);
 
         setTimeout(function() {
-            test(_ab2);
+            fighting(_ab2);
         }, _ab2.time * fight_ms);
 
         setTimeout(function() {
-            test(_ab3);
+            fighting(_ab3);
         }, _ab3.time * fight_ms);
 
         setTimeout(function() {
-            test(_ab4);
+            fighting(_ab4);
         }, _ab4.time * fight_ms);
     }
 
-    function test(_nowobj) {
+    function fighting(_nowobj) {
         if(_bcount === 30 || _acount === 30) {
             return;
         }
@@ -246,6 +229,7 @@
             playera = _nowobj;
             if(_nowobj.status === _nowobj.wincounts) {
                 _acount ++;
+                $('#p-status-' + _nowobj.name).html(_nowobj.status + '胜');
                 if(_acount === 30) {
                     return;
                 }
@@ -256,7 +240,9 @@
             playerb = _nowobj;
             if(_nowobj.status === _nowobj.wincounts) {
                 _bcount ++;
+                $('#p-status-' + _nowobj.name).html(_nowobj.status + '胜');
                 if(_bcount === 30) {
+                    
                     return;
                 }
                 playerb = new Player(aoi_sola[_bcount]);
@@ -266,21 +252,32 @@
             playera = new Player(all_star[_acount]);
             playerb = new Player(aoi_sola[_bcount]);
         }
-        _nowobj = oppose(playera, playerb);
         
-        if(_nowobj.loc === 'A') {
-            _bcount ++
-        }else {
-            _acount ++;
-        }
+        var _outobj = oppose(playera, playerb);
 
         setTimeout(function() {
-            test(_nowobj);
-        }, _nowobj.time * fight_ms);
+        
+            if(_outobj.loc === 'A') {
+                _bcount ++
+            }else {
+                _acount ++;
+            }
+            fighting(_outobj);
+        }, _outobj.time * fight_ms);
 
 
     }
 
+    function test() {
+        var a = function() {
+            setTimeout(function() {
+                return 'sss';
+            }, 5 * 1000);
+        }
+
+        var ss = a();
+        alert(ss);
+    }
     
 
     
@@ -288,10 +285,10 @@
     initUI(all_star, 'fight-left');
     initUI(aoi_sola, 'fight-right');
 
-    firstFighter();
+   // firstFighter();
     
     // begin();
     
-    
+    test();
 
 })();
