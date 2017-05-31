@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>extensive</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="36" cy="36" r="36"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Express-Marketing" transform="translate(-1085.000000, -568.000000)">
+            <g id="extensive" transform="translate(1085.000000, 568.000000)">
+                <circle id="Oval" stroke="#FFFFFF" cx="36" cy="36" r="35.5"></circle>
+                <g id="Group-7">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Oval-Copy"></g>
+                    <path d="M54.1805325,2 C51.4339298,-1.0687468 47.4424991,-3 43,-3 C34.7157288,-3 28,3.71572875 28,12 C28,12.3489812 28.0119176,12.6951789 28.035368,13.0382083 C21.8590089,13.529484 17,18.6973008 17,25 C17,31.627417 22.372583,37 29,37 L60,37 C67.7319865,37 74,30.7319865 74,23 L74,20 L72,20 L72,2 L54.1805325,2 Z" id="Combined-Shape" stroke="#FFFFFF" mask="url(#mask-2)"></path>
+                    <path d="M52.5583496,37.0571289 L52.5583496,39.4641025 L52.5583496,39.4641025 C52.5583496,46.0915195 47.1857666,51.4641025 40.5583496,51.4641025 L36.4704694,51.4641025" id="Path-2" stroke="#FFFFFF" opacity="0.600000024" mask="url(#mask-2)"></path>
+                    <path d="M25.5,47.5 L25.5,55.5 L32.5,55.5 C34.709139,55.5 36.5,53.709139 36.5,51.5 C36.5,49.290861 34.709139,47.5 32.5,47.5 L25.5,47.5 Z" id="Rectangle-10" stroke="#FFFFFF" mask="url(#mask-2)"></path>
+                    <rect id="Rectangle-14" fill="#FFFFFF" opacity="0.600000024" mask="url(#mask-2)" x="20" y="49" width="5" height="1"></rect>
+                    <rect id="Rectangle-14-Copy" fill="#FFFFFF" opacity="0.600000024" mask="url(#mask-2)" x="20" y="53" width="5" height="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

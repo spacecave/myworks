@@ -1,0 +1,11 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.wrap {
+    width: 1440px;
+    height: 747px;
+    background-image: radial-gradient(100% 116%, #14102F 32%, #000000 100%);
+    margin: 0 auto;
+    text-align: center;
+}

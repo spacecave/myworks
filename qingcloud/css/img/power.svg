@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>power</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#30C476" offset="0%"></stop>
+            <stop stop-color="#229C4F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Express-Marketing" transform="translate(-540.000000, -1127.000000)">
+            <g id="power" transform="translate(540.000000, 1127.000000)">
+                <circle id="Oval-8" fill="url(#linearGradient-1)" cx="27" cy="27" r="27"></circle>
+                <path d="M32.8534662,25.6761504 L30.5165849,26.2156619 L36.2301528,31.3408792 L39.1187262,24.2297011 L36.7518326,24.7761416 C35.7407192,20.3236553 31.7585002,17 27,17 C21.4771525,17 17,21.4771525 17,27 C17,31.6475626 20.1704892,35.5546178 24.4666,36.6762978 L25.47996,32.8057787 C22.9022935,32.1327707 21,29.7885376 21,27 C21,23.6862915 23.6862915,21 27,21 C29.8588271,21 32.2506687,22.9994029 32.8534662,25.6761504 Z" id="Combined-Shape" fill=""></path>
+                <g id="Group-31" opacity="0.5" transform="translate(4.000000, 5.000000)" fill="#FFFFFF">
+                    <rect id="Rectangle-23" opacity="0.439999998" x="40.4550156" y="25.2412271" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.919999957" x="26.0706353" y="0.273369522" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.939999998" x="29.5398675" y="1.24156551" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.959999979" x="32.6725959" y="2.71914516" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.979999959" x="35.5597849" y="4.88094699" width="1" height="6"></rect>
+                    <rect id="Path" x="37.9172324" y="7.7130641" width="1" height="6"></rect>
+                    <rect id="Path" x="39.7378986" y="10.9036432" width="1" height="6"></rect>
+                    <rect id="Path" x="41.0192171" y="14.4664373" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.4" x="41.5859852" y="17.985745" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.419999987" x="41.4134044" y="21.6311198" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.459999979" x="39.2656936" y="28.6022824" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.479999989" x="37.1362146" y="31.6256126" width="1" height="6"></rect>
+                    <rect id="Path" x="34.3575926" y="34.1841005" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.519999981" x="31.2923431" y="36.1019335" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.539999962" x="27.9583131" y="37.3455564" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.560000002" x="24.5656294" y="37.9730642" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.579999983" x="20.8477869" y="38.0433767" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.599999964" x="17.2807962" y="37.3736326" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.620000005" x="13.8870595" y="36.1109667" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.639999986" x="10.5863011" y="34.1179384" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.659999967" x="7.80908822" y="31.5150169" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.680000007" x="5.7136619" y="28.5375852" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.699999988" x="4.17225394" y="25.2988451" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.719999969" x="3.28017008" y="21.765153" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.74000001" x="3.18566698" y="17.9974637" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.75999999" x="3.71855138" y="14.504035" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.779999971" x="4.85742966" y="11.0799127" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.799999952" x="6.65231103" y="7.89348402" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.819999993" x="9.08385278" y="5.08382785" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.839999974" x="12.059153" y="2.86977993" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.859999955" x="15.4342723" y="1.3160284" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.879999995" x="18.9904162" y="0.304492188" width="1" height="6"></rect>
+                    <rect id="Path" opacity="0.899999976" x="22.5" y="0.0269357527" width="1" height="6"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

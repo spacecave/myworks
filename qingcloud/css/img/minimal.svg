@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>minimal</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="36" cy="36" r="36"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Express-Marketing" transform="translate(-286.000000, -568.000000)">
+            <g id="minimal" transform="translate(286.000000, 568.000000)">
+                <circle id="Oval" stroke="#FFFFFF" cx="36" cy="36" r="35.5"></circle>
+                <g id="Group-7">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Oval-Copy"></g>
+                    <g id="Group-6" mask="url(#mask-2)">
+                        <g transform="translate(22.949747, 50.378680) rotate(-315.000000) translate(-22.949747, -50.378680) translate(19.949747, 23.878680)">
+                            <rect id="Rectangle-8" stroke="#FFFFFF" stroke-width="1" fill="none" transform="translate(2.566757, 26.909903) rotate(-360.000000) translate(-2.566757, -26.909903) " x="0.566756826" y="1.40990258" width="4" height="51"></rect>
+                            <rect id="Rectangle-8-Copy" stroke="none" fill="#FFFFFF" fill-rule="evenodd" opacity="0.400532156" transform="translate(2.566757, 5.833631) rotate(-360.000000) translate(-2.566757, -5.833631) " x="0.0667568262" y="0.909902577" width="5" height="9.84745674"></rect>
+                        </g>
+                    </g>
+                </g>
+                <path d="M38,13 L40,13 L39,24 L38,13 Z M53.1819805,18.9038059 L54.5961941,20.3180195 L46.1109127,27.3890873 L53.1819805,18.9038059 Z M60,33 L60,35 L50,34 L60,33 Z M54.2426407,47.8284271 L52.8284271,49.2426407 L46.4644661,41.4644661 L54.2426407,47.8284271 Z M40,56 L38,56 L39,45 L40,56 Z M18,35 L18,33 L28,34 L18,35 Z M23.4038059,20.3180195 L24.8180195,18.9038059 L31.8890873,27.3890873 L23.4038059,20.3180195 Z" id="Rectangle-9" fill="#FFFFFF" opacity="0.659080616"></path>
+            </g>
+        </g>
+    </g>
+</svg>

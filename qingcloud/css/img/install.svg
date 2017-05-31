@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="60px" viewBox="0 0 56 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>install</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#B7EBD0" offset="0%"></stop>
+            <stop stop-color="#71CB92" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#30C476" offset="0%"></stop>
+            <stop stop-color="#229C4F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Express-Marketing" transform="translate(-141.000000, -1509.000000)">
+            <g id="install" transform="translate(141.000000, 1509.000000)">
+                <rect id="Rectangle-34" fill="url(#linearGradient-1)" x="0" y="38.5" width="56" height="21"></rect>
+                <path d="M37,38.5 L37,1.5 L19,1.5 L19,38.5 L15,38.5 L28,51.5 L41,38.5 L37,38.5 Z" id="Combined-Shape" fill="url(#linearGradient-2)"></path>
+                <rect id="Rectangle-36-Copy-7" fill="#FFFFFF" x="25" y="1.5" width="2" height="24"></rect>
+                <rect id="Rectangle-36-Copy-10" fill="#FFFFFF" opacity="0.5" x="25" y="27.5" width="2" height="5"></rect>
+                <g id="Group-38" transform="translate(0.000000, 0.500000)" fill="#FFFFFF">
+                    <rect id="Rectangle-36-Copy-12" x="23" y="8" width="2" height="3"></rect>
+                    <rect id="Rectangle-36-Copy-13" x="19" y="1" width="2" height="5"></rect>
+                    <rect id="Rectangle-36-Copy-6" x="21" y="1" width="2" height="16"></rect>
+                    <rect id="Rectangle-36-Copy-18" opacity="0.5" x="31" y="7" width="2" height="2"></rect>
+                    <rect id="Rectangle-36-Copy-11" opacity="0.5" x="23" y="1" width="2" height="7"></rect>
+                    <rect id="Rectangle-36-Copy-8" x="29" y="1" width="2" height="18"></rect>
+                    <rect id="Rectangle-36-Copy-9" x="33" y="1" width="2" height="14"></rect>
+                    <rect id="Rectangle-36-Copy-14" x="27" y="1" width="2" height="10"></rect>
+                    <rect id="Rectangle-36-Copy-16" x="31" y="9" width="2" height="2"></rect>
+                    <rect id="Rectangle-36-Copy-15" x="31" y="1" width="2" height="6"></rect>
+                    <rect id="Rectangle-36-Copy-17" x="35" y="0" width="2" height="5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

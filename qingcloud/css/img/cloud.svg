@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="37px" viewBox="0 0 56 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>cloud</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#30C476" offset="0%"></stop>
+            <stop stop-color="#229C4F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Express-Marketing" transform="translate(-940.000000, -1144.000000)" fill="url(#linearGradient-1)">
+            <g id="cloud" transform="translate(940.000000, 1144.000000)">
+                <path d="M12.5,12 L12.5,12 L12.5,12 C19.4035594,12 25,17.5964406 25,24.5 L25,37 L12.5,37 L12.5,37 C5.59644063,37 8.45442189e-16,31.4035594 0,24.5 L0,24.5 L0,24.5 C-8.45442189e-16,17.5964406 5.59644063,12 12.5,12 Z" id="Rectangle-33" opacity="0.300000012"></path>
+                <path d="M19.5,4 L19.5,4 L19.5,4 C28.6126984,4 36,11.3873016 36,20.5 L36,37 L19.5,37 L19.5,37 C10.3873016,37 3,29.6126984 3,20.5 L3,20.5 L3,20.5 C3,11.3873016 10.3873016,4 19.5,4 Z" id="Rectangle-33-Copy-2" opacity="0.600000024"></path>
+                <path d="M37.5,0 L37.5,0 L37.5,0 C47.7172679,-1.87688166e-15 56,8.28273213 56,18.5 L56,37 L37.5,37 L37.5,37 C27.2827321,37 19,28.7172679 19,18.5 L19,18.5 L19,18.5 C19,8.28273213 27.2827321,1.87688166e-15 37.5,0 Z" id="Rectangle-33-Copy" transform="translate(37.500000, 18.500000) scale(-1, 1) translate(-37.500000, -18.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

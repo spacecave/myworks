@@ -1,0 +1,598 @@
+@font-face { 
+    font-family: Roboto100; 
+    src: url(font/Roboto_100.ttf); 
+}
+@font-face { 
+    font-family: Roboto700; 
+    src: url(font/Roboto_700.ttf); 
+}
+@font-face { 
+    font-family: Roboto_r; 
+    src: url(font/Roboto_regular.ttf); 
+}
+@font-face { 
+    font-family: Roboto_thin; 
+    src: url(font/Roboto-Thin.ttf); 
+}
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    border:0;
+}
+
+.wrap {
+    width: 100%;
+    margin: auto;
+}
+
+.diagonal {
+    width: 100%;
+    height: 914px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    background: url(img/line.png) repeat;
+}
+
+.diagonal-1 {
+    z-index: -2;
+    background-image: radial-gradient(100% 116%, #14102F 32%, #000000 100%);
+}
+
+.leader {
+    width: 1160px;
+    height: 914px;
+    margin: 0 auto;
+    z-index: 99;
+    /*background-image: radial-gradient(100% 116%, #14102F 32%, #000000 100%);*/
+    background: rgba(255, 255, 255, 0);
+}
+.leader-top {
+    width: 100%;
+    height: 100px;
+}
+
+.logo-area {
+    width: 352px;
+    height: 100px;
+    line-height: 100px;
+    float: left;
+    display:flex;
+    align-items:center;
+    justify-content: flex-start;
+}
+
+.logo-img {
+    width: 168px;
+    height: 36px;
+    background: url(img/qingcloudlogo.svg) no-repeat;
+}
+
+.nav-bar {
+    height: 100px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.nav-items {
+    font-size: 16px;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+.no-margin {
+    margin-left: 0px;
+}
+
+.btns {
+    padding-left: 32px;
+}
+
+.sign {
+    width: 64px;
+    height: 46px;
+    line-height: 46px;
+    display: inline-block;
+    text-align: center;
+    opacity: 0.65;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sign-in {  
+    color: #3be25c;
+    border: 1px solid #31A65D;
+    
+}
+
+.sign-up {
+    color: #fff;
+    background: #28AF5B;
+    opacity: 1;
+    margin-left: 16px;
+}
+
+.sign:hover {
+    background: #4ba575;
+}
+
+.q-title {
+    width: 100%;
+    height: 234px;
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.q-title-area {
+    font-family: Roboto_thin;
+    font-size: 32px;
+    color: #000000;
+}
+
+.q-thin {
+    font-family: Roboto_thin;
+}
+
+.q-pingf {
+    padding-top: 16px;
+}
+
+.q-title-border {
+    width: 1300px;
+    height: 234px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.q-border-left {
+    width: 1060px;
+    height: 100%;
+    float: left;
+    background-image: linear-gradient(89deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,0.06) 100%);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+
+}
+.q-border-right {
+    width: 0; 
+    height: 0;
+    float: left;
+    border-width: 117px 120px; 
+    border-style: solid; 
+    border-color: rgba(255,255,255,0.06) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgba(255,255,255,0.06);
+}
+
+.q-border-line {
+    width: 236px;
+    height: 235px;
+    position: relative;
+    left: 1060px;
+    top: -1px;
+    box-sizing: border-box;
+    border-left: 1px solid rgba(255,255,255,0.60);
+    transform-origin: left bottom;
+    -ms-transform: rotateZ(45.3deg) scale(1.423);
+    -moz-transform: rotateZ(45.3deg) scale(1.423);
+    -webkit-transform: rotateZ(45.3deg) scale(1.423);
+    -o-transform: rotateZ(45.3deg) scale(1.423);
+    transform: rotateZ(45.3deg) scale(1.423);
+
+
+}
+
+.q-regular {
+    width: 760px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto_r;
+    font-size: 16px;
+}
+
+.q-regular p {
+    flex: 1;
+    opacity: 0.8;
+}
+
+.leader-bottom {
+    width: 1160px;
+  /*  height: 426px;*/
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.bottom-area ul {
+    opacity: 0.8;
+    font-family: Roboto_r;
+    font-size: 16px;
+    margin-top: 32px;
+    list-style-type: circle;
+    white-space: nowrap;
+}
+
+.bottom-area li {
+   height: 30px;
+}
+
+.icon-simple {
+    width: 72px;
+    height: 72px;
+    /*flex: 1;*/
+    background: url(img/minimal.svg) no-repeat;
+}
+
+.icon-extensive {
+    background: url(img/extensive.svg) no-repeat;
+}
+
+.icon-complete {
+    background: url(img/complete.svg) no-repeat;
+}
+
+.icon-name {
+    margin-top: 24px;
+    /*flex: 1;*/
+}
+
+
+/*功能亮点*/
+
+.bright-func {
+    width: 100%;
+    height: 1020px;
+}
+
+.func-title {
+    width: 100%;
+    height: 213px;
+    line-height: 213px;
+    text-align: center;
+    font-family: Roboto700;
+    font-size: 24px;
+    color: #313132;
+}
+
+.func-detail {
+    width: 1160px;
+    height: 807px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.func-area {
+    flex: 1;
+    display: flex;
+}
+.func-area-p {
+    flex: 1;
+}
+
+.func-area-p p {
+    padding-top: 8px;
+    font-family: Roboto_r;
+    font-size: 16px;
+    color: #616162;
+}
+
+.func-name {
+    height: 22px;
+    padding-top: 24px;
+    font-family: Roboto700;
+    font-size: 16px;
+    color: #32A65D;
+}
+
+.func-icon-compute {
+    width: 54px;
+    height: 54px;
+    background: url(img/compute.svg) no-repeat bottom;
+}
+
+.icon-power {
+    background: url(img/power.svg) no-repeat bottom;
+}
+
+.icon-cloud {
+    background: url(img/cloud.svg) no-repeat bottom;
+}
+
+.icon-install {
+    background: url(img/install.svg) no-repeat bottom;
+}
+
+.icon-x86 {
+    background: url(img/x86.svg) no-repeat bottom;
+}
+
+.icon-global {
+    background: url(img/global.svg) no-repeat bottom; 
+}
+
+/*产品规格*/
+
+.production {
+    width: 100%;
+    height: 1227px;
+    background: #FAFAFB;
+}
+
+.pro-title {
+    width: 100%;
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pro-title h1 {
+    margin-bottom: 16px;
+    font-family: Roboto700;
+    font-size: 24px;
+    color: #313132;
+}
+
+.pro-title p {
+    height: 30px;
+    font-family: Roboto700;
+    font-size: 16px;
+    color: #616162;
+}
+
+.pro-detail {
+    width: 1160px;
+    height: 558px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.pro-detail-row {
+    flex: 1;
+    display: flex;
+    border-bottom: 1px solid #E3E3E4;
+    align-items: center;
+}
+
+.pro-detail-row span {
+    flex: 1;
+    font-family: Roboto_r;
+    font-size: 16px;
+    color: #616162;
+}
+
+.pro-detail-row p {
+    flex: 1.5;
+    font-family: Roboto_r;
+    font-size: 16px;
+    color: #313132;
+}
+
+.pro-detail-each-first {
+    flex: 1;
+    justify-content: center;
+
+}
+
+.pro-detail-each {
+    flex: 1.5;
+    justify-content: center;
+
+}
+
+.each-title {
+    font-family: Roboto700;
+    font-size: 16px;
+    color: #313132;
+}
+
+.each-name {
+    margin-top: 8px;
+    font-family: Roboto_r;
+    font-size: 16px;
+    color: #919192;
+}
+
+.pro-detail-spe {
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.pro-detail-spe span {
+    flex: 1;
+    margin-top: 36px;
+    font-family: Roboto_r;
+    font-size: 16px;
+    color: #616162;
+}
+
+.pro-detail-spe ul {
+    margin-top: 36px;
+    flex: 1.5;
+    list-style-type: none;
+}
+
+.pro-detail-spe li {
+    margin-top: 15px;
+    font-family: Roboto_r;
+    font-size: 16px;
+    color: #313132;
+}
+
+/*应用场景*/
+.applyto {
+    width: 100%;
+    height: 969px;
+}
+
+.applyto-title {
+    height: 198px;
+}
+
+.applyto-area {
+    width: 1160px;
+    height: 558px;
+    margin: 0 auto;
+}
+
+.applyto-name {
+    float: left;
+    margin-left: 16px;
+    font-family: Roboto700;
+    font-size: 20px;
+    color: #32A65D;
+}
+
+.applyto-row {
+    height: 186px;
+    flex: 1;
+    display: flex;
+    border-bottom: 1px solid #E3E3E4;
+    align-items: flex-start;
+    
+}
+
+
+.applyto-left {
+    flex: 1;
+    padding-top: 48px;
+}
+
+.applyto-right {
+    flex: 1.9;
+    padding-top: 48px;
+}
+
+.applyto-row-first  {
+    height: 106px;
+}
+
+.applyto-row-first .applyto-right{
+    padding-top: 0px;
+}
+
+.applyto-row-first .applyto-left{
+    padding-top: 0px;
+}
+
+.applyto-row-end {
+    border: 0;
+}
+
+.applyto-right p{
+    height: 30px;
+    font-family: Roboto_r;
+    font-size: 16px;
+    color: #616162;
+}
+
+.applyto-icon-1 {
+    width: 32px;
+    height: 32px;
+    float: left;
+    background: url(img/1.svg) no-repeat;
+}
+
+.icon-2 {
+    background: url(img/2.svg) no-repeat;
+}
+
+.icon-3 {
+    background: url(img/3.svg) no-repeat;
+}
+
+.icon-4 {
+    background: url(img/4.svg) no-repeat;
+}
+
+/*行业应用推荐*/
+.recommend {
+    width: 100%;
+    height: 747px;
+    background-image: radial-gradient(100% 116%, #14102F 32%, #000000 100%);
+}
+
+.rec-title {
+    color: #ffffff;
+}
+
+.rec-area {
+    width: 1160px;
+    height: 417px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.rec-column {
+    flex: 1;
+}
+
+.rec-icon-gorvernment {
+    width: 56px;
+    height: 56px;
+    background: url(img/gorvernment.svg);
+}
+
+.rec-name {
+    margin-top: 31px;
+    font-family: Roboto_r;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.rec-column ul {
+    margin-top: 8px;
+}
+
+.rec-column li {
+    opacity: 0.6;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 30px;
+    list-style-type: none;
+}
+
+.icon-finance {
+    background: url(img/finance.svg) no-repeat;
+}
+
+.icon-education {
+    background: url(img/education.svg) no-repeat;
+}
+
+.icon-enterprise {
+    background: url(img/enterprise.svg) no-repeat;
+}
+.rec-line {
+    width: 1160px;
+    margin: 0 auto;
+    border: 1px solid #FFFFFF;
+    opacity: 0.15;
+}
+
+.rec-copyright {
+    width: 100%;
+    height: 124px;
+    text-align: center;
+    line-height: 124px;
+    opacity: 0.34;
+    font-family: Roboto_r;
+    font-size: 16px;
+    color: #FFFFFF;
+}

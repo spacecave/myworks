@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="59px" height="56px" viewBox="0 0 59 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>finance</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-9.0582435%" y1="7.32736698%" x2="100%" y2="96.3037101%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.832965353" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.27196558" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="0.0280523287 11.1591865 25.9961754 24.0718982 11.9338771 0.11124432"></polygon>
+        <linearGradient x1="13.220667%" y1="13.6610243%" x2="46.589265%" y2="46.4798539%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" stop-opacity="0.287279212" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.10303442" offset="100%"></stop>
+        </linearGradient>
+        <path d="M54.4244312,31.5718608 C54.8016527,29.7738823 55,27.9101044 55,26 C55,11.0883118 42.9116882,-1 28,-1 C13.0883118,-1 1,11.0883118 1,26 C1,40.9116882 13.0883118,53 28,53 C32.1338148,53 36.0506509,52.0710035 39.5531228,50.410396 C36.7793097,48.2123816 35,44.8139808 35,41 C35,34.372583 40.372583,29 47,29 C49.8031584,29 52.3818289,29.961147 54.4244312,31.5718608 Z" id="path-5"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Express-Marketing" transform="translate(-440.000000, -4365.000000)">
+            <g id="finance" transform="translate(440.000000, 4365.000000)">
+                <path d="M40.8936895,52.2963019 C38.1596957,50.2417885 36.5,47.0124916 36.5,43.5 C36.5,37.4248678 41.4248678,32.5 47.5,32.5 C50.132192,32.5 52.6188099,33.4291841 54.579933,35.0808168 C55.188407,32.7907919 55.5,30.4164749 55.5,28 C55.5,12.8121694 43.1878306,0.5 28,0.5 C24.0510523,0.5 20.2211577,1.33264653 16.703106,2.91992172 L29.0113594,28.9692468 L2.32088768,18.1385246 C1.12264656,21.2565526 0.5,24.584617 0.5,28 C0.5,43.1878306 12.8121694,55.5 28,55.5 C32.5616996,55.5 36.9605439,54.3882662 40.8936895,52.2963019 Z" id="Combined-Shape" stroke="#FFFFFF"></path>
+                <circle id="Oval-4-Copy-2" stroke="#FFFFFF" cx="47.5" cy="43.5" r="11"></circle>
+                <path d="M48,45 L48,43 L52,43 L52,42 L48.3612771,42 L52.11199,38.2492871 L51.5329581,37.6702551 L47.6287539,41.5744593 L43.6046283,37.5503337 L43.0255964,38.1293656 L46.8962308,42 L43,42 L43,43 L47,43 L47,45 L43,45 L43,46 L47,46 L47,50 L48,50 L48,46 L52,46 L52,45 L48,45 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                <g id="Group-16" transform="translate(0.000000, 2.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Path-6"></g>
+                    <g id="Combined-Shape" mask="url(#mask-3)">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        <path stroke="#FFFFFF" stroke-width="1" d="M54.1148302,31.9644766 C52.1018039,30.3770853 49.6184882,29.5 47,29.5 C40.6487254,29.5 35.5,34.6487254 35.5,41 C35.5,44.5592957 37.126732,47.8497342 39.8636548,50.0185161 L40.4937185,50.5177887 L39.7673284,50.862188 C36.1209836,52.5910091 32.1244937,53.5 28,53.5 C12.8121694,53.5 0.5,41.1878306 0.5,26 C0.5,10.8121694 12.8121694,-1.5 28,-1.5 C43.1878306,-1.5 55.5,10.8121694 55.5,26 C55.5,27.9237015 55.3023996,29.8222083 54.9137773,31.6745271 L54.7481647,32.4638986 L54.1148302,31.9644766 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
