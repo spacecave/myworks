@@ -23,8 +23,11 @@
     font-size: 16px;
   }
 
+body {
+    display: block;
+}
 .wrap {
-   width: 100%;
+  
 }
 
 .diagonal {
@@ -121,7 +124,7 @@
 }
 
 .q-title {
-    width: 100%;
+    /*width: 100%;*/
     height: 234px;
     position: relative;
     display: flex;
@@ -253,12 +256,12 @@
 /*功能亮点*/
 
 .bright-func {
-    width: 100%;
+    /*width: 100%;*/
     height: 1020px;
 }
 
 .func-title {
-    width: 100%;
+    /*width: 100%;*/
     height: 213px;
     line-height: 213px;
     text-align: center;
@@ -328,13 +331,13 @@
 /*产品规格*/
 
 .production {
-    width: 100%;
+    /*width: 100%;*/
     height: 1227px;
     background: #FAFAFB;
 }
 
 .pro-title {
-    width: 100%;
+    /*width: 100%;*/
     height: 384px;
     display: flex;
     flex-direction: column;
@@ -439,7 +442,7 @@
 
 /*应用场景*/
 .applyto {
-    width: 100%;
+    /*width: 100%;*/
     height: 969px;
 }
 
@@ -525,7 +528,7 @@
 
 /*行业应用推荐*/
 .recommend {
-    width: 100%;
+    /*width: 100%;*/
     height: 543px;
     background: #FAFAFB;
 }
@@ -592,7 +595,7 @@
 }
 
 .rec-copyright {
-    width: 100%;
+    /*width: 100%;*/
     height: 124px;
     text-align: center;
     line-height: 124px;
@@ -604,7 +607,7 @@
 
 /*联系我们*/
 .contactus {
-    width: 100%;
+    wi/dth: 100%;
     height: 244px;
 }
 
@@ -653,7 +656,7 @@
 /*开始使用*/
 
 .useit {
-    width: 100%;
+    /*width: 100%;*/
     height: 866px;
     background-image: radial-gradient(100% 116%, #14102F 32%, #000000 100%);
 }
