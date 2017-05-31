@@ -19,10 +19,12 @@
     padding: 0;
     color: #fff;
     border:0;
+    font-family: Roboto_r;
+    font-size: 16px;
   }
 
 .wrap {
-   
+   width: 100%;
 }
 
 .diagonal {
@@ -32,7 +34,7 @@
     left: 0px;
     top: 0px;
     z-index: -1;
-    background: url(img/line.png) repeat;
+    background: url(img/line.png) repeat center;
 }
 
 .diagonal-1 {
@@ -303,7 +305,8 @@
 }
 
 .icon-power {
-    background: url(img/power.svg) no-repeat bottom;
+    background: url(img/power.png) no-repeat;
+    background-size: 100%;
 }
 
 .icon-cloud {
@@ -523,12 +526,14 @@
 /*行业应用推荐*/
 .recommend {
     width: 100%;
-    height: 747px;
-    background-image: radial-gradient(100% 116%, #14102F 32%, #000000 100%);
+    height: 543px;
+    background: #FAFAFB;
 }
 
 .rec-title {
-    color: #ffffff;
+    font-family: Sans-serif;
+    font-size: 24px;
+    color: #313132;
 }
 
 .rec-area {
@@ -545,14 +550,14 @@
 .rec-icon-gorvernment {
     width: 56px;
     height: 56px;
-    background: url(img/gorvernment.svg);
+    background: url(img/government.svg);
 }
 
 .rec-name {
-    margin-top: 31px;
-    font-family: Roboto_r;
+    margin-top: 16px;
+    font-family: Roboto700;
     font-size: 16px;
-    color: #FFFFFF;
+    color: #32A65D;
 }
 
 .rec-column ul {
@@ -561,8 +566,9 @@
 
 .rec-column li {
     opacity: 0.6;
+    font-family: Roboto_r;
     font-size: 16px;
-    color: #FFFFFF;
+    color: #616162;
     line-height: 30px;
     list-style-type: none;
 }
@@ -594,4 +600,165 @@
     font-family: Roboto_r;
     font-size: 16px;
     color: #FFFFFF;
+}
+
+/*联系我们*/
+.contactus {
+    width: 100%;
+    height: 244px;
+}
+
+.con-area {
+    width: 1160px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+.con-title {
+    flex: 1;
+    margin-top: 80.3px;
+    font-family: sans-serif;
+    font-size: 24px;
+    color: #313132;
+}
+
+.con-column {
+    flex: 1;
+    margin-top: 80.3px;
+}
+
+.con-column-each {
+    width: 260px;
+    height: 83px;
+    border: 1px solid #EEEEEF;
+}
+
+.con-tel {
+    padding-left: 15px;
+    padding-top: 12px;
+    font-family: Roboto700;
+    color: #313132;
+}
+
+.con-no {
+    padding-left: 15px;
+    padding-top: 12px;
+    font-family: Roboto_r;
+    color: #616162;
+    opacity: 0.7;
+}
+
+/*开始使用*/
+
+.useit {
+    width: 100%;
+    height: 866px;
+    background-image: radial-gradient(100% 116%, #14102F 32%, #000000 100%);
+}
+
+.useit-top {
+    width: 1160px;
+    height: 299px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.useit-left {
+    float: left;
+    padding-top: 137px;
+}
+
+.useit-left span {
+    font-family: Roboto_thin;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.useit-left p {
+    height: 22px;
+    font-family: Roboto_r;
+    margin-top: 8px;
+    opacity: 0.6;
+}
+
+.useit-regist {
+    width: 180px;
+    height: 46px;
+    margin-top: 137px;
+    background: #28AF5B;
+    border-radius: 4px;
+    float: right;
+    text-align: center;
+    line-height: 46px;
+    color: #fff;
+}
+
+.useit-bottom {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.useit-list {
+    width: 881.4px;
+    margin-top: 36px;
+
+    float: left;
+    display: flex;
+}
+
+.useit-column {
+    flex: 1;
+}
+
+.useit-column ul {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.useit-column li {
+    height: 22px;
+    margin-top: 8px;
+    opacity: 0.4;
+}
+
+.useit-column-spe li{
+    opacity: 1;
+}
+
+.useit-column-spe li p{
+    opacity: 0.4;
+}
+
+.useit-copyright {
+    float: right;
+    margin-top: 36px;
+}
+
+.useit-copyright p {
+    margin-top: 31px;
+    margin-left: -10px;
+    opacity: 0.4;
+}
+
+.icon-twitter {
+    width: 75px;
+    height: 19px;
+    padding-left: 20px;
+    background: url(img/twitter.svg) no-repeat 0px 2px;
+}
+
+.icon-weibo {
+    background: url(img/weibo.svg) no-repeat 0px 5px;
+} 
+
+.icon-mail {
+    background: url(img/mail.svg) no-repeat 0px 7px;
+} 
+
+.icon-qingcloudlogo2 {
+    width: 111px;
+    height: 84px;
+    background: url(img/qingcloudlogo2.svg) no-repeat;
 }

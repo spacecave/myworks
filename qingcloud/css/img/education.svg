@@ -4,21 +4,25 @@
     <title>education</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
-            <stop stop-color="#FFFFFF" offset="0%"></stop>
-            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#30C476" offset="0%"></stop>
+            <stop stop-color="#229C4F" offset="100%"></stop>
         </linearGradient>
-        <linearGradient x1="0%" y1="0%" x2="95.367141%" y2="100%" id="linearGradient-2">
+        <linearGradient x1="0%" y1="0%" x2="95.1729706%" y2="100%" id="linearGradient-2">
             <stop stop-color="#FFFFFF" offset="0%"></stop>
-            <stop stop-color="#FFFFFF" stop-opacity="0.308990036" offset="100%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.480157382" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="96.4934651%" id="linearGradient-3">
+            <stop stop-color="#FAFAFB" offset="0%"></stop>
+            <stop stop-color="#FAFAFB" stop-opacity="0" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Express-Marketing" transform="translate(-739.000000, -4369.000000)">
-            <g id="education" transform="translate(739.000000, 4369.000000)">
-                <rect id="Rectangle-18" fill="url(#linearGradient-1)" x="26.5" y="7" width="1" height="40"></rect>
-                <path d="M0.5,0.5 L0.5,41.5000684 L12.1561146,41.5016637 C17.5054727,41.5023958 22.6857597,43.3570683 26.8091153,46.7371329 C26.8666804,46.782411 26.9296133,46.8335726 26.998,46.8906741 C27.065897,46.8342867 27.127876,46.784961 27.1830285,46.7434413 C31.3142403,43.3570683 36.4945273,41.5023958 41.8438854,41.5016637 L53.5,41.5000684 L53.5,0.5 L35.5,0.5 C31.856154,0.5 28.653021,2.81400357 27.4720983,6.19919835 L27,7.55250015 L26.5279017,6.19919835 C25.346979,2.81400357 22.143846,0.5 18.5,0.5 L0.5,0.5 Z" id="Combined-Shape" stroke="#FFFFFF"></path>
+        <g id="Express-Marketing" transform="translate(-741.000000, -4335.000000)">
+            <g id="education" transform="translate(741.000000, 4335.000000)">
+                <path d="M27,6.0345072 C25.7742865,2.52091652 22.4315391,0 18.5,0 L0,0 L0,42 L12.1560462,42.0016637 C17.3995941,42.0023813 22.4657092,43.8232048 26.5,47.1301312 C26.632798,47.2345843 26.7994646,47.3752779 27,47.5522121 C27.1952296,47.3752779 27.3618963,47.2345843 27.5,47.1301312 C31.5342908,43.8232048 36.6004059,42.0023813 41.8439538,42.0016637 L54,42 L54,0 L35.5,0 C31.5684609,0 28.2257135,2.52091652 27,6.0345072 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
                 <path d="M33,7 L48,7 L48,8 L33,8 L33,7 Z M6,7 L21,7 L21,8 L6,8 L6,7 Z M33,13 L48,13 L48,14 L33,14 L33,13 Z M6,13 L21,13 L21,14 L6,14 L6,13 Z M33,25 L48,25 L48,26 L33,26 L33,25 Z M6,19 L14,19 L14,20 L6,20 L6,19 Z M6,25 L21,25 L21,26 L6,26 L6,25 Z M6,31 L21,31 L21,32 L6,32 L6,31 Z M33,10 L48,10 L48,11 L33,11 L33,10 Z M6,10 L21,10 L21,11 L6,11 L6,10 Z M33,16 L48,16 L48,17 L33,17 L33,16 Z M6,16 L21,16 L21,17 L6,17 L6,16 Z M33,28 L48,28 L48,29 L33,29 L33,28 Z M6,28 L21,28 L21,29 L6,29 L6,28 Z M6,34 L14,34 L14,35 L6,35 L6,34 Z M33,19 L41,19 L41,20 L33,20 L33,19 Z M33,31 L41,31 L41,32 L33,32 L33,31 Z" id="Combined-Shape" fill="url(#linearGradient-2)" opacity="0.486469656"></path>
+                <rect id="Rectangle-17" fill="url(#linearGradient-3)" x="26.5" y="5" width="1" height="43"></rect>
             </g>
         </g>
     </g>
