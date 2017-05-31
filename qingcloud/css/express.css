@@ -19,11 +19,10 @@
     padding: 0;
     color: #fff;
     border:0;
-}
+  }
 
 .wrap {
-    width: 100%;
-    margin: auto;
+   
 }
 
 .diagonal {
@@ -168,7 +167,7 @@
 }
 
 .q-border-line {
-    width: 236px;
+    width: 10px;
     height: 235px;
     position: relative;
     left: 1060px;
