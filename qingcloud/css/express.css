@@ -16,7 +16,7 @@
     padding: 0;
     color: #fff;
     border:0;
-    font-family: Roboto_r, sans-serif;
+    font-family: Roboto_r, Pingfang SC, sans-serif;
     font-size: 16px;
   }
 
@@ -199,20 +199,20 @@ a{
     justify-content: center;
 }
 .q-title-area {
-    font-family: Roboto100;
+    font-family: Roboto100, Pingfang SC;
     font-size: 32px;
     color: #000000;
     text-align: center;
 }
 
 .q-thin {
-    font-family: Roboto100;
+    font-family: Roboto100, Pingfang SC;
     font-size: 32px;
     font-weight: 100;
 }
 
 .q-pingf {
-    font-family: sans-serif;
+    font-family: Pingfang SC, sans-serif;
     padding-top: 16px;
     font-size: 32px;
     font-weight: 100;
@@ -330,7 +330,7 @@ a{
 .icon-name {
     margin-top: 24px;
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: Pingfang SC, sans-serif;
     font-weight: 100;
 }
 
@@ -347,14 +347,14 @@ a{
     height: 213px;
     line-height: 213px;
     text-align: center;
-    font-family: sans-serif;
+    font-family: Pingfang SC, sans-serif;
     font-size: 24px;
     color: #313132;
     font-weight: bold;
 }
 
 .func-mark {
-    font-family: sans-serif;
+    font-family: Pingfang SC, sans-serif;
     font-size: 16px;
     color: #919192;
 }
@@ -439,7 +439,7 @@ a{
 
 .pro-title span {
     margin-bottom: 16px;
-    font-family: sans-serif;
+    font-family: Pingfang SC, sans-serif;
     font-weight: bold;
     font-size: 24px;
     color: #313132;
@@ -707,7 +707,7 @@ a{
 .con-title {
     flex: 1;
     margin-top: 80.3px;
-    font-family: sans-serif;
+    font-family: Pingfang SC, sans-serif;
     font-weight: bold;
     font-size: 24px;
     color: #313132;
@@ -760,7 +760,7 @@ a{
 }
 
 .useit-left span {
-    font-family: sans-serif;
+    font-family: Pingfang SC, sans-serif;
     font-weight: 100;
     font-size: 24px;
     color: #FFFFFF;
@@ -768,7 +768,7 @@ a{
 
 .useit-left p {
     height: 22px;
-    font-family: sans-serif;
+    font-family: Pingfang SC, sans-serif;
     margin-top: 8px;
     opacity: 0.6;
 }
@@ -822,7 +822,7 @@ a{
 }
 
 .useit-column span {
-    font-family: sans-serif;
+    font-family: Pingfang SC, sans-serif;
 }
 
 .useit-column-spe li{
