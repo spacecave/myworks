@@ -26,6 +26,13 @@
 body {
     display: block;
 }
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 .wrap {
   
 }
@@ -45,6 +52,16 @@ body {
     background-image: radial-gradient(100% 116%, #14102F 32%, #000000 100%);
 }
 
+.line-more {
+    width: calc(50% - 580px);
+    height: 235px;
+    left: 0;
+    top: 100px;
+    position: absolute;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    border-top: 1px solid rgba(255,255,255,0.15);
+}
+
 .leader {
     width: 1160px;
     height: 914px;
@@ -53,6 +70,7 @@ body {
     /*background-image: radial-gradient(100% 116%, #14102F 32%, #000000 100%);*/
     background: rgba(255, 255, 255, 0);
 }
+
 .leader-top {
     width: 100%;
     height: 100px;
@@ -78,13 +96,59 @@ body {
     height: 100px;
     float: left;
     display: flex;
-    align-items: center;
+    list-style-type: none;
 }
 
 .nav-items {
+    display: block;
+    position: relative;
+    height: 100px;
+    line-height: 100px;
     font-size: 16px;
     margin-left: 24px;
     cursor: pointer;
+}
+
+.items {
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: 98px;
+    background: #57b382;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    z-index: 101;
+    list-style-type: none;
+}
+
+.items li{
+    margin: 0;
+    padding: 0;
+}
+
+.items li:hover{
+    background: #4ba575;
+}
+
+.items a {
+    color: #fff;
+    display: block;
+    padding: 4px 19px;
+    text-align: left;
+    line-height: 32px;
+    font-size: 14px;
+}
+
+
+.items::before {
+    content: '';
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent #57b382;
+    position: absolute;
+    left: 69px;
+    top: -12px;
 }
 
 .no-margin {
@@ -99,6 +163,7 @@ body {
     width: 64px;
     height: 46px;
     line-height: 46px;
+    margin-top: 27px;
     display: inline-block;
     text-align: center;
     opacity: 0.65;
@@ -107,8 +172,9 @@ body {
 }
 
 .sign-in {  
-    color: #3be25c;
-    border: 1px solid #31A65D;
+    background: rgba(255, 255, 255, 0.07);
+    color: #ffffff;
+    border-radius: 4px;
     
 }
 
@@ -139,10 +205,13 @@ body {
 
 .q-thin {
     font-family: Roboto_thin;
+    font-size: 32px;
 }
 
 .q-pingf {
+    font-family: sans-serif;
     padding-top: 16px;
+    font-size: 32px;
 }
 
 .q-title-border {
@@ -270,6 +339,12 @@ body {
     color: #313132;
 }
 
+.func-mark {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #919192;
+}
+
 .func-detail {
     width: 1160px;
     height: 807px;
@@ -331,13 +406,11 @@ body {
 /*产品规格*/
 
 .production {
-    /*width: 100%;*/
-    height: 1227px;
+    height: 1327px;
     background: #FAFAFB;
 }
 
 .pro-title {
-    /*width: 100%;*/
     height: 384px;
     display: flex;
     flex-direction: column;
@@ -354,8 +427,6 @@ body {
 
 .pro-title p {
     height: 30px;
-    font-family: Roboto700;
-    font-size: 16px;
     color: #616162;
 }
 
@@ -376,15 +447,11 @@ body {
 
 .pro-detail-row span {
     flex: 1;
-    font-family: Roboto_r;
-    font-size: 16px;
     color: #616162;
 }
 
 .pro-detail-row p {
     flex: 1.5;
-    font-family: Roboto_r;
-    font-size: 16px;
     color: #313132;
 }
 
@@ -442,7 +509,6 @@ body {
 
 /*应用场景*/
 .applyto {
-    /*width: 100%;*/
     height: 969px;
 }
 
@@ -607,7 +673,6 @@ body {
 
 /*联系我们*/
 .contactus {
-    wi/dth: 100%;
     height: 244px;
 }
 
@@ -698,6 +763,10 @@ body {
     color: #fff;
 }
 
+.useit-regist:hover {
+    background: #4ba575;
+}
+
 .useit-bottom {
     width: 1160px;
     margin: 0 auto;
@@ -726,12 +795,16 @@ body {
     opacity: 0.4;
 }
 
-.useit-column-spe li{
+.useit-column li:hover {
     opacity: 1;
 }
 
-.useit-column-spe li p{
+.useit-column-spe li{
     opacity: 0.4;
+}
+
+.useit-column-spe li:hover {
+    opacity: 1;
 }
 
 .useit-copyright {
@@ -750,15 +823,27 @@ body {
     height: 19px;
     padding-left: 20px;
     background: url(img/twitter.svg) no-repeat 0px 2px;
+    cursor: pointer;
+}
+.icon-twitter::before {
+    content: 'Twitter';
 }
 
 .icon-weibo {
     background: url(img/weibo.svg) no-repeat 0px 5px;
 } 
 
+.icon-weibo::before {
+    content: '新浪微博';
+}
+
 .icon-mail {
     background: url(img/mail.svg) no-repeat 0px 7px;
 } 
+
+.icon-mail::before {
+    content: '邮箱';
+}
 
 .icon-qingcloudlogo2 {
     width: 111px;
