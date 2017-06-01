@@ -355,8 +355,8 @@ a{
 }
 
 .func-mark {
-    font-family: Pingfang SC, sans-serif;
     font-size: 16px;
+    font-weight: normal;
     color: #919192;
 }
 
