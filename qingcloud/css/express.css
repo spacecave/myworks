@@ -8,7 +8,7 @@
 }
 @font-face { 
     font-family: Roboto_r; 
-    src: url(font/Roboto_regular.ttf); 
+    src: url(font/Robotoregular.ttf); 
 }
 
 * {
@@ -195,14 +195,14 @@ a{
     justify-content: center;
 }
 .q-title-area {
-    font-family: Roboto_thin;
+    font-family: Roboto100;
     font-size: 32px;
     color: #000000;
     text-align: center;
 }
 
 .q-thin {
-    font-family: Roboto_thin;
+    font-family: Roboto100;
     font-size: 32px;
     font-weight: 100;
 }
