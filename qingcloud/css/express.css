@@ -388,18 +388,22 @@ a{
 }
 
 .icon-cloud {
+    width: 56px;
     background: url(img/cloud.svg) no-repeat bottom;
 }
 
 .icon-install {
+    width: 56px;
     background: url(img/install.svg) no-repeat bottom;
 }
 
 .icon-x86 {
+    width: 60px;
     background: url(img/x86.svg) no-repeat bottom;
 }
 
 .icon-global {
+    width: 55px;
     background: url(img/global.svg) no-repeat bottom; 
 }
 
@@ -643,6 +647,7 @@ a{
 }
 
 .icon-finance {
+    width: 59px;
     background: url(img/finance.svg) no-repeat;
 }
 
