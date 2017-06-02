@@ -278,6 +278,7 @@ a{
     flex: 1;
     opacity: 0.8;
     font-weight: 300;
+    font-family: Roboto100;
 }
 
 .leader-bottom {
@@ -313,6 +314,7 @@ a{
    padding-left: 45px;
    background: url(img/oval.svg) no-repeat 30px 8px;
    font-weight: 300;
+   font-family: Roboto100;
 }
 
 .icon-simple {
@@ -775,7 +777,7 @@ a{
 
 .useit-left p {
     height: 22px;
-    font-family: Pingfang SC, sans-serif;
+    font-family: Roboto100, Pingfang SC, sans-serif;
     margin-top: 8px;
     opacity: 0.6;
 }
@@ -821,19 +823,31 @@ a{
 .useit-column li {
     height: 22px;
     margin-top: 8px;
-    opacity: 0.4;
 }
 
-.useit-column li:hover {
-    opacity: 1;
-}
+
 
 .useit-column span {
     font-family: Pingfang SC, sans-serif;
 }
 
-.useit-column-spe li{
-    opacity: 0.4;
+.useit-column a {
+    font-family: Roboto100;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.useit-column a:hover {
+    color: #fff;
+}
+
+.useit-column-spe {
+    flex: 1;
+    opacity: 1;
+}
+
+.useit-column-spe a{
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .useit-column-spe li:hover {
