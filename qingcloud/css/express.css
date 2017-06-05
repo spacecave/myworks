@@ -779,7 +779,7 @@ a{
   font-family: Roboto100, Pingfang SC, sans-serif;
   margin-top: 8px;
   font-weight: 300;
-  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.6);
 
 }
 
