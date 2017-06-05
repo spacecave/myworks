@@ -276,7 +276,7 @@ a{
 
 .q-regular p {
   flex: 1;
-  opacity: 0.8;
+  color: rgba(255, 255, 255, 0.8);
   font-weight: 300;
   font-family: Roboto100, Pingfang SC, sans-serif;
 }
@@ -309,12 +309,12 @@ a{
 }
 
 .bottom-area li {
- height: 30px;
- opacity: 0.8;
- padding-left: 45px;
- background: url(img/oval.svg) no-repeat 30px 8px;
- font-weight: 300;
- font-family: Roboto100, Pingfang SC, sans-serif;
+  height: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  padding-left: 45px;
+  background: url(img/oval.svg) no-repeat 30px 8px;
+  font-weight: 300;
+  font-family: Roboto100, Pingfang SC, sans-serif;
 }
 
 .icon-simple {
