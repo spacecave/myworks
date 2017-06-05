@@ -1,905 +1,905 @@
 @font-face { 
-    font-family: Roboto100; 
-    src: url(font/Roboto_100.ttf); 
+  font-family: Roboto100; 
+  src: url(font/Roboto_100.ttf); 
 }
 @font-face { 
-    font-family: Roboto700; 
-    src: url(font/Roboto_700.ttf); 
+  font-family: Roboto700; 
+  src: url(font/Roboto_700.ttf); 
 }
 @font-face { 
-    font-family: Roboto_r; 
-    src: url(font/Robotoregular.ttf); 
+  font-family: Roboto_r; 
+  src: url(font/Robotoregular.ttf); 
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    border:0;
-    font-family: Roboto_r, Pingfang SC, sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-  }
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  border:0;
+  font-family: Roboto_r, Pingfang SC, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
 
 body {
-    display: block;
+  display: block;
 }
 
 a{
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 
 .wrap {
-  
+
 }
 
 .diagonal {
-    width: 100%;
-    height: 914px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-    background: url(img/line.png) repeat center;
+  width: 100%;
+  height: 914px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  background: url(img/line.png) repeat center;
 }
 
 .diagonal-1 {
-    z-index: -2;
-    background-image: radial-gradient(ellipse farthest-corner at 2400px 100px, #14102F 20%, #000000 100%);
+  z-index: -2;
+  background-image: radial-gradient(ellipse farthest-corner at 2400px 100px, #14102F 20%, #000000 100%);
 }
 
 .line-more {
-    width: calc(50% - 580px);
-    height: 235px;
-    left: 0;
-    top: 100px;
-    position: absolute;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-    border-top: 1px solid rgba(255,255,255,0.08);
+  width: calc(50% - 580px);
+  height: 235px;
+  left: 0;
+  top: 100px;
+  position: absolute;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 .leader {
-    width: 1160px;
-    height: 914px;
-    margin: 0 auto;
-    z-index: 99;
-    /*background-image: radial-gradient(100% 116%, #14102F 32%, #000000 100%);*/
-    background: rgba(255, 255, 255, 0);
+  width: 1160px;
+  height: 914px;
+  margin: 0 auto;
+  z-index: 99;
+  /*background-image: radial-gradient(100% 116%, #14102F 32%, #000000 100%);*/
+  background: rgba(255, 255, 255, 0);
 }
 
 .leader-top {
-    width: 100%;
-    height: 100px;
+  width: 100%;
+  height: 100px;
 }
 
 .logo-area {
-    width: 352px;
-    height: 100px;
-    line-height: 100px;
-    float: left;
-    display:flex;
-    align-items:center;
-    justify-content: flex-start;
+  width: 352px;
+  height: 100px;
+  line-height: 100px;
+  float: left;
+  display:flex;
+  align-items:center;
+  justify-content: flex-start;
 }
 
 .logo-img {
-    width: 168px;
-    height: 36px;
-    background: url(img/qingcloudlogo.svg) no-repeat;
+  width: 168px;
+  height: 36px;
+  background: url(img/qingcloudlogo.svg) no-repeat;
 }
 
 .nav-bar {
-    height: 100px;
-    float: left;
-    display: flex;
-    list-style-type: none;
+  height: 100px;
+  float: left;
+  display: flex;
+  list-style-type: none;
 }
 
 .nav-items {
-    display: block;
-    position: relative;
-    height: 100px;
-    line-height: 100px;
-    font-size: 16px;
-    margin-left: 24px;
-    cursor: pointer;
+  display: block;
+  position: relative;
+  height: 100px;
+  line-height: 100px;
+  font-size: 16px;
+  margin-left: 24px;
+  cursor: pointer;
 }
 
 .items {
-    display: none;
-    position: absolute;
-    left: 10px;
-    top: 98px;
-    background: #57b382;
-    padding: 0;
-    margin: 0;
-    width: 150px;
-    z-index: 101;
-    list-style-type: none;
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 98px;
+  background: #57b382;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  z-index: 101;
+  list-style-type: none;
 }
 
 .items li{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .items li:hover{
-    background: #4ba575;
+  background: #4ba575;
 }
 
 .items a {
-    color: #fff;
-    display: block;
-    padding: 4px 19px;
-    text-align: left;
-    line-height: 32px;
-    font-size: 14px;
+  color: #fff;
+  display: block;
+  padding: 4px 19px;
+  text-align: left;
+  line-height: 32px;
+  font-size: 14px;
 }
 
 
 .items::before {
-    content: '';
-    border-width: 6px;
-    border-style: solid;
-    border-color: transparent transparent #57b382;
-    position: absolute;
-    left: 69px;
-    top: -12px;
+  content: '';
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #57b382;
+  position: absolute;
+  left: 69px;
+  top: -12px;
 }
 
 .no-margin {
-    margin-left: 0px;
+  margin-left: 0px;
 }
 
 .btns {
-    padding-left: 32px;
+  padding-left: 32px;
 }
 
 .sign {
-    width: 64px;
-    height: 46px;
-    line-height: 46px;
-    margin-top: 27px;
-    display: inline-block;
-    text-align: center;
-    opacity: 0.65;
-    border-radius: 4px;
-    cursor: pointer;
+  width: 64px;
+  height: 46px;
+  line-height: 46px;
+  margin-top: 27px;
+  display: inline-block;
+  text-align: center;
+  opacity: 0.65;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .sign-in {  
-    background: rgba(255, 255, 255, 0.07);
-    color: #ffffff;
-    border-radius: 4px;
-    
+  background: rgba(255, 255, 255, 0.07);
+  color: #ffffff;
+  border-radius: 4px;
+  
 }
 
 .sign-up {
-    color: #fff;
-    background: #28AF5B;
-    opacity: 1;
-    margin-left: 16px;
+  color: #fff;
+  background: #28AF5B;
+  opacity: 1;
+  margin-left: 16px;
 }
 
 .sign-in:hover {
-    background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .sign-up:hover {
-    background: #2abf63;
+  background: #2abf63;
 }
 
 .q-title {
-    /*width: 100%;*/
-    height: 234px;
-    position: relative;
-    display: flex;
-    align-items:center;
-    justify-content: center;
+  /*width: 100%;*/
+  height: 234px;
+  position: relative;
+  display: flex;
+  align-items:center;
+  justify-content: center;
 }
 .q-title-area {
-    font-family: Roboto100, Pingfang SC, sans-serif;
-    font-size: 32px;
-    color: #000000;
-    text-align: center;
+  font-family: Roboto100, Pingfang SC, sans-serif;
+  font-size: 32px;
+  color: #000000;
+  text-align: center;
 }
 
 .q-thin {
-    font-family: Roboto100, Pingfang SC, sans-serif;
-    font-size: 32px;
-    font-weight: 100;
+  font-family: Roboto100, Pingfang SC, sans-serif;
+  font-size: 32px;
+  font-weight: 100;
 }
 
 .q-pingf {
-    font-family: Pingfang SC, sans-serif;
-    padding-top: 16px;
-    font-size: 32px;
-    font-weight: 100;
+  font-family: Pingfang SC, sans-serif;
+  padding-top: 16px;
+  font-size: 32px;
+  font-weight: 100;
 }
 
 .q-title-border {
-    width: 1300px;
-    height: 234px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-top: 1px solid rgba(255,255,255,0.08);
+  width: 1300px;
+  height: 234px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 .q-border-left {
-    width: 1060px;
-    height: 235px;
-    float: left;
-    background-image: linear-gradient(89deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,0.06) 100%);
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+  width: 1060px;
+  height: 235px;
+  float: left;
+  background-image: linear-gradient(89deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,0.06) 100%);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 
 }
 .q-border-right {
-    width: 0; 
-    height: 0;
-    float: left;
-    border-width: 117px 120px; 
-    border-style: solid; 
-    border-color: rgba(255,255,255,0.06) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgba(255,255,255,0.06);
+  width: 0; 
+  height: 0;
+  float: left;
+  border-width: 117px 120px; 
+  border-style: solid; 
+  border-color: rgba(255,255,255,0.06) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgba(255,255,255,0.06);
 }
 
 .q-border-line {
-    width: 10px;
-    height: 235px;
-    position: relative;
-    left: 1060px;
-    top: -1px;
-    box-sizing: border-box;
-    border-left: 1px solid rgba(255,255,255,0.60);
-    transform-origin: left bottom;
-    -ms-transform: rotateZ(45.3deg) scale(1.423);
-    -moz-transform: rotateZ(45.3deg) scale(1.423);
-    -webkit-transform: rotateZ(45.3deg) scale(1.423);
-    -o-transform: rotateZ(45.3deg) scale(1.423);
-    transform: rotateZ(45.3deg) scale(1.423);
+  width: 10px;
+  height: 235px;
+  position: relative;
+  left: 1060px;
+  top: -1px;
+  box-sizing: border-box;
+  border-left: 1px solid rgba(255,255,255,0.60);
+  transform-origin: left bottom;
+  -ms-transform: rotateZ(45.3deg) scale(1.423);
+  -moz-transform: rotateZ(45.3deg) scale(1.423);
+  -webkit-transform: rotateZ(45.3deg) scale(1.423);
+  -o-transform: rotateZ(45.3deg) scale(1.423);
+  transform: rotateZ(45.3deg) scale(1.423);
 
 
 }
 
 .q-regular {
-    height: 90px;
-    display: flex;
-    font-family: Roboto_r, Pingfang SC, sans-serif;
-    font-size: 16px;
-    opacity: 0.8;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  height: 90px;
+  display: flex;
+  font-family: Roboto_r, Pingfang SC, sans-serif;
+  font-size: 16px;
+  opacity: 0.8;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .q-regular p {
-    flex: 1;
-    opacity: 0.8;
-    font-weight: 300;
-    font-family: Roboto100, Pingfang SC, sans-serif;
+  flex: 1;
+  opacity: 0.8;
+  font-weight: 300;
+  font-family: Roboto100, Pingfang SC, sans-serif;
 }
 
 .leader-bottom {
-    width: 1160px;
-  /*  height: 426px;*/
-    margin: auto;
-    display: flex;
-    justify-content: center;
+  width: 1160px;
+/*  height: 426px;*/
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .bottom-area {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
 }
 .bottom-area ul {
-    opacity: 0.8;
-    font-family: Roboto_r, Pingfang SC, sans-serif;
-    font-size: 16px;
-    margin-top: 32px;
-    list-style-type: none;
-   
-    white-space: nowrap;
-    
+  opacity: 0.8;
+  font-family: Roboto_r, Pingfang SC, sans-serif;
+  font-size: 16px;
+  margin-top: 32px;
+  list-style-type: none;
+ 
+  white-space: nowrap;
+  
 }
 
 .bottom-area li {
-   height: 30px;
-   opacity: 0.8;
-   padding-left: 45px;
-   background: url(img/oval.svg) no-repeat 30px 8px;
-   font-weight: 300;
-   font-family: Roboto100, Pingfang SC, sans-serif;
+ height: 30px;
+ opacity: 0.8;
+ padding-left: 45px;
+ background: url(img/oval.svg) no-repeat 30px 8px;
+ font-weight: 300;
+ font-family: Roboto100, Pingfang SC, sans-serif;
 }
 
 .icon-simple {
-    width: 72px;
-    height: 72px;
-    /*flex: 1;*/
-    background: url(img/minimal.svg) no-repeat;
+  width: 72px;
+  height: 72px;
+  /*flex: 1;*/
+  background: url(img/minimal.svg) no-repeat;
 }
 
 .icon-extensive {
-    background: url(img/extensive.svg) no-repeat;
+  background: url(img/extensive.svg) no-repeat;
 }
 
 .icon-complete {
-    background: url(img/complete.svg) no-repeat;
+  background: url(img/complete.svg) no-repeat;
 }
 
 .icon-name {
-    margin-top: 24px;
-    font-size: 20px;
-    font-family: Pingfang SC, sans-serif;
-    font-weight: 100;
+  margin-top: 24px;
+  font-size: 20px;
+  font-family: Pingfang SC, sans-serif;
+  font-weight: 100;
 }
 
 
 /*功能亮点*/
 
 .bright-func {
-    /*width: 100%;*/
-    height: 1020px;
+  /*width: 100%;*/
+  height: 1020px;
 }
 
 .func-margin {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .func-title {
-    /*width: 100%;*/
-    height: 213px;
-    line-height: 213px;
-    text-align: center;
-    font-family: Pingfang SC, sans-serif;
-    font-size: 24px;
-    color: #313132;
-    font-weight: bold;
+  /*width: 100%;*/
+  height: 213px;
+  line-height: 213px;
+  text-align: center;
+  font-family: Pingfang SC, sans-serif;
+  font-size: 24px;
+  color: #313132;
+  font-weight: bold;
 }
 
 .func-mark {
-    font-size: 16px;
-    font-weight: normal;
-    color: #919192;
+  font-size: 16px;
+  font-weight: normal;
+  color: #919192;
 }
 
 .func-detail {
-    width: 1160px;
-    height: 807px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+  width: 1160px;
+  height: 807px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .func-area {
-    flex: 1;
-    display: flex;
+  flex: 1;
+  display: flex;
 }
 .func-area-p {
-    flex: 1;
+  flex: 1;
 }
 
 .func-area-p p {
-    padding-top: 8px;
-    font-family: Roboto_r;
-    font-size: 16px;
-    color: #616162;
+  padding-top: 8px;
+  font-family: Roboto_r;
+  font-size: 16px;
+  color: #616162;
 }
 
 .func-name {
-    height: 22px;
-    padding-top: 24px;
-    font-family: Roboto700;
-    font-size: 16px;
-    color: #32A65D;
+  height: 22px;
+  padding-top: 24px;
+  font-family: Roboto700;
+  font-size: 16px;
+  color: #32A65D;
 }
 
 .func-icon-compute {
-    width: 54px;
-    height: 54px;
-    background: url(img/compute.svg) no-repeat bottom;
+  width: 54px;
+  height: 54px;
+  background: url(img/compute.svg) no-repeat bottom;
 }
 
 .icon-power {
-    background: url(img/power.png) no-repeat;
-    background-size: 100%;
+  background: url(img/power.png) no-repeat;
+  background-size: 100%;
 }
 
 .icon-cloud {
-    width: 56px;
-    background: url(img/cloud.svg) no-repeat bottom;
+  width: 56px;
+  background: url(img/cloud.svg) no-repeat bottom;
 }
 
 .icon-install {
-    width: 56px;
-    background: url(img/install.svg) no-repeat bottom;
+  width: 56px;
+  background: url(img/install.svg) no-repeat bottom;
 }
 
 .icon-x86 {
-    width: 60px;
-    background: url(img/x86.svg) no-repeat bottom;
+  width: 60px;
+  background: url(img/x86.svg) no-repeat bottom;
 }
 
 .icon-global {
-    width: 55px;
-    opacity: 0.87;
-    background: url(img/global.svg) no-repeat bottom; 
+  width: 55px;
+  opacity: 0.87;
+  background: url(img/global.svg) no-repeat bottom; 
 }
 
 /*产品规格*/
 
 .production {
-    height: 1327px;
-    background: #FAFAFB;
+  height: 1327px;
+  background: #FAFAFB;
 }
 
 .pro-title {
-    height: 384px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  height: 384px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .pro-title span {
-    margin-bottom: 16px;
-    font-family: Pingfang SC, sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    color: #313132;
+  margin-bottom: 16px;
+  font-family: Pingfang SC, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #313132;
 }
 
 .pro-title p {
-    height: 30px;
-    color: #616162;
+  height: 30px;
+  color: #616162;
 }
 
 .pro-detail {
-    width: 1160px;
-    height: 558px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+  width: 1160px;
+  height: 558px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .pro-detail-row {
-    flex: 1;
-    display: flex;
-    border-bottom: 1px solid #E3E3E4;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  border-bottom: 1px solid #E3E3E4;
+  align-items: center;
 }
 
 .pro-detail-row span {
-    flex: 1;
-    color: #616162;
+  flex: 1;
+  color: #616162;
 }
 
 .pro-detail-row p {
-    flex: 1.5;
-    color: #313132;
+  flex: 1.5;
+  color: #313132;
 }
 
 .pro-detail-each-first {
-    flex: 1;
-    justify-content: center;
+  flex: 1;
+  justify-content: center;
 
 }
 
 .pro-detail-each {
-    flex: 1.5;
-    justify-content: center;
+  flex: 1.5;
+  justify-content: center;
 
 }
 
 .each-title {
-    font-family: Roboto700;
-    font-size: 16px;
-    color: #313132;
+  font-family: Roboto700;
+  font-size: 16px;
+  color: #313132;
 }
 
 .each-name {
-    margin-top: 8px;
-    font-family: Roboto_r;
-    font-size: 16px;
-    color: #919192;
+  margin-top: 8px;
+  font-family: Roboto_r;
+  font-size: 16px;
+  color: #919192;
 }
 
 .pro-detail-spe {
-    width: 1160px;
-    margin: 0 auto;
-    display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .pro-detail-spe span {
-    flex: 1;
-    margin-top: 36px;
-    font-family: Roboto_r;
-    font-size: 16px;
-    color: #616162;
+  flex: 1;
+  margin-top: 36px;
+  font-family: Roboto_r;
+  font-size: 16px;
+  color: #616162;
 }
 
 .pro-detail-spe ul {
-    margin-top: 36px;
-    flex: 1.5;
-    list-style-type: none;
+  margin-top: 36px;
+  flex: 1.5;
+  list-style-type: none;
 }
 
 .pro-detail-spe li {
-    margin-top: 15px;
-    font-family: Roboto_r;
-    font-size: 16px;
-    color: #313132;
+  margin-top: 15px;
+  font-family: Roboto_r;
+  font-size: 16px;
+  color: #313132;
 }
 
 /*应用场景*/
 .applyto {
-    height: 969px;
+  height: 969px;
 }
 
 .applyto-title {
-    height: 198px;
+  height: 198px;
 }
 
 .applyto-area {
-    width: 1160px;
-    height: 558px;
-    margin: 0 auto;
+  width: 1160px;
+  height: 558px;
+  margin: 0 auto;
 }
 
 .applyto-name {
-    float: left;
-    margin-left: 16px;
-    font-family: Roboto700;
-    font-size: 20px;
-    color: #32A65D;
+  float: left;
+  margin-left: 16px;
+  font-family: Roboto700;
+  font-size: 20px;
+  color: #32A65D;
 }
 
 .applyto-row {
-    height: 186px;
-    flex: 1;
-    display: flex;
-    border-bottom: 1px solid #E3E3E4;
-    align-items: flex-start;
-    
+  height: 186px;
+  flex: 1;
+  display: flex;
+  border-bottom: 1px solid #E3E3E4;
+  align-items: flex-start;
+  
 }
 
 
 .applyto-left {
-    flex: 1;
-    padding-top: 48px;
+  flex: 1;
+  padding-top: 48px;
 }
 
 .applyto-right {
-    flex: 1.9;
-    padding-top: 48px;
+  flex: 1.9;
+  padding-top: 48px;
 }
 
 .applyto-row-first  {
-    height: 106px;
+  height: 106px;
 }
 
 .applyto-row-first .applyto-right{
-    padding-top: 0px;
+  padding-top: 0px;
 }
 
 .applyto-row-first .applyto-left{
-    padding-top: 0px;
+  padding-top: 0px;
 }
 
 .applyto-row-end {
-    border: 0;
+  border: 0;
 }
 
 .applyto-right p{
-    height: 30px;
-    font-family: Roboto_r;
-    font-size: 16px;
-    color: #616162;
+  height: 30px;
+  font-family: Roboto_r;
+  font-size: 16px;
+  color: #616162;
 }
 
 .applyto-icon-1 {
-    width: 32px;
-    height: 32px;
-    float: left;
-    background: url(img/1.svg) no-repeat;
+  width: 32px;
+  height: 32px;
+  float: left;
+  background: url(img/1.svg) no-repeat;
 }
 
 .icon-2 {
-    background: url(img/2.svg) no-repeat;
+  background: url(img/2.svg) no-repeat;
 }
 
 .icon-3 {
-    background: url(img/3.svg) no-repeat;
+  background: url(img/3.svg) no-repeat;
 }
 
 .icon-4 {
-    background: url(img/4.svg) no-repeat;
+  background: url(img/4.svg) no-repeat;
 }
 
 /*行业应用推荐*/
 .recommend {
-    /*width: 100%;*/
-    height: 543px;
-    background: #FAFAFB;
+  /*width: 100%;*/
+  height: 543px;
+  background: #FAFAFB;
 }
 
 .rec-title {
-    font-family: Sans-serif;
-    font-size: 24px;
-    color: #313132;
+  font-family: Sans-serif;
+  font-size: 24px;
+  color: #313132;
 }
 
 .rec-area {
-    width: 1160px;
-    height: 417px;
-    margin: 0 auto;
-    display: flex;
+  width: 1160px;
+  height: 417px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .rec-column {
-    flex: 1;
+  flex: 1;
 }
 
 .rec-icon-gorvernment {
-    width: 56px;
-    height: 56px;
-    background: url(img/government.svg);
+  width: 56px;
+  height: 56px;
+  background: url(img/government.svg);
 }
 
 .rec-name {
-    margin-top: 16px;
-    font-family: Roboto700;
-    font-size: 16px;
-    color: #32A65D;
+  margin-top: 16px;
+  font-family: Roboto700;
+  font-size: 16px;
+  color: #32A65D;
 }
 
 .rec-column ul {
-    margin-top: 8px;
+  margin-top: 8px;
 }
 
 .rec-column li {
-    font-family: Roboto_r;
-    font-size: 16px;
-    color: #616162;
-    line-height: 30px;
-    list-style-type: none;
+  font-family: Roboto_r;
+  font-size: 16px;
+  color: #616162;
+  line-height: 30px;
+  list-style-type: none;
 }
 
 .icon-finance {
-    width: 59px;
-    background: url(img/finance.svg) no-repeat;
+  width: 59px;
+  background: url(img/finance.svg) no-repeat;
 }
 
 .icon-education {
-    background: url(img/education.svg) no-repeat;
+  background: url(img/education.svg) no-repeat;
 }
 
 .icon-enterprise {
-    background: url(img/enterprise.svg) no-repeat;
+  background: url(img/enterprise.svg) no-repeat;
 }
 .rec-line {
-    width: 1160px;
-    margin: 0 auto;
-    border: 1px solid #FFFFFF;
-    opacity: 0.15;
+  width: 1160px;
+  margin: 0 auto;
+  border: 1px solid #FFFFFF;
+  opacity: 0.15;
 }
 
 .rec-copyright {
-    /*width: 100%;*/
-    height: 124px;
-    text-align: center;
-    line-height: 124px;
-    opacity: 0.34;
-    font-family: Roboto_r;
-    font-size: 16px;
-    color: #FFFFFF;
+  /*width: 100%;*/
+  height: 124px;
+  text-align: center;
+  line-height: 124px;
+  opacity: 0.34;
+  font-family: Roboto_r;
+  font-size: 16px;
+  color: #FFFFFF;
 }
 
 /*联系我们*/
 .contactus {
-    height: 244px;
+  height: 244px;
 }
 
 .con-area {
-    width: 1160px;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: flex-start;
+  width: 1160px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
 }
 
 .con-title {
-    flex: 1;
-    margin-top: 80.3px;
-    font-family: Pingfang SC, sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    color: #313132;
+  flex: 1;
+  margin-top: 80.3px;
+  font-family: Pingfang SC, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #313132;
 }
 
 .con-column {
-    flex: 1;
-    margin-top: 80.3px;
+  flex: 1;
+  margin-top: 80.3px;
 }
 
 .con-column-each {
-    width: 260px;
-    height: 83px;
-    border: 1px solid #EEEEEF;
+  width: 260px;
+  height: 83px;
+  border: 1px solid #EEEEEF;
 }
 
 .con-tel {
-    padding-left: 15px;
-    padding-top: 12px;
-    font-family: Roboto700;
-    color: #313132;
+  padding-left: 15px;
+  padding-top: 12px;
+  font-family: Roboto700;
+  color: #313132;
 }
 
 .con-no {
-    padding-left: 15px;
-    padding-top: 12px;
-    font-family: Roboto_r;
-    color: #616162;
-    opacity: 0.7;
+  padding-left: 15px;
+  padding-top: 12px;
+  font-family: Roboto_r;
+  color: #616162;
+  opacity: 0.7;
 }
 
 /*开始使用*/
 
 .useit {
-    /*width: 100%;*/
-    height: 866px;
-    background-image: radial-gradient(ellipse farthest-corner at 2400px 100px, #14102F 20%, #000000 100%);
+  /*width: 100%;*/
+  height: 866px;
+  background-image: radial-gradient(ellipse farthest-corner at 2400px 100px, #14102F 20%, #000000 100%);
 }
 
 .useit-top {
-    width: 1160px;
-    height: 299px;
-    margin: 0 auto;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  width: 1160px;
+  height: 299px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .useit-left {
-    float: left;
-    padding-top: 137px;
+  float: left;
+  padding-top: 137px;
 }
 
 .useit-left span {
-    font-family: Pingfang SC, sans-serif;
-    font-weight: 100;
-    font-size: 24px;
-    color: #FFFFFF;
+  font-family: Pingfang SC, sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+  color: #FFFFFF;
 }
 
 .useit-left p {
-    height: 22px;
-    font-family: Roboto100, Pingfang SC, sans-serif;
-    margin-top: 8px;
-    font-weight: 300;
-    opacity: 0.6;
+  height: 22px;
+  font-family: Roboto100, Pingfang SC, sans-serif;
+  margin-top: 8px;
+  font-weight: 300;
+  opacity: 0.6;
 
 }
 
 .useit-regist {
-    width: 180px;
-    height: 46px;
-    margin-top: 137px;
-    background: #28AF5B;
-    border-radius: 4px;
-    float: right;
-    text-align: center;
-    line-height: 46px;
-    color: #fff;
+  width: 180px;
+  height: 46px;
+  margin-top: 137px;
+  background: #28AF5B;
+  border-radius: 4px;
+  float: right;
+  text-align: center;
+  line-height: 46px;
+  color: #fff;
 }
 
 .useit-regist:hover {
-    background: #2abf63;
+  background: #2abf63;
 }
 
 .useit-bottom {
-    width: 1160px;
-    margin: 0 auto;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .useit-list {
-    width: 881.4px;
-    margin-top: 36px;
+  width: 881.4px;
+  margin-top: 36px;
 
-    float: left;
-    display: flex;
+  float: left;
+  display: flex;
 }
 
 .useit-column {
-    flex: 1;
+  flex: 1;
 }
 
 .useit-column ul {
-    margin-top: 20px;
-    list-style-type: none;
+  margin-top: 20px;
+  list-style-type: none;
 }
 
 .useit-column li {
-    height: 22px;
-    margin-top: 8px;
+  height: 22px;
+  margin-top: 8px;
 }
 
 
 
 .useit-column span {
-    font-family: Pingfang SC, sans-serif;
-    font-weight: 300;
+  font-family: Pingfang SC, sans-serif;
+  font-weight: 300;
 }
 
 .useit-column a {
-    font-family: Roboto100, Pingfang SC, sans-serif;
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.4);
+  font-family: Roboto100, Pingfang SC, sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .useit-column a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .useit-column-spe {
-    flex: 1;
-    opacity: 1;
+  flex: 1;
+  opacity: 1;
 }
 
 .useit-column-spe a{
-    color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .useit-column-spe li:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .useit-copyright {
-    float: right;
-    margin-top: 36px;
+  float: right;
+  margin-top: 36px;
 }
 
 .useit-copyright p {
-    margin-top: 31px;
-    margin-left: -10px;
-    opacity: 0.4;
-    font-family: Roboto100, Pingfang SC, sans-serif;
-    font-weight: 300;
+  margin-top: 31px;
+  margin-left: -10px;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: Roboto100, Pingfang SC, sans-serif;
+  font-weight: 300;
 }
 
 .icon-twitter {
-    width: 75px;
-    height: 19px;
-    padding-left: 20px;
-    background: url(img/twitter.svg) no-repeat 0px 2px;
-    cursor: pointer;
+  width: 75px;
+  height: 19px;
+  padding-left: 20px;
+  background: url(img/twitter.svg) no-repeat 0px 2px;
+  cursor: pointer;
 }
 .icon-twitter::before {
-    content: 'Twitter';
+  content: 'Twitter';
 }
 
 .icon-weibo {
-    background: url(img/weibo.svg) no-repeat 0px 5px;
+  background: url(img/weibo.svg) no-repeat 0px 5px;
 } 
 
 .icon-weibo::before {
-    content: '新浪微博';
+  content: '新浪微博';
 }
 
 .icon-mail {
-    background: url(img/mail.svg) no-repeat 0px 7px;
+  background: url(img/mail.svg) no-repeat 0px 7px;
 } 
 
 .icon-mail::before {
-    content: '邮箱';
+  content: '邮箱';
 }
 
 .icon-qingcloudlogo2 {
-    width: 111px;
-    height: 84px;
-    display: block;
-    background: url(img/qingcloudlogo2.svg) no-repeat;
+  width: 111px;
+  height: 84px;
+  display: block;
+  background: url(img/qingcloudlogo2.svg) no-repeat;
 }
