@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="260px" height="195px" viewBox="0 0 260 195" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="260" height="195" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-940.000000, -211.000000)">
+            <g id="Group-9" transform="translate(940.000000, 211.000000)">
+                <g id="Group-11">
+                    <g id="Rectangle-10" style="mix-blend-mode: overlay;">
+                        <use fill-opacity="0.164005888" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke-opacity="0.406816123" stroke="#FFFFFF" stroke-width="5" x="2.5" y="2.5" width="255" height="190" rx="2"></rect>
+                    </g>
+                    <rect id="Rectangle-15" fill="#FFFFFF" style="mix-blend-mode: overlay;" x="36" y="34" width="188.753906" height="31"></rect>
+                    <rect id="Rectangle-15-Copy" fill="#FFFFFF" opacity="0.38111413" style="mix-blend-mode: overlay;" x="36" y="86" width="120" height="21"></rect>
+                    <g id="Group-6" transform="translate(181.000000, 116.000000)" fill="#57B382">
+                        <path d="M26,52 C11.6405965,52 0,40.3594035 0,26 C0,11.6405965 11.6405965,0 26,0 C40.3594035,0 52,11.6405965 52,26 C52,40.3594035 40.3594035,52 26,52 Z M12.3260269,28.7244302 C11.6469295,29.4278452 11.6666427,30.5485929 12.3700577,31.2276904 C12.3745993,31.232075 12.3791644,31.2364353 12.3837527,31.2407711 L19.9085258,38.3514679 L38.5726955,20.6196907 L38.5726955,20.6196907 C39.2834346,19.9444576 39.3122178,18.8209051 38.6369846,18.110166 C38.6337141,18.1067236 38.6304299,18.1032943 38.6271319,18.0998782 C37.9391231,17.3872329 36.80516,17.3627355 36.0870165,18.0450032 L19.9085258,33.4152767 L14.8707234,28.6647152 C14.1492666,27.9843939 13.0147777,28.0110163 12.3260269,28.7244302 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,459 @@
+@font-face 
+  font-family: Roboto100; 
+  src: url(font/Roboto_100.ttf);
+@font-face
+  font-family: Roboto700; 
+  src: url(font/Roboto_700.ttf); 
+@font-face
+  font-family: Roboto_r; 
+  src: url(font/Robotoregular.ttf);
+
+ssl-width = 1160px;
+font-roboto-regular = Roboto-Regular, Roboto_r;
+font-roboto-medium = Roboto-Medium, Pingfang SC, sans-serif;
+font-pingfang-medium = PingFangSC-Medium;
+
+
+*
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #fff
+  font-family: font-roboto-regular, Pingfang SC, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+
+body
+  .wrap
+    a
+      text-decoration: none
+      cursor: pointer
+    .sign
+      width: 64px;
+      height: 46px;
+      line-height: 46px;
+      margin-top: 27px;
+      display: inline-block;
+      text-align: center;
+      opacity: 0.65;
+      border-radius: 4px;
+      cursor: pointer;
+    .sign-in
+      background: rgba(255, 255, 255, 0.07);
+      color: #ffffff;
+      border-radius: 4px;
+      &:hover
+        background: rgba(255, 255, 255, 0.2);
+    .sign-up
+      color: #fff;
+      background: #28AF5B;
+      opacity: 1;
+      margin-left: 16px;
+      &:hover
+        background: #2abf63;
+    .area-title
+      padding-top: 60px;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      font-family: font-pingfang-medium, sans-serif;
+      font-size: 32px;
+      color: #3E464C;
+      font-weight: bold;
+    .leader-bg
+      width: 100%
+      background: #3C3843
+      height: 550px
+      .leader
+        width: ssl-width;
+        height: 550px
+        margin: 0 auto
+        .leader-top
+          width: @width
+          height: 100px
+          .logo-area
+            width: 261px
+            height: 100px
+            line-height: 100px
+            float: left
+            display:flex
+            align-items:center
+            justify-content: flex-start
+            .logo-img
+              width: 168px
+              height: 36px
+              background: url(img/qingcloudlogo.svg) no-repeat
+          .nav-bar
+            height: 100px
+            float: left
+            display: flex
+            list-style-type: none
+            .nav-items
+              display: block
+              position: relative
+              height: 100px
+              line-height: 100px
+              font-size: 16px
+              margin-left: 24px
+              cursor: pointer
+              .items
+                display: none
+                position: absolute
+                left: 10px
+                top: 75px
+                background: #57b382
+                padding: 0
+                margin: 0
+                width: 150px
+                z-index: 101
+                list-style-type: none
+                &:before
+                  content: ''
+                  border-width: 6px
+                  border-style: solid
+                  border-color: transparent transparent #57b382
+                  position: absolute
+                  left: 69px
+                  top: -12px
+                li
+                  margin: 0
+                  padding: 0
+                  &:hover
+                    background: #4ba575
+                a
+                  color: #fff
+                  display: block
+                  padding: 4px 19px
+                  text-align: left
+                  line-height: 32px
+                  font-size: 14px
+          .btns
+            padding-left: 30px;
+            
+        .leader-bottom
+          margin-top: 65px
+          width: @width
+          .leader-btm-left
+            float: left
+            width: 660px
+            .leader-ssl-title
+              width: 240px
+              height: 56px
+              font-family: font-roboto-regular;
+              font-weight: 400;
+              font-size: 40px
+            .leader-ssl-content
+              margin-top: 20px
+              width: @width;
+              height: 90px;
+              line-height: 30px;
+              font-weight: 400;
+            .leader-ssl-btns
+              .ssl-btns
+                width: 152px;
+          .leader-btm-right
+            float: left
+            margin-top: 46px
+            .leader-ssl-img
+              margin-left: 140px
+              width: 260px
+              height: 195px
+              background: url(img/sslbg.svg) no-repeat
+    .bright-func
+      height: 436px;
+      .func-detail
+        margin-top: 60px;
+        width: ssl-width;
+        margin: 0 auto;
+        display: flex;
+        .func-margin
+          margin-left: 39px;
+        .func-area-p
+          flex: 1;
+          width: 361px;
+          margin-top: 60px;
+          .func-name
+            margin-top: 19px;
+            color: #68747F;
+          .func-content
+            margin-top: 10px;
+            color: #A1A6AB;
+            font-size: 14px;
+            height: 40px;
+            line-height: 20px;
+          .func-icon-guard
+            width: 40px;
+            height: 40px;
+            background: url(img/guard.svg) no-repeat bottom;
+          .icon-lego
+            background: url(img/lego.svg) no-repeat bottom;
+          .icon-window
+            background: url(img/window.svg) no-repeat bottom;
+    .product
+      height: 537px;
+      background: #F5F9FA;
+      .product-detail
+        width: ssl-width;
+        margin: 0 auto;
+        margin-top: 60px
+        .product-center
+          line-height: 102px;
+        .product-margin
+          margin-top: 40px
+        .product-left
+          width: 300px;
+          float: left;
+          .product-left-item
+            width: @width
+            height: 102px
+            text-align: center;
+            font-family: font-roboto-medium;
+            font-size: 20px;
+            color: #68747F;
+        .product-right
+          float: left;
+          width: ssl-width - 300;
+          .product-right-item
+            height: 102px;
+            width: 100%;
+            .product-content
+              width: 760px;
+              height: 44px;
+              line-height: 20px
+              color: #68747F;
+              display: inline-block;
+          .product-border
+            border-top: 1px solid #DCE0E1;
+            border-bottom: 1px solid #DCE0E1;
+    .ssltype
+      height: 1021px;
+      .type-detail
+        width: ssl-width;
+        margin: 0 auto;
+        margin-top: 60px;
+        .type-detail-row
+          width: @width;
+          height: 80px;
+          border-bottom: 1px solid#E3E3E4;
+          .type-detail-each
+            float: left;
+            width: 25%;
+            height: @height;
+            .each-name
+              width: 100%;
+              height: 16px;
+              color: #68747F;
+              font-size: 14px;
+              font-family: PingFangSC-Regular;
+            .type-img-1
+              height: 30px;
+              background: url(img/address1.svg) no-repeat left bottom;
+            .type-img-2
+              height: 30px;
+              background: url(img/address2.svg) no-repeat left bottom;
+            .type-img-3
+              height: 30px;
+              background: url(img/address3.svg) no-repeat left bottom;
+            .each-name-padding
+              padding-top: 30px;
+              margin-bottom: 10px;
+            .type-row-title
+              height: 22px;
+              color: #68747F;
+              font-family: font-pingfang-medium;
+              font-size: 16px;
+              padding-top: 30px;
+              padding-bottom: 18px;
+          .each-header
+            .each-name
+              color: #3E464C;
+              font-size: 16px;
+              font-family: font-roboto-medium;
+        .row-header
+          height: 52px;
+          .type-detail-each
+            height: @height;
+        .row-larger
+          height: 110px;
+        .row-last
+          border: 0;
+      .type-btns
+        width: ssl-width;
+        margin: 0 auto;
+        margin-top: 100px;
+        .btns
+          width: 382px;
+          margin: 0 auto;
+          .type-btns-buy
+            width: 152px;
+            height: 48px;
+            margin: 0;
+            line-height: 48px;
+            background: #443D4E;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05), 0 5px 10px 0 rgba(0,0,0,0.06);
+          .type-btns-free
+            width: 152px;
+            height: 48px;
+            margin: 0;
+            margin-left: 40px;
+            line-height: 48px;
+            background: #00A971;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05), 0 5px 10px 0 rgba(0,0,0,0.06);
+    .scene
+      height: 2761px;
+      background: #3C3843;
+      .scene-top
+        width: ssl-width;
+        margin: 0 auto;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        .scene-title
+          margin-top: 85px;
+          color: #ffffff;
+        .scene-content
+          margin: 0 auto;
+          margin-top: 40px;
+          width: 760px;
+          height: 329px;
+          background-image: linear-gradient(78deg, #19895F 0%, #146C4F 100%); 
+          .scene-content-top
+            width: 600px;
+            height: 93px;
+            line-height: 31px;
+            margin: 0 auto;
+            padding-top: 36px;
+            opacity: 0.8;
+            font-family: font-roboto-regular;
+          .scene-content-list
+            margin: 10px 0px 0px 80px;
+            font-family: font-roboto-regular;
+        .scene-price
+          margin-top: 100px
+          height: 1298px;
+          .price-left
+            float: left;
+            width: 300px;
+            height: 45px;
+            font-family: font-roboto-medium;
+            font-size: 32px;
+            color: #FFFFFF;
+          .price-right
+            float: left;
+            .price-right-title
+              font-family: font-roboto-regular;
+              font-size: 16px;
+              color: #FFFFFF;
+            .price-right-content
+              margin-top: 40px;
+              .price-table
+                margin-top: 20px;
+                width: 660px;
+                border-width: 1px;
+                border-color: #7C7783;
+                border-collapse: collapse;
+                td
+                  height: 44px;
+                  padding-left: 30px;
+                  border: 1px solid #7C7783;
+                  font-family: font-roboto-regular;
+                  font-size: 14px;
+                  color: rgba(255, 255, 255, 0.6);
+                  a
+                    margin-left: 55px;
+                    font-size: 14px;
+                td:first-child
+                  width: 411px;
+            .price-right-mark
+              margin-top: 40px;
+              .price-right-title
+                font-size: 14px;
+                opacity: 0.6;
+                margin-top: 10px;
+        .scene-user
+          margin-top: 100px
+          height: 340px
+          .user-left
+            float: left;
+            width: 300px;
+            height: 45px;
+            font-family: font-roboto-medium;
+            font-size: 32px;
+            color: #FFFFFF;
+          .user-title
+            font-family: PingFangSC-Regular;
+            font-size: 20px;
+            color: #FFFFFF;
+          .user-content
+            margin-top: 20px;
+            width: 230px;
+            height: 192px;
+            line-height: 32px;
+            font-size: 14px;
+            opacity: 0.6;
+          .user-issue
+            float: left;
+            width: 400px;
+          .user-index
+            float: left;
+      .scene-bottom
+        width: ssl-width;
+        margin: 0 auto;
+        .useit-list
+          width: 881.4px;
+          margin-top: 36px;
+          float: left;
+          display: flex;
+          .useit-column
+            flex: 1
+            span 
+              font-family: Pingfang SC, sans-serif;
+              font-weight: 300;
+            a
+              font-family: Roboto100, Pingfang SC, sans-serif;
+              font-weight: 300;
+              color: rgba(255, 255, 255, 0.4);
+              &:hover
+                color: #fff;
+            ul
+              margin-top: 20px;
+              list-style-type: none;
+              li
+                height: 22px;
+                margin-top: 8px;
+          .useit-column-spe
+            flex: 1;
+            opacity: 1;
+            a
+              color: rgba(255, 255, 255, 0.4);
+            li
+              &:hover
+                opacity: 1;
+        .useit-copyright
+          float: right;
+          margin-top: 36px;
+          p
+            margin-top: 31px;
+            margin-left: -10px;
+            color: rgba(255, 255, 255, 0.4);
+            font-family: Roboto100, Pingfang SC, sans-serif;
+            font-weight: 300;
+        .icon-twitter
+          width: 75px;
+          height: 19px;
+          padding-left: 20px;
+          background: url(img/twitter.svg) no-repeat 0px 2px;
+          cursor: pointer;
+        .icon-twitter::before
+          content: 'Twitter';
+        .icon-weibo
+          background: url(img/weibo.svg) no-repeat 0px 5px;
+        .icon-weibo::before 
+          content: '新浪微博';
+        .icon-mail
+          background: url(img/mail.svg) no-repeat 0px 7px;
+        .icon-mail::before
+          content: '邮箱';
+        .icon-qingcloudlogo2
+          width: 111px;
+          height: 84px;
+          display: block;
+          background: url(img/qingcloudlogo2.svg) no-repeat;

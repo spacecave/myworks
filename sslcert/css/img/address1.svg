@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="199px" height="30px" viewBox="0 0 199 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>address 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="199" height="28" rx="3"></rect>
+        <linearGradient x1="20.1079341%" y1="50%" x2="87.7304797%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-386.000000, -1771.000000)">
+            <g id="address-1" transform="translate(386.000000, 1771.000000)">
+                <g id="Group" transform="translate(0.000000, 1.000000)">
+                    <g id="Rectangle-12">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#B7B7B7" stroke-width="1" x="0.5" y="0.5" width="198" height="27" rx="3"></rect>
+                    </g>
+                    <g id="ic_lock_black_24px" transform="translate(8.000000, 8.000000)">
+                        <polygon id="Shape" points="0 0 12 0 12 12 0 12"></polygon>
+                        <path d="M9,4 L8.5,4 L8.5,3 C8.5,1.62 7.38,0.5 6,0.5 C4.62,0.5 3.5,1.62 3.5,3 L3.5,4 L3,4 C2.45,4 2,4.45 2,5 L2,10 C2,10.55 2.45,11 3,11 L9,11 C9.55,11 10,10.55 10,10 L10,5 C10,4.45 9.55,4 9,4 Z M7.55,4 L4.45,4 L4.45,3 C4.45,2.145 5.145,1.45 6,1.45 C6.855,1.45 7.55,2.145 7.55,3 L7.55,4 Z" id="Shape" fill="#0A8043" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+                <text id="安全" font-family="PingFangSC-Medium, PingFang SC" font-size="14" font-weight="400" fill="#0A8043">
+                    <tspan x="27" y="20">安全</tspan>
+                </text>
+                <text id="https://www.qingclo" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal">
+                    <tspan x="72" y="20" fill="#0A8043">https</tspan>
+                    <tspan x="103.930664" y="20" fill="#7F8082">://</tspan>
+                    <tspan x="117.329102" y="20" fill="#011327">www.qingclo</tspan>
+                </text>
+                <rect id="Rectangle-16" fill="#A6A6A6" x="63" y="7" width="1" height="16"></rect>
+                <rect id="Rectangle-17" fill="url(#linearGradient-2)" x="174" y="0" width="25" height="30"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

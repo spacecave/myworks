@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>lego</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="22 19 36 12 36 30 22 37"></polygon>
+        <polygon id="path-2" points="19.5 5.5 36 12.1492763 22 19 4.19339027 12"></polygon>
+        <path d="M20,12.3368439 C23.8659932,12.3368439 27,11.1045695 27,10 C27,8.8954305 23.8659932,7.57407846 20,7.57407846 C16.1340068,7.57407846 13,8.8954305 13,10 C13,11.1045695 16.1340068,12.3368439 20,12.3368439 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-544.000000, -760.000000)">
+            <g id="lego" transform="translate(540.000000, 755.000000)">
+                <polygon id="Rectangle" fill="#86DBA2" points="4.1828889 11.9968128 22 19 22 37 4.2751441 30"></polygon>
+                <g id="Rectangle">
+                    <use fill="#B7E6A8" xlink:href="#path-1"></use>
+                    <use fill="#ADECB5" xlink:href="#path-1"></use>
+                </g>
+                <g id="Rectangle-3">
+                    <use fill="#B7E6A8" xlink:href="#path-2"></use>
+                    <use fill="#ADECB5" xlink:href="#path-2"></use>
+                </g>
+                <path d="M27,13.6666667 C25.9810693,15.0260578 23.2317358,16 20,16 C16.7682642,16 14.0189307,15.0260578 13,13.6666667 L13,10 C14.0189307,11.3593911 16.7682642,12.3333333 20,12.3333333 C23.2317358,12.3333333 25.9810693,11.3593911 27,10 L27,13.6666667 Z" id="Combined-Shape" fill="#443D4E"></path>
+                <g id="Oval-3">
+                    <use fill="#B7E6A8" xlink:href="#path-3"></use>
+                    <use fill="#ADECB5" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

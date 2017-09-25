@@ -1,0 +1,28 @@
+@font-face {
+  font-family: Roboto100;
+  src: url("font/Roboto_100.ttf");
+}
+@font-face {
+  font-family: Roboto700;
+  src: url("font/Roboto_700.ttf");
+}
+@font-face {
+  font-family: Roboto_r;
+  src: url("font/Robotoregular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  border: 0;
+  font-family: Roboto_r, Pingfang SC, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+* body {
+  display: block;
+}
+* body a {
+  text-decoration: none;
+  cursor: pointer;
+}

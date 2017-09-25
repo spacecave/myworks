@@ -1,0 +1,557 @@
+@font-face {
+  font-family: Roboto100;
+  src: url("font/Roboto_100.ttf");
+}
+@font-face {
+  font-family: Roboto700;
+  src: url("font/Roboto_700.ttf");
+}
+@font-face {
+  font-family: Roboto_r;
+  src: url("font/Robotoregular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #fff;
+  font-family: Roboto-Regular, Roboto_r, Pingfang SC, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+body .wrap a {
+  text-decoration: none;
+  cursor: pointer;
+}
+body .wrap .sign {
+  width: 64px;
+  height: 46px;
+  line-height: 46px;
+  margin-top: 27px;
+  display: inline-block;
+  text-align: center;
+  opacity: 0.65;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body .wrap .sign-in {
+  background: rgba(255,255,255,0.07);
+  color: #fff;
+  border-radius: 4px;
+}
+body .wrap .sign-in:hover {
+  background: rgba(255,255,255,0.2);
+}
+body .wrap .sign-up {
+  color: #fff;
+  background: #28af5b;
+  opacity: 1;
+  margin-left: 16px;
+}
+body .wrap .sign-up:hover {
+  background: #2abf63;
+}
+body .wrap .area-title {
+  padding-top: 60px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-family: PingFangSC-Medium, sans-serif;
+  font-size: 32px;
+  color: #3e464c;
+  font-weight: bold;
+}
+body .wrap .leader-bg {
+  width: 100%;
+  background: #3c3843;
+  height: 550px;
+}
+body .wrap .leader-bg .leader {
+  width: 1160px;
+  height: 550px;
+  margin: 0 auto;
+}
+body .wrap .leader-bg .leader .leader-top {
+  width: 1160px;
+  height: 100px;
+}
+body .wrap .leader-bg .leader .leader-top .logo-area {
+  width: 261px;
+  height: 100px;
+  line-height: 100px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+body .wrap .leader-bg .leader .leader-top .logo-area .logo-img {
+  width: 168px;
+  height: 36px;
+  background: url("img/qingcloudlogo.svg") no-repeat;
+}
+body .wrap .leader-bg .leader .leader-top .nav-bar {
+  height: 100px;
+  float: left;
+  display: flex;
+  list-style-type: none;
+}
+body .wrap .leader-bg .leader .leader-top .nav-bar .nav-items {
+  display: block;
+  position: relative;
+  height: 100px;
+  line-height: 100px;
+  font-size: 16px;
+  margin-left: 24px;
+  cursor: pointer;
+}
+body .wrap .leader-bg .leader .leader-top .nav-bar .nav-items .items {
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 75px;
+  background: #57b382;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  z-index: 101;
+  list-style-type: none;
+}
+body .wrap .leader-bg .leader .leader-top .nav-bar .nav-items .items:before {
+  content: '';
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #57b382;
+  position: absolute;
+  left: 69px;
+  top: -12px;
+}
+body .wrap .leader-bg .leader .leader-top .nav-bar .nav-items .items li {
+  margin: 0;
+  padding: 0;
+}
+body .wrap .leader-bg .leader .leader-top .nav-bar .nav-items .items li:hover {
+  background: #4ba575;
+}
+body .wrap .leader-bg .leader .leader-top .nav-bar .nav-items .items a {
+  color: #fff;
+  display: block;
+  padding: 4px 19px;
+  text-align: left;
+  line-height: 32px;
+  font-size: 14px;
+}
+body .wrap .leader-bg .leader .leader-top .btns {
+  padding-left: 30px;
+}
+body .wrap .leader-bg .leader .leader-bottom {
+  margin-top: 65px;
+  width: 1160px;
+}
+body .wrap .leader-bg .leader .leader-bottom .leader-btm-left {
+  float: left;
+  width: 660px;
+}
+body .wrap .leader-bg .leader .leader-bottom .leader-btm-left .leader-ssl-title {
+  width: 240px;
+  height: 56px;
+  font-family: Roboto-Regular, Roboto_r;
+  font-weight: 400;
+  font-size: 40px;
+}
+body .wrap .leader-bg .leader .leader-bottom .leader-btm-left .leader-ssl-content {
+  margin-top: 20px;
+  width: 660px;
+  height: 90px;
+  line-height: 30px;
+  font-weight: 400;
+}
+body .wrap .leader-bg .leader .leader-bottom .leader-btm-left .leader-ssl-btns .ssl-btns {
+  width: 152px;
+}
+body .wrap .leader-bg .leader .leader-bottom .leader-btm-right {
+  float: left;
+  margin-top: 46px;
+}
+body .wrap .leader-bg .leader .leader-bottom .leader-btm-right .leader-ssl-img {
+  margin-left: 140px;
+  width: 260px;
+  height: 195px;
+  background: url("img/sslbg.svg") no-repeat;
+}
+body .wrap .bright-func {
+  height: 436px;
+}
+body .wrap .bright-func .func-detail {
+  margin-top: 60px;
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+}
+body .wrap .bright-func .func-detail .func-margin {
+  margin-left: 39px;
+}
+body .wrap .bright-func .func-detail .func-area-p {
+  flex: 1;
+  width: 361px;
+  margin-top: 60px;
+}
+body .wrap .bright-func .func-detail .func-area-p .func-name {
+  margin-top: 19px;
+  color: #68747f;
+}
+body .wrap .bright-func .func-detail .func-area-p .func-content {
+  margin-top: 10px;
+  color: #a1a6ab;
+  font-size: 14px;
+  height: 40px;
+  line-height: 20px;
+}
+body .wrap .bright-func .func-detail .func-area-p .func-icon-guard {
+  width: 40px;
+  height: 40px;
+  background: url("img/guard.svg") no-repeat bottom;
+}
+body .wrap .bright-func .func-detail .func-area-p .icon-lego {
+  background: url("img/lego.svg") no-repeat bottom;
+}
+body .wrap .bright-func .func-detail .func-area-p .icon-window {
+  background: url("img/window.svg") no-repeat bottom;
+}
+body .wrap .product {
+  height: 537px;
+  background: #f5f9fa;
+}
+body .wrap .product .product-detail {
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+body .wrap .product .product-detail .product-center {
+  line-height: 102px;
+}
+body .wrap .product .product-detail .product-margin {
+  margin-top: 40px;
+}
+body .wrap .product .product-detail .product-left {
+  width: 300px;
+  float: left;
+}
+body .wrap .product .product-detail .product-left .product-left-item {
+  width: 300px;
+  height: 102px;
+  text-align: center;
+  font-family: Roboto-Medium, Pingfang SC, sans-serif;
+  font-size: 20px;
+  color: #68747f;
+}
+body .wrap .product .product-detail .product-right {
+  float: left;
+  width: 860px;
+}
+body .wrap .product .product-detail .product-right .product-right-item {
+  height: 102px;
+  width: 100%;
+}
+body .wrap .product .product-detail .product-right .product-right-item .product-content {
+  width: 760px;
+  height: 44px;
+  line-height: 20px;
+  color: #68747f;
+  display: inline-block;
+}
+body .wrap .product .product-detail .product-right .product-border {
+  border-top: 1px solid #dce0e1;
+  border-bottom: 1px solid #dce0e1;
+}
+body .wrap .ssltype {
+  height: 1021px;
+}
+body .wrap .ssltype .type-detail {
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+body .wrap .ssltype .type-detail .type-detail-row {
+  width: 1160px;
+  height: 80px;
+  border-bottom: 1px solid #e3e3e4;
+}
+body .wrap .ssltype .type-detail .type-detail-row .type-detail-each {
+  float: left;
+  width: 25%;
+  height: 80px;
+}
+body .wrap .ssltype .type-detail .type-detail-row .type-detail-each .each-name {
+  width: 100%;
+  height: 16px;
+  color: #68747f;
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+}
+body .wrap .ssltype .type-detail .type-detail-row .type-detail-each .type-img-1 {
+  height: 30px;
+  background: url("img/address1.svg") no-repeat left bottom;
+}
+body .wrap .ssltype .type-detail .type-detail-row .type-detail-each .type-img-2 {
+  height: 30px;
+  background: url("img/address2.svg") no-repeat left bottom;
+}
+body .wrap .ssltype .type-detail .type-detail-row .type-detail-each .type-img-3 {
+  height: 30px;
+  background: url("img/address3.svg") no-repeat left bottom;
+}
+body .wrap .ssltype .type-detail .type-detail-row .type-detail-each .each-name-padding {
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+body .wrap .ssltype .type-detail .type-detail-row .type-detail-each .type-row-title {
+  height: 22px;
+  color: #68747f;
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  padding-top: 30px;
+  padding-bottom: 18px;
+}
+body .wrap .ssltype .type-detail .type-detail-row .each-header .each-name {
+  color: #3e464c;
+  font-size: 16px;
+  font-family: Roboto-Medium, Pingfang SC, sans-serif;
+}
+body .wrap .ssltype .type-detail .row-header {
+  height: 52px;
+}
+body .wrap .ssltype .type-detail .row-header .type-detail-each {
+  height: 52px;
+}
+body .wrap .ssltype .type-detail .row-larger {
+  height: 110px;
+}
+body .wrap .ssltype .type-detail .row-last {
+  border: 0;
+}
+body .wrap .ssltype .type-btns {
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+body .wrap .ssltype .type-btns .btns {
+  width: 382px;
+  margin: 0 auto;
+}
+body .wrap .ssltype .type-btns .btns .type-btns-buy {
+  width: 152px;
+  height: 48px;
+  margin: 0;
+  line-height: 48px;
+  background: #443d4e;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05), 0 5px 10px 0 rgba(0,0,0,0.06);
+}
+body .wrap .ssltype .type-btns .btns .type-btns-free {
+  width: 152px;
+  height: 48px;
+  margin: 0;
+  margin-left: 40px;
+  line-height: 48px;
+  background: #00a971;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05), 0 5px 10px 0 rgba(0,0,0,0.06);
+}
+body .wrap .scene {
+  height: 2761px;
+  background: #3c3843;
+}
+body .wrap .scene .scene-top {
+  width: 1160px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+body .wrap .scene .scene-top .scene-title {
+  margin-top: 85px;
+  color: #fff;
+}
+body .wrap .scene .scene-top .scene-content {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 760px;
+  height: 329px;
+  background-image: linear-gradient(78deg, #19895f 0%, #146c4f 100%);
+}
+body .wrap .scene .scene-top .scene-content .scene-content-top {
+  width: 600px;
+  height: 93px;
+  line-height: 31px;
+  margin: 0 auto;
+  padding-top: 36px;
+  opacity: 0.8;
+  font-family: Roboto-Regular, Roboto_r;
+}
+body .wrap .scene .scene-top .scene-content .scene-content-list {
+  margin: 10px 0px 0px 80px;
+  font-family: Roboto-Regular, Roboto_r;
+}
+body .wrap .scene .scene-top .scene-price {
+  margin-top: 100px;
+  height: 1298px;
+}
+body .wrap .scene .scene-top .scene-price .price-left {
+  float: left;
+  width: 300px;
+  height: 45px;
+  font-family: Roboto-Medium, Pingfang SC, sans-serif;
+  font-size: 32px;
+  color: #fff;
+}
+body .wrap .scene .scene-top .scene-price .price-right {
+  float: left;
+}
+body .wrap .scene .scene-top .scene-price .price-right .price-right-title {
+  font-family: Roboto-Regular, Roboto_r;
+  font-size: 16px;
+  color: #fff;
+}
+body .wrap .scene .scene-top .scene-price .price-right .price-right-content {
+  margin-top: 40px;
+}
+body .wrap .scene .scene-top .scene-price .price-right .price-right-content .price-table {
+  margin-top: 20px;
+  width: 660px;
+  border-width: 1px;
+  border-color: #7c7783;
+  border-collapse: collapse;
+}
+body .wrap .scene .scene-top .scene-price .price-right .price-right-content .price-table td {
+  height: 44px;
+  padding-left: 30px;
+  border: 1px solid #7c7783;
+  font-family: Roboto-Regular, Roboto_r;
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+}
+body .wrap .scene .scene-top .scene-price .price-right .price-right-content .price-table td a {
+  margin-left: 55px;
+  font-size: 14px;
+}
+body .wrap .scene .scene-top .scene-price .price-right .price-right-content .price-table td:first-child {
+  width: 411px;
+}
+body .wrap .scene .scene-top .scene-price .price-right .price-right-mark {
+  margin-top: 40px;
+}
+body .wrap .scene .scene-top .scene-price .price-right .price-right-mark .price-right-title {
+  font-size: 14px;
+  opacity: 0.6;
+  margin-top: 10px;
+}
+body .wrap .scene .scene-top .scene-user {
+  margin-top: 100px;
+  height: 340px;
+}
+body .wrap .scene .scene-top .scene-user .user-left {
+  float: left;
+  width: 300px;
+  height: 45px;
+  font-family: Roboto-Medium, Pingfang SC, sans-serif;
+  font-size: 32px;
+  color: #fff;
+}
+body .wrap .scene .scene-top .scene-user .user-title {
+  font-family: PingFangSC-Regular;
+  font-size: 20px;
+  color: #fff;
+}
+body .wrap .scene .scene-top .scene-user .user-content {
+  margin-top: 20px;
+  width: 230px;
+  height: 192px;
+  line-height: 32px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+body .wrap .scene .scene-top .scene-user .user-issue {
+  float: left;
+  width: 400px;
+}
+body .wrap .scene .scene-top .scene-user .user-index {
+  float: left;
+}
+body .wrap .scene .scene-bottom {
+  width: 1160px;
+  margin: 0 auto;
+}
+body .wrap .scene .scene-bottom .useit-list {
+  width: 881.4px;
+  margin-top: 36px;
+  float: left;
+  display: flex;
+}
+body .wrap .scene .scene-bottom .useit-list .useit-column {
+  flex: 1;
+}
+body .wrap .scene .scene-bottom .useit-list .useit-column span {
+  font-family: Pingfang SC, sans-serif;
+  font-weight: 300;
+}
+body .wrap .scene .scene-bottom .useit-list .useit-column a {
+  font-family: Roboto100, Pingfang SC, sans-serif;
+  font-weight: 300;
+  color: rgba(255,255,255,0.4);
+}
+body .wrap .scene .scene-bottom .useit-list .useit-column a:hover {
+  color: #fff;
+}
+body .wrap .scene .scene-bottom .useit-list .useit-column ul {
+  margin-top: 20px;
+  list-style-type: none;
+}
+body .wrap .scene .scene-bottom .useit-list .useit-column ul li {
+  height: 22px;
+  margin-top: 8px;
+}
+body .wrap .scene .scene-bottom .useit-list .useit-column-spe {
+  flex: 1;
+  opacity: 1;
+}
+body .wrap .scene .scene-bottom .useit-list .useit-column-spe a {
+  color: rgba(255,255,255,0.4);
+}
+body .wrap .scene .scene-bottom .useit-list .useit-column-spe li:hover {
+  opacity: 1;
+}
+body .wrap .scene .scene-bottom .useit-copyright {
+  float: right;
+  margin-top: 36px;
+}
+body .wrap .scene .scene-bottom .useit-copyright p {
+  margin-top: 31px;
+  margin-left: -10px;
+  color: rgba(255,255,255,0.4);
+  font-family: Roboto100, Pingfang SC, sans-serif;
+  font-weight: 300;
+}
+body .wrap .scene .scene-bottom .icon-twitter {
+  width: 75px;
+  height: 19px;
+  padding-left: 20px;
+  background: url("img/twitter.svg") no-repeat 0px 2px;
+  cursor: pointer;
+}
+body .wrap .scene .scene-bottom .icon-twitter::before {
+  content: 'Twitter';
+}
+body .wrap .scene .scene-bottom .icon-weibo {
+  background: url("img/weibo.svg") no-repeat 0px 5px;
+}
+body .wrap .scene .scene-bottom .icon-weibo::before {
+  content: '新浪微博';
+}
+body .wrap .scene .scene-bottom .icon-mail {
+  background: url("img/mail.svg") no-repeat 0px 7px;
+}
+body .wrap .scene .scene-bottom .icon-mail::before {
+  content: '邮箱';
+}
+body .wrap .scene .scene-bottom .icon-qingcloudlogo2 {
+  width: 111px;
+  height: 84px;
+  display: block;
+  background: url("img/qingcloudlogo2.svg") no-repeat;
+}
