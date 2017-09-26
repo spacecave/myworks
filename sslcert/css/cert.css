@@ -260,9 +260,10 @@ body .wrap .leader-bg .leader .leader-bottom .leader-btm-right {
 body .wrap .leader-bg .leader .leader-bottom .leader-btm-right .leader-ssl-img {
   margin-left: 70px;
   margin-top: -72px;
-  width: 370px;
-  height: 395px;
-  background: url("img/sslbg.svg") no-repeat;
+  width: 400px;
+  height: 400px;
+  background: url("img/sslbg.png") no-repeat;
+  background-size: 100%;
 }
 body .wrap .bright-func {
   height: 436px;
