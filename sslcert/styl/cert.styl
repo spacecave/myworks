@@ -1,27 +1,120 @@
-@font-face 
-  font-family: Roboto100; 
-  src: url(font/Roboto_100.ttf);
-@font-face
-  font-family: Roboto700; 
-  src: url(font/Roboto_700.ttf); 
-@font-face
-  font-family: Roboto_r; 
-  src: url(font/Robotoregular.ttf);
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(font/roboto-regular-normal-400-greek-ext.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(font/roboto-regular-normal-400-greek.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(font/roboto-regular-normal-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(font/roboto-regular-normal-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(font/roboto-medium-normal-500-greek-ext.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(font/roboto-medium-normal-500-greek.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(font/roboto-medium-normal-500-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(font/roboto-medium-normal-500-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(font/roboto-bold-normal-700-greek-ext.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(font/roboto-bold-normal-700-greek.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(font/roboto-bold-normal-700-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(font/roboto-bold-normal-700-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
 
 ssl-width = 1160px;
-font-roboto-regular = Roboto-Regular, Roboto_r;
-font-roboto-medium = Roboto-Medium, Pingfang SC, sans-serif;
 font-pingfang-medium = PingFangSC-Medium;
 
 
 *
-  margin: 0;
-  padding: 0;
-  border: 0;
+  margin: 0
+  padding: 0
+  border: 0
   color: #fff
-  font-family: font-roboto-regular, Pingfang SC, sans-serif;
-  font-size: 16px;
+  font-family: "Roboto", "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", BlinkMacSystemFont, -apple-system, "Segoe UI", "Microsoft Yahei", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  font-size: 16px
   font-weight: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 
 body
   .wrap
@@ -56,10 +149,10 @@ body
       height: 45px;
       line-height: 45px;
       text-align: center;
-      font-family: font-pingfang-medium, sans-serif;
+      // font-family: font-pingfang-medium, sans-serif;
       font-size: 32px;
       color: #3E464C;
-      font-weight: bold;
+      font-weight: 500;
     .leader-bg
       width: 100%
       background: #3C3843
@@ -139,7 +232,6 @@ body
             .leader-ssl-title
               width: 240px
               height: 56px
-              font-family: font-roboto-regular;
               font-weight: 400;
               font-size: 40px
             .leader-ssl-content
@@ -150,6 +242,7 @@ body
               font-weight: 400;
             .leader-ssl-btns
               .ssl-btns
+                margin-left: 0px;
                 width: 152px;
           .leader-btm-right
             float: left
@@ -207,7 +300,6 @@ body
             width: @width
             height: 102px
             text-align: center;
-            font-family: font-roboto-medium;
             font-size: 20px;
             color: #68747F;
         .product-right
@@ -244,7 +336,7 @@ body
               height: 16px;
               color: #68747F;
               font-size: 14px;
-              font-family: PingFangSC-Regular;
+              // font-family: PingFangSC-Regular;
             .type-img-1
               height: 30px;
               background: url(img/address1.svg) no-repeat left bottom;
@@ -260,7 +352,7 @@ body
             .type-row-title
               height: 22px;
               color: #68747F;
-              font-family: font-pingfang-medium;
+              // font-family: font-pingfang-medium;
               font-size: 16px;
               padding-top: 30px;
               padding-bottom: 18px;
@@ -268,7 +360,6 @@ body
             .each-name
               color: #3E464C;
               font-size: 16px;
-              font-family: font-roboto-medium;
         .row-header
           height: 52px;
           .type-detail-each
@@ -282,10 +373,10 @@ body
         margin: 0 auto;
         margin-top: 100px;
         .btns
-          width: 382px;
+          width: 152px;
           margin: 0 auto;
           .type-btns-buy
-            width: 152px;
+            width: @width;
             height: 48px;
             margin: 0;
             line-height: 48px;
@@ -295,7 +386,7 @@ body
             width: 152px;
             height: 48px;
             margin: 0;
-            margin-left: 40px;
+            margin-left: 0px;
             line-height: 48px;
             background: #00A971;
             box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05), 0 5px 10px 0 rgba(0,0,0,0.06);
@@ -322,10 +413,8 @@ body
             margin: 0 auto;
             padding-top: 36px;
             opacity: 0.8;
-            font-family: font-roboto-regular;
           .scene-content-list
             margin: 10px 0px 0px 80px;
-            font-family: font-roboto-regular;
         .scene-price
           margin-top: 100px
           height: 1298px;
@@ -333,13 +422,11 @@ body
             float: left;
             width: 300px;
             height: 45px;
-            font-family: font-roboto-medium;
             font-size: 32px;
             color: #FFFFFF;
           .price-right
             float: left;
             .price-right-title
-              font-family: font-roboto-regular;
               font-size: 16px;
               color: #FFFFFF;
             .price-right-content
@@ -354,7 +441,6 @@ body
                   height: 44px;
                   padding-left: 30px;
                   border: 1px solid #7C7783;
-                  font-family: font-roboto-regular;
                   font-size: 14px;
                   color: rgba(255, 255, 255, 0.6);
                   a
@@ -375,11 +461,10 @@ body
             float: left;
             width: 300px;
             height: 45px;
-            font-family: font-roboto-medium;
             font-size: 32px;
             color: #FFFFFF;
           .user-title
-            font-family: PingFangSC-Regular;
+            // font-family: PingFangSC-Regular;
             font-size: 20px;
             color: #FFFFFF;
           .user-content
@@ -389,6 +474,8 @@ body
             line-height: 32px;
             font-size: 14px;
             opacity: 0.6;
+            a
+              font-size: 14px;
           .user-issue
             float: left;
             width: 400px;
@@ -405,11 +492,7 @@ body
           .useit-column
             flex: 1
             span 
-              font-family: Pingfang SC, sans-serif;
-              font-weight: 300;
             a
-              font-family: Roboto100, Pingfang SC, sans-serif;
-              font-weight: 300;
               color: rgba(255, 255, 255, 0.4);
               &:hover
                 color: #fff;
@@ -434,8 +517,6 @@ body
             margin-top: 31px;
             margin-left: -10px;
             color: rgba(255, 255, 255, 0.4);
-            font-family: Roboto100, Pingfang SC, sans-serif;
-            font-weight: 300;
         .icon-twitter
           width: 75px;
           height: 19px;

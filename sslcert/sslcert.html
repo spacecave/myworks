@@ -1,543 +1,542 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>青云QingCloud SSL 证书服务</title>
-    <meta name="keywords" content="青云，QingCloud，云计算，云主机，云服务器，对象存储，云存储，公有云，私有云">
-    <meta name="description" content="青云QingCloud 是全球首家实现资源秒级响应并按秒计量的基础云服务商，致力于为企业用户提供安全可靠、性能卓越、按需、实时的 IT 资源交付平台。">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=1450, initial-scale=0.25, maximum-scale=1, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link rel="icon" href="static/images/favicon.ico?v=1" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="css/cert.css"/>
-    <script type='text/javascript'>
-      var _vds = _vds || [];
-      window._vds = _vds;
-      (function(){
-        _vds.push(['setAccountId', 'ab7e0583a75979c5']);
-        (function() {
-          var vds = document.createElement('script');
-          vds.type='text/javascript';
-          vds.async = true;
-          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(vds, s);
-        })();
+<html lang="zh-CN" class="no-js no-svg">
+<head>
+  <title>青云QingCloud SSL 证书服务</title>
+  <meta name="keywords" content="青云，QingCloud，云计算，云主机，云服务器，对象存储，云存储，公有云，私有云">
+  <meta name="description" content="青云QingCloud 是全球首家实现资源秒级响应并按秒计量的基础云服务商，致力于为企业用户提供安全可靠、性能卓越、按需、实时的 IT 资源交付平台。">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=1450, initial-scale=0.25, maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="icon" href="static/images/favicon.ico?v=1" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/cert.css"/>
+  <script type='text/javascript'>
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function(){
+      _vds.push(['setAccountId', 'ab7e0583a75979c5']);
+      (function() {
+        var vds = document.createElement('script');
+        vds.type='text/javascript';
+        vds.async = true;
+        vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(vds, s);
       })();
-    </script>
-  </head>
-  <body>
-    <div class="wrap">
-      <div class="leader-bg">
-        <div class="leader">
-          <div class="leader-top">
-            <div class="logo-area">
-              <a href="https://qingcloud.com/" class="logo-img"></a>
-            </div>
-            <ul class="nav-bar">
-              <li class="nav-items no-margin">
-                <a href="https://www.qingcloud.com/hybrid_cloud">混合云</a>
-              </li>
-              <li class="nav-items">
-                <a href="https://qingcloud.com/enterprise">企业云</a>
-                <ul class="items"><li><a href="/products/computing" data-permalink="">计算</a></li><li><a href="/products/network" data-permalink="">网络 1.0</a></li><li><a href="/products/vpc" data-permalink="">网络 2.0</a></li><li><a href="/products/storage" data-permalink="">存储</a></li><li><a href="/products/database_cache" data-permalink="">数据库与缓存</a></li><li><a href="/products/big_data_platform" data-permalink="">大数据平台</a></li><li><a href="/products/security" data-permalink="">安全</a></li><li><a href="/products/management" data-permalink="">部署与管理</a></li><li><a href="/products/api" data-permalink="">开放 API</a></li><li><a href="http://status.qingcloud.com" target="_blank">服务健康状态监控</a></li></ul>
-              </li>
-              <li class="nav-items">
-                <a href="https://qingcloud.com/products">产品</a>
-              </li>
-              <li class="nav-items"><a href="https://appcenter.qingcloud.com/">应用中心</a></li>
-              <li class="nav-items"><a >客户案例</a></li>
-              <li class="nav-items"><a >价格</a></li>
-              <li class="nav-items"><a href="https://console.qingcloud.com/gd1">控制台</a></li>
-              <li class="nav-items"><a href="https://qingcloud.com/apps">App</a></li>
-              <li class="nav-items"><a href="https://qingcloud.com/icp/list">备案</a></li>
-              <li class="nav-items"><a >文档</a></li>
-              <li class="nav-items"><a >关于</a></li>
-            </ul>
-            <div class="btns nav-bar">
-              <a class="sign sign-in" href="https://console.qingcloud.com/login" target="_blank">登录</a>
-              <a class="sign sign-up" href="https://console.qingcloud.com/signup" target="_blank">注册</a>
-            </div>
+    })();
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="leader-bg">
+      <div class="leader">
+        <div class="leader-top">
+          <div class="logo-area">
+            <a href="https://qingcloud.com/" class="logo-img"></a>
           </div>
-          <div class="leader-bottom">
-            <div class="leader-btm-left">
-              <div class="leader-ssl-title">SSL 证书服务</div>
-              <div class="leader-ssl-content">SSL 证书 (SSL Certificates) 服务是 QingCloud 在运上提供的一站式证书解决方案，包括证书的申请、部署和统一管理。SSL 证书可实现网站 HTTPS 化，使网站可信，防劫持、防篡改、防监听。</div>
-              <div class="leader-ssl-btns">
-                <div class="sign sign-in ssl-btns">立即选购</div>
-                <div class="sign sign-up ssl-btns">申请免费证书</div>
-              </div>
-            </div>
-            <div class="leader-btm-right">
-              <div class="leader-ssl-img"></div>
-            </div>
+          <ul class="nav-bar">
+            <li class="nav-items no-margin">
+              <a href="https://www.qingcloud.com/hybrid_cloud">混合云</a>
+            </li>
+            <li class="nav-items">
+              <a href="https://qingcloud.com/enterprise">企业云</a>
+              <ul class="items"><li><a href="/products/computing" data-permalink="">计算</a></li><li><a href="/products/network" data-permalink="">网络 1.0</a></li><li><a href="/products/vpc" data-permalink="">网络 2.0</a></li><li><a href="/products/storage" data-permalink="">存储</a></li><li><a href="/products/database_cache" data-permalink="">数据库与缓存</a></li><li><a href="/products/big_data_platform" data-permalink="">大数据平台</a></li><li><a href="/products/security" data-permalink="">安全</a></li><li><a href="/products/management" data-permalink="">部署与管理</a></li><li><a href="/products/api" data-permalink="">开放 API</a></li><li><a href="http://status.qingcloud.com" target="_blank">服务健康状态监控</a></li></ul>
+            </li>
+            <li class="nav-items">
+              <a href="https://qingcloud.com/products">产品</a>
+            </li>
+            <li class="nav-items"><a href="https://appcenter.qingcloud.com/">应用中心</a></li>
+            <li class="nav-items"><a >客户案例</a></li>
+            <li class="nav-items"><a >价格</a></li>
+            <li class="nav-items"><a href="https://console.qingcloud.com/gd1">控制台</a></li>
+            <li class="nav-items"><a href="https://qingcloud.com/apps">App</a></li>
+            <li class="nav-items"><a href="https://qingcloud.com/icp/list">备案</a></li>
+            <li class="nav-items"><a >文档</a></li>
+            <li class="nav-items"><a >关于</a></li>
+          </ul>
+          <div class="btns nav-bar">
+            <a class="sign sign-in" href="https://console.qingcloud.com/login" target="_blank">登录</a>
+            <a class="sign sign-up" href="https://console.qingcloud.com/signup" target="_blank">注册</a>
           </div>
         </div>
-      </div>
-      
-      <div class="bright-func">
-        <div class="func-title area-title">
-            产品特性
-        </div>
-        <div class="func-detail">
-          <div class="func-area-p">
-            <div class="func-icon-guard"></div>
-            <div class="func-name">安全</div>
-            <div class="func-content">SSL 证书由国际顶级 CA 机构颁发，保障证书的可靠性。</div>
+        <div class="leader-bottom">
+          <div class="leader-btm-left">
+            <div class="leader-ssl-title">SSL 证书服务</div>
+            <div class="leader-ssl-content">SSL 证书 (SSL Certificates) 服务是 QingCloud 在运上提供的一站式证书解决方案，包括证书的申请、部署和统一管理。SSL 证书可实现网站 HTTPS 化，使网站可信，防劫持、防篡改、防监听。</div>
+            <div class="leader-ssl-btns">
+              <div class="sign sign-up ssl-btns">立即选购</div>
+            </div>
           </div>
-
-          <div class="func-area-p func-margin">
-            <div class="func-icon-guard icon-lego"></div>
-            <div class="func-name">兼容性</div>
-            <div class="func-content">所有证书均 100% 兼容各类浏览器，包括 Chrome、Firefox 以及 Internet Explorer 等。</div>
-          </div>
-
-          <div class="func-area-p func-margin">
-            <div class="func-icon-guard icon-window"></div>
-            <div class="func-name">易用</div>
-            <div class="func-content">统一平台上实现数字证书管理，支持一键分发到负载均衡器。</div>
+          <div class="leader-btm-right">
+            <div class="leader-ssl-img"></div>
           </div>
         </div>
-      </div>
-
-      <div class="product">
-        <div class="product-title area-title">
-          产品功能
-        </div>
-        <div class="product-detail">
-          <div class="product-left">
-            <div class="product-left-item">
-              网站安全
-            </div>
-            <div class="product-left-item product-center">
-              轻松部署
-            </div>
-            <div class="product-left-item product-margin">
-              统一管理
-            </div>
-          </div>
-          <div class="product-right">
-            <div class="product-right-item">
-              <div class="product-content">实现网站 HTTPS 化，加密用户与网站间的交互访问，强化网站用户端的可信展示程度，防劫持、防篡改、防监听。</div>
-            </div>
-
-            <div class="product-right-item product-border product-center">
-              <div class="product-content">一键部署数字证书，并可在多个云产品中快速复用数字证书。</div>
-            </div>
-
-            <div class="product-right-item product-margin">
-              <div class="product-content">提供数字证书的统一管理功能，用户可以在统一的平台下查看云业务所使用证书的情况，以及管理自己的证书订单。</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="ssltype">
-        <div class="area-title">
-          证书类型
-        </div>
-        <div class="type-detail">
-          <div class="type-detail-row row-header">
-            <div class="type-detail-each type-detail-each-first">
-            </div>
-
-            <div class="type-detail-each each-header">
-              <div class="each-name">域名型 (DV)</div>
-            </div>
-            
-            <div class="type-detail-each each-header">
-              <div class="each-name">企业型 (OV)</div>
-            </div>
-
-            <div class="type-detail-each each-header">
-              <div class="each-name">增强型 (EV)</div>
-            </div>
-          </div>
-
-          <div class="type-detail-row row-larger">
-            <div class="type-detail-each">
-              <div class="each-name type-row-title">地址栏</div>
-              <div class="each-name">(以 Chrome 浏览器为例)</div>
-            </div>
-
-            <div class="type-detail-each">
-              <div class="each-name each-name-padding type-img-1"></div>
-              <div class="each-name">显示小锁图标、https</div>
-            </div>
-            
-            <div class="type-detail-each">
-              <div class="each-name each-name-padding type-img-2"></div>
-              <div class="each-name">显示小锁图标、https</div>
-            </div>
-
-            <div class="type-detail-each">
-              <div class="each-name each-name-padding type-img-3"></div>
-              <div class="each-name">显示小锁图标、https、公司名称</div>
-            </div>
-          </div>
-
-          <div class="type-detail-row row-larger">
-            <div class="type-detail-each">
-              <div class="each-name type-row-title">适用于</div>
-              <div class="each-name"></div>
-            </div>
-  
-            <div class="type-detail-each">
-              <div class="each-name each-name-padding">•  个人站点和应用</div>
-              <div class="each-name">•  简单的 HTTPS 加密需求</div>
-            </div>
-            
-            <div class="type-detail-each">
-              <div class="each-name each-name-padding">•  电子商务站点和应用</div>
-              <div class="each-name">•  中小企业站点</div>
-            </div>
-  
-            <div class="type-detail-each">
-              <div class="each-name each-name-padding">•  大型金融平台</div>
-              <div class="each-name">•  大型企业和政府机构站点</div>
-            </div>
-          </div>
-
-          <div class="type-detail-row row-larger">
-            <div class="type-detail-each">
-              <div class="each-name type-row-title">审核内容</div>
-              <div class="each-name"></div>
-            </div>
-  
-            <div class="type-detail-each">
-              <div class="each-name each-name-padding">域名所有权验证</div>
-              <div class="each-name"></div>
-            </div>
-            
-            <div class="type-detail-each">
-              <div class="each-name each-name-padding">•  域名所有权验证</div>
-              <div class="each-name">•  全面的企业身份验证</div>
-            </div>
-  
-            <div class="type-detail-each">
-              <div class="each-name each-name-padding">•  域名所有权验证</div>
-              <div class="each-name">•  最高等级的企业身份验证</div>
-            </div>
-          </div>
-
-          <div class="type-detail-row">
-            <div class="type-detail-each">
-              <div class="each-name type-row-title">签发时间</div>
-              <div class="each-name"></div>
-            </div>
-  
-            <div class="type-detail-each">
-              <div class="each-name each-name-padding">数小时</div>
-              <div class="each-name"></div>
-            </div>
-            
-            <div class="type-detail-each">
-              <div class="each-name each-name-padding">5个工作日</div>
-              <div class="each-name"></div>
-            </div>
-  
-            <div class="type-detail-each">
-              <div class="each-name each-name-padding">7个工作日</div>
-              <div class="each-name"></div>
-            </div>
-          </div>
-
-          <div class="type-detail-row">
-            <div class="type-detail-each">
-              <div class="each-name type-row-title">单次申请年限</div>
-              <div class="each-name"></div>
-            </div>
-  
-            <div class="type-detail-each">
-              <div class="each-name each-name-padding">1年</div>
-              <div class="each-name"></div>
-            </div>
-            
-            <div class="type-detail-each">
-              <div class="each-name each-name-padding">1-3年</div>
-              <div class="each-name"></div>
-            </div>
-  
-            <div class="type-detail-each">
-              <div class="each-name each-name-padding">1-2年</div>
-              <div class="each-name"></div>
-            </div>
-          </div>
-
-          <div class="type-detail-row row-last">
-            <div class="type-detail-each">
-              <div class="each-name type-row-title">赔付保证金</div>
-              <div class="each-name"></div>
-            </div>
-  
-            <div class="type-detail-each">
-              <div class="each-name each-name-padding">无</div>
-              <div class="each-name"></div>
-            </div>
-            
-            <div class="type-detail-each">
-              <div class="each-name each-name-padding">最高150万美元</div>
-              <div class="each-name"></div>
-            </div>
-  
-            <div class="type-detail-each">
-              <div class="each-name each-name-padding">最高175万美元</div>
-              <div class="each-name"></div>
-            </div>
-          </div>
-          
-        </div>
-
-        <div class="type-btns">
-          <div class="btns">
-            <a class="sign sign-in type-btns-buy" href="https://console.qingcloud.com/login" target="_blank">立即选购</a>
-            <a class="sign sign-up type-btns-free" href="https://console.qingcloud.com/signup" target="_blank">申请免费证书</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="scene">
-        <div class="scene-top">
-          <div class="area-title scene-title">应用场景</div>
-          <div class="scene-content">
-            <div class="scene-content-top">
-              网上购物、交易、财务管理以及社交等已经成为现代人生活的一部分，而这些业务都涉及用户的隐私信息，因此需要高等级的安全保障，确保数据不被泄漏。SSL 加密证书提供基础的网页安全防护，对如下 (不限于) 场景，强力推荐使用 SSL 加密证书:
-            </div>
-            <div class="scene-content-list">•  电子商务网站</div>
-            <div class="scene-content-list">•  互联网金融业务</div>
-            <div class="scene-content-list">•  社交网站</div>
-            <div class="scene-content-list">•  线上支付</div>
-            <div class="scene-content-list">•  实名信息认证</div>
-          </div>
-
-          <div class="scene-price">
-            <div class="price-left">
-              产品定价
-            </div>
-            <div class="price-right">
-              <div class="price-right-title">QingCloud 提供三种品牌的 SSL 证书服务，价格分别为:</div>
-              <div class="price-right-content">
-                <div class="price-right-title">Symantec</div>
-                <table width="660px" border= "0" class="price-table">
-                  <tr>
-                    <td>产品</td>
-                    <td>价格</td>
-                  </tr>
-                  <tr>
-                    <td>企业型 (OV) SSL 证书</td>
-                    <td>¥4850/年</td>
-                  </tr>
-                  <tr>
-                    <td>企业型 (OV) SSL 证书专业版</td>
-                    <td>¥7650/年</td>
-                  </tr>
-                  <tr>
-                    <td>增强型 (EV) SSL 证书</td>
-                    <td>¥7950/年</td>
-                  </tr>
-                  <tr>
-                    <td>增强型 (EV) SSL 证书专业版</td>
-                    <td>¥12650/年</td>
-                  </tr>
-                  <tr>
-                    <td>企业型 (OV) 通配符 SSL 证书</td>
-                    <td>¥38000/年</td>
-                  </tr>
-                  <tr>
-                    <td>企业型 (OV) 通配符 SSL 证书专业版</td>
-                    <td>¥68000/年</td>
-                  </tr>
-                </table>
-              </div>
-
-              <div class="price-right-content">
-                <div class="price-right-title">GeoTrust</div>
-                <table width="660px" border= "0" class="price-table">
-                  <tr>
-                    <td>产品</td>
-                    <td>价格</td>
-                  </tr>
-                  <tr>
-                    <td>企业型 (OV) SSL 证书</td>
-                    <td>¥2850/年</td>
-                  </tr>
-                  <tr>
-                    <td>企业型 (OV) 多域名 SSL 证书 (默认5个单域名)</td>
-                    <td>¥5580/年</td>
-                  </tr>
-                  <tr>
-                    <td>企业型 (OV) 多域名 SSL 证书 (额外域名)</td>
-                    <td>¥650/年</td>
-                  </tr>
-                  <tr>
-                    <td>增强型 (EV) SSL 证书专业版</td>
-                    <td>¥4850/年</td>
-                  </tr>
-                  <tr>
-                    <td>增强型 (EV) 多域名 SSL 证书 (默认5个单域名)</td>
-                    <td>¥9650/年</td>
-                  </tr>
-                  <tr>
-                    <td>增强型 (EV) 多域名 SSL 证书 (额外域名)</td>
-                    <td>¥1450/年</td>
-                  </tr>
-                  <tr>
-                    <td>企业型 (OV) 通配符 SSL 证书</td>
-                    <td>¥6850/年</td>
-                  </tr>
-                </table>
-              </div>
-
-              <div class="price-right-content">
-                <div class="price-right-title">Symantec</div>
-                <table width="660px" border= "0" class="price-table">
-                  <tr>
-                    <td>产品</td>
-                    <td>价格</td>
-                  </tr>
-                  <tr>
-                    <td>域名型 (DV) SSL 证书</td>
-                    <td>免费 <a>立即申请 →</a></td>
-                  </tr>
-                  <tr>
-                    <td>域名型 (DV) 通配符 SSL 证书</td>
-                    <td>¥1999/年</td>
-                  </tr>
-                  <tr>
-                    <td>域名型 (DV) 多域名 SSL 证书 (默认5个域名)</td>
-                    <td>¥4900/年</td>
-                  </tr>
-                  <tr>
-                    <td>域名型 (DV) 多域名 SSL 证书 (额外域名)</td>
-                    <td>¥950/年</td>
-                  </tr>
-                </table>
-              </div>
-              
-              <div class="price-right-mark">
-                <div class="price-right-title">* 注释:</div>
-                <div class="price-right-title">•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GeoTust、TrustAsia 多域名证书价格 = (多证书默认价格 + 额外域名价格 × 额外域名数量) × 年数</div>
-                <div class="price-right-title">•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Symantec 多域名证书价格 = 单个域名价格 × 域名数量 × 年数</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="scene-user">
-            <div class="user-left">
-                用户支持
-            </div>
-            <div class="user-issue">
-              <div class="user-title">
-                常见问题
-              </div>
-
-              <div class="user-content">
-                • 加密算法如何选择?<br/>
-                • 是否支持吊销?<br/>
-                • Google 不信任 Symantec 是真是假?<br/>
-                • HTTPS 的性能损耗有多少?<br/>
-                • 如何检测证书的兼容性?<br/>
-                • 如何选择一个合适的证书?<br/>
-              </div>
-            </div>
-
-            <div class="user-index">
-              <div class="user-title">
-                用户指南
-              </div>
-
-              <div class="user-content">
-                SSL 证书操作指引
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="scene-bottom">
-          <div class="useit-list">
-            <div class="useit-column">
-              <span>产品</span>
-              <ul>
-                <li><a href="https://qingcloud.com/products/computing">计算</a></li>
-                <li><a href="https://qingcloud.com/products/network">网络 1.0</a></li>
-                <li><a href="https://qingcloud.com/products/vpc">网络 2.0</a></li>
-                <li><a href="https://qingcloud.com/products/storage">存储</a></li>
-                <li><a href="https://qingcloud.com/products/database_cache" >数据库与缓存</a></li>
-                <li><a href="https://qingcloud.com/products/big_data_platform">大数据平台</a></li>
-                <li><a href="https://qingcloud.com/products/security" >安全</a></li>
-                <li><a href="https://qingcloud.com/products/management" >部署与管理</a></li>
-                <li><a href="https://qingcloud.com/products/api" >开放 API</a></li>
-                <li><a href="http://status.qingcloud.com" target="_blank">服务健康状态监控</a></li>
-              </ul>
-            </div>
-
-            <div class="useit-column">
-              <span>客户案例</span>
-              <ul>
-                <li><a href="https://qingcloud.com/customers/finance" >互联网金融</a></li>
-                <li><a href="https://qingcloud.com/customers/education" >在线教育</a></li>
-                <li><a href="https://qingcloud.com/customers/video" >视频</a></li>
-                <li><a href="https://qingcloud.com/customers/game" >游戏</a></li>
-                <li><a href="https://qingcloud.com/customers/e_commerce" >电商</a></li>
-                <li><a href="https://qingcloud.com/customers/platform" >平台</a></li>
-                <li><a href="https://qingcloud.com/customers/devops" >DevOps</a></li>
-                <li><a href="https://qingcloud.com/customers/big_data" >大数据</a></li>
-                <li><a href="https://qingcloud.com/customers/web" >门户</a></li>
-                <li><a href="https://qingcloud.com/customers/mobile">移动 APP</a></li>
-              </ul>
-            </div>
-
-            <div class="useit-column">
-              <span>价格</span>
-              <ul>
-                <li><a href="https://qingcloud.com/pricing/plan" >资源价格</a></li>
-                <li><a href="https://qingcloud.com/pricing/billing" >按秒计费</a></li>
-              </ul>
-            </div>
-
-            <div class="useit-column">
-              <span>文档</span>
-              <ul>
-                <li><a href="https://docs.qingcloud.com/guide/index.html" target="_blank">用户指南</a></li>
-                <li><a href="https://docs.qingcloud.com/faq/index.html" target="_blank">常见问题</a></li>
-                <li><a href="https://docs.qingcloud.com/api/index.html" target="_blank">API 文档</a></li>
-                <li><a href="https://docs.qingcloud.com/cli/index.html" target="_blank">CLI 文档</a></li>
-                <li><a href="https://docs.qingcloud.com/sdk/index.html" target="_blank">SDK 文档</a></li>
-              </ul>
-            </div>
-
-            <div class="useit-column">
-              <span>关于</span>
-              <ul>
-                <li><a href="https://qingcloud.com/about/blog" target="_blank">青云志</a></li>
-                <li><a href="https://www.qingcloud.com/promotion/startups" target="_blank">创业扶持</a></li>
-                <li><a href="https://community.qingcloud.com" target="_blank">青云社区</a></li>
-                <li><a href="https://qingcloud.com/about/media" target="_blank">媒体报道</a></li>
-                <li><a href="https://qingcloud.com/about/join_us" target="_blank">加入我们</a></li>
-                <li><a href="https://qingcloud.com/about/contact_us" target="_blank">联系我们</a></li>
-                <li><a href="https://qingcloud.com/about/tos" target="_blank">服务条款</a></li>
-              </ul>
-            </div>
-
-            <div class="useit-column useit-column-spe">
-              <span>联系我们</span>
-              <ul>
-                <li><a href="https://twitter.com/yunifytech" class="icon-twitter" target="_blank"></a></li>
-                <li><a href="http://weibo.com/u/3563234355" class="icon-twitter icon-weibo" target="_blank"></a></li>
-                <li><a href="mailto:contactus@yunify.com" class="icon-twitter icon-mail" target="_blank"></a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="useit-copyright">
-              <a href="https://qingcloud.com/" class="icon-qingcloudlogo2"></a>
-              <p>© 青云QingCloud</p>
-          </div>
-        </div>
-
       </div>
     </div>
-  </body>
-  <script type="text/javascript" src="../../js/libs/jquery/jquery.min.js"></script>
-  <script type="text/javascript" src="js/cert.js"></script>
+    
+    <div class="bright-func">
+      <div class="func-title area-title">
+          产品特性
+      </div>
+      <div class="func-detail">
+        <div class="func-area-p">
+          <div class="func-icon-guard"></div>
+          <div class="func-name">安全</div>
+          <div class="func-content">SSL 证书由国际顶级 CA 机构颁发，保障证书的可靠性。</div>
+        </div>
+
+        <div class="func-area-p func-margin">
+          <div class="func-icon-guard icon-lego"></div>
+          <div class="func-name">兼容性</div>
+          <div class="func-content">所有证书均 100% 兼容各类浏览器，包括 Chrome、Firefox 以及 Internet Explorer 等。</div>
+        </div>
+
+        <div class="func-area-p func-margin">
+          <div class="func-icon-guard icon-window"></div>
+          <div class="func-name">易用</div>
+          <div class="func-content">统一平台上实现数字证书管理，支持一键分发到负载均衡器。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="product-title area-title">
+        产品功能
+      </div>
+      <div class="product-detail">
+        <div class="product-left">
+          <div class="product-left-item">
+            网站安全
+          </div>
+          <div class="product-left-item product-center">
+            轻松部署
+          </div>
+          <div class="product-left-item product-margin">
+            统一管理
+          </div>
+        </div>
+        <div class="product-right">
+          <div class="product-right-item">
+            <div class="product-content">实现网站 HTTPS 化，加密用户与网站间的交互访问，强化网站用户端的可信展示程度，防劫持、防篡改、防监听。</div>
+          </div>
+
+          <div class="product-right-item product-border product-center">
+            <div class="product-content">一键部署数字证书，并可在多个云产品中快速复用数字证书。</div>
+          </div>
+
+          <div class="product-right-item product-margin">
+            <div class="product-content">提供数字证书的统一管理功能，用户可以在统一的平台下查看云业务所使用证书的情况，以及管理自己的证书订单。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="ssltype">
+      <div class="area-title">
+        证书类型
+      </div>
+      <div class="type-detail">
+        <div class="type-detail-row row-header">
+          <div class="type-detail-each type-detail-each-first">
+          </div>
+
+          <div class="type-detail-each each-header">
+            <div class="each-name">域名型 (DV)</div>
+          </div>
+          
+          <div class="type-detail-each each-header">
+            <div class="each-name">企业型 (OV)</div>
+          </div>
+
+          <div class="type-detail-each each-header">
+            <div class="each-name">增强型 (EV)</div>
+          </div>
+        </div>
+
+        <div class="type-detail-row row-larger">
+          <div class="type-detail-each">
+            <div class="each-name type-row-title">地址栏</div>
+            <div class="each-name">(以 Chrome 浏览器为例)</div>
+          </div>
+
+          <div class="type-detail-each">
+            <div class="each-name each-name-padding type-img-1"></div>
+            <div class="each-name">显示小锁图标、https</div>
+          </div>
+          
+          <div class="type-detail-each">
+            <div class="each-name each-name-padding type-img-2"></div>
+            <div class="each-name">显示小锁图标、https</div>
+          </div>
+
+          <div class="type-detail-each">
+            <div class="each-name each-name-padding type-img-3"></div>
+            <div class="each-name">显示小锁图标、https、公司名称</div>
+          </div>
+        </div>
+
+        <div class="type-detail-row row-larger">
+          <div class="type-detail-each">
+            <div class="each-name type-row-title">适用于</div>
+            <div class="each-name"></div>
+          </div>
+
+          <div class="type-detail-each">
+            <div class="each-name each-name-padding">•  个人站点和应用</div>
+            <div class="each-name">•  简单的 HTTPS 加密需求</div>
+          </div>
+          
+          <div class="type-detail-each">
+            <div class="each-name each-name-padding">•  电子商务站点和应用</div>
+            <div class="each-name">•  中小企业站点</div>
+          </div>
+
+          <div class="type-detail-each">
+            <div class="each-name each-name-padding">•  大型金融平台</div>
+            <div class="each-name">•  大型企业和政府机构站点</div>
+          </div>
+        </div>
+
+        <div class="type-detail-row row-larger">
+          <div class="type-detail-each">
+            <div class="each-name type-row-title">审核内容</div>
+            <div class="each-name"></div>
+          </div>
+
+          <div class="type-detail-each">
+            <div class="each-name each-name-padding">域名所有权验证</div>
+            <div class="each-name"></div>
+          </div>
+          
+          <div class="type-detail-each">
+            <div class="each-name each-name-padding">•  域名所有权验证</div>
+            <div class="each-name">•  全面的企业身份验证</div>
+          </div>
+
+          <div class="type-detail-each">
+            <div class="each-name each-name-padding">•  域名所有权验证</div>
+            <div class="each-name">•  最高等级的企业身份验证</div>
+          </div>
+        </div>
+
+        <div class="type-detail-row">
+          <div class="type-detail-each">
+            <div class="each-name type-row-title">签发时间</div>
+            <div class="each-name"></div>
+          </div>
+
+          <div class="type-detail-each">
+            <div class="each-name each-name-padding">数小时</div>
+            <div class="each-name"></div>
+          </div>
+          
+          <div class="type-detail-each">
+            <div class="each-name each-name-padding">5个工作日</div>
+            <div class="each-name"></div>
+          </div>
+
+          <div class="type-detail-each">
+            <div class="each-name each-name-padding">7个工作日</div>
+            <div class="each-name"></div>
+          </div>
+        </div>
+
+        <div class="type-detail-row">
+          <div class="type-detail-each">
+            <div class="each-name type-row-title">单次申请年限</div>
+            <div class="each-name"></div>
+          </div>
+
+          <div class="type-detail-each">
+            <div class="each-name each-name-padding">1年</div>
+            <div class="each-name"></div>
+          </div>
+          
+          <div class="type-detail-each">
+            <div class="each-name each-name-padding">1-3年</div>
+            <div class="each-name"></div>
+          </div>
+
+          <div class="type-detail-each">
+            <div class="each-name each-name-padding">1-2年</div>
+            <div class="each-name"></div>
+          </div>
+        </div>
+
+        <div class="type-detail-row row-last">
+          <div class="type-detail-each">
+            <div class="each-name type-row-title">赔付保证金</div>
+            <div class="each-name"></div>
+          </div>
+
+          <div class="type-detail-each">
+            <div class="each-name each-name-padding">无</div>
+            <div class="each-name"></div>
+          </div>
+          
+          <div class="type-detail-each">
+            <div class="each-name each-name-padding">最高150万美元</div>
+            <div class="each-name"></div>
+          </div>
+
+          <div class="type-detail-each">
+            <div class="each-name each-name-padding">最高175万美元</div>
+            <div class="each-name"></div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="type-btns">
+        <div class="btns">
+          <a class="sign sign-up type-btns-free" href="https://console.qingcloud.com/signup" target="_blank">立即选购</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="scene">
+      <div class="scene-top">
+        <div class="area-title scene-title">应用场景</div>
+        <div class="scene-content">
+          <div class="scene-content-top">
+            网上购物、交易、财务管理以及社交等已经成为现代人生活的一部分，而这些业务都涉及用户的隐私信息，因此需要高等级的安全保障，确保数据不被泄漏。SSL 加密证书提供基础的网页安全防护，对如下 (不限于) 场景，强力推荐使用 SSL 加密证书:
+          </div>
+          <div class="scene-content-list">•  电子商务网站</div>
+          <div class="scene-content-list">•  互联网金融业务</div>
+          <div class="scene-content-list">•  社交网站</div>
+          <div class="scene-content-list">•  线上支付</div>
+          <div class="scene-content-list">•  实名信息认证</div>
+        </div>
+
+        <div class="scene-price">
+          <div class="price-left">
+            产品定价
+          </div>
+          <div class="price-right">
+            <div class="price-right-title">QingCloud 提供三种品牌的 SSL 证书服务，价格分别为:</div>
+            <div class="price-right-content">
+              <div class="price-right-title">Symantec</div>
+              <table width="660px" border= "0" class="price-table">
+                <tr>
+                  <td>产品</td>
+                  <td>价格</td>
+                </tr>
+                <tr>
+                  <td>企业型 (OV) SSL 证书</td>
+                  <td>¥4850/年</td>
+                </tr>
+                <tr>
+                  <td>企业型 (OV) SSL 证书专业版</td>
+                  <td>¥7650/年</td>
+                </tr>
+                <tr>
+                  <td>增强型 (EV) SSL 证书</td>
+                  <td>¥7950/年</td>
+                </tr>
+                <tr>
+                  <td>增强型 (EV) SSL 证书专业版</td>
+                  <td>¥12650/年</td>
+                </tr>
+                <tr>
+                  <td>企业型 (OV) 通配符 SSL 证书</td>
+                  <td>¥38000/年</td>
+                </tr>
+                <tr>
+                  <td>企业型 (OV) 通配符 SSL 证书专业版</td>
+                  <td>¥68000/年</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="price-right-content">
+              <div class="price-right-title">GeoTrust</div>
+              <table width="660px" border= "0" class="price-table">
+                <tr>
+                  <td>产品</td>
+                  <td>价格</td>
+                </tr>
+                <tr>
+                  <td>企业型 (OV) SSL 证书</td>
+                  <td>¥2850/年</td>
+                </tr>
+                <tr>
+                  <td>企业型 (OV) 多域名 SSL 证书 (默认5个单域名)</td>
+                  <td>¥5580/年</td>
+                </tr>
+                <tr>
+                  <td>企业型 (OV) 多域名 SSL 证书 (额外域名)</td>
+                  <td>¥650/年</td>
+                </tr>
+                <tr>
+                  <td>增强型 (EV) SSL 证书专业版</td>
+                  <td>¥4850/年</td>
+                </tr>
+                <tr>
+                  <td>增强型 (EV) 多域名 SSL 证书 (默认5个单域名)</td>
+                  <td>¥9650/年</td>
+                </tr>
+                <tr>
+                  <td>增强型 (EV) 多域名 SSL 证书 (额外域名)</td>
+                  <td>¥1450/年</td>
+                </tr>
+                <tr>
+                  <td>企业型 (OV) 通配符 SSL 证书</td>
+                  <td>¥6850/年</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="price-right-content">
+              <div class="price-right-title">Symantec</div>
+              <table width="660px" border= "0" class="price-table">
+                <tr>
+                  <td>产品</td>
+                  <td>价格</td>
+                </tr>
+                <tr>
+                  <td>域名型 (DV) SSL 证书</td>
+                  <td>免费 <a>立即申请 →</a></td>
+                </tr>
+                <tr>
+                  <td>域名型 (DV) 通配符 SSL 证书</td>
+                  <td>¥1999/年</td>
+                </tr>
+                <tr>
+                  <td>域名型 (DV) 多域名 SSL 证书 (默认5个域名)</td>
+                  <td>¥4900/年</td>
+                </tr>
+                <tr>
+                  <td>域名型 (DV) 多域名 SSL 证书 (额外域名)</td>
+                  <td>¥950/年</td>
+                </tr>
+              </table>
+            </div>
+            
+            <div class="price-right-mark">
+              <div class="price-right-title">* 注释:</div>
+              <div class="price-right-title">•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GeoTust、TrustAsia 多域名证书价格 = (多证书默认价格 + 额外域名价格 × 额外域名数量) × 年数</div>
+              <div class="price-right-title">•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Symantec 多域名证书价格 = 单个域名价格 × 域名数量 × 年数</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-user">
+          <div class="user-left">
+              用户支持
+          </div>
+          <div class="user-issue">
+            <div class="user-title">
+              常见问题
+            </div>
+
+            <div class="user-content">
+              <a href="https://docs.qingcloud.com/guide/domain/ssl.html#faq" target="_blank">• 加密算法如何选择?<br/></a>
+              <a href="https://docs.qingcloud.com/guide/domain/ssl.html#faq" target="_blank">• 是否支持吊销?<br/></a>
+              <a href="https://docs.qingcloud.com/guide/domain/ssl.html#faq" target="_blank">• Google 不信任 Symantec 是真是假?<br/></a>
+              <a href="https://docs.qingcloud.com/guide/domain/ssl.html#faq" target="_blank">• HTTPS 的性能损耗有多少?<br/></a>
+              <a href="https://docs.qingcloud.com/guide/domain/ssl.html#faq" target="_blank">• 如何检测证书的兼容性?<br/></a>
+              <a href="https://docs.qingcloud.com/guide/domain/ssl.html#faq" target="_blank">• 如何选择一个合适的证书?<br/></a>
+            </div>
+          </div>
+
+          <div class="user-index">
+            <div class="user-title">
+              用户指南
+            </div>
+
+            <div class="user-content">
+              <a href="https://docs.qingcloud.com/guide/domain/ssl.html" target="_blank">SSL 证书操作指引</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scene-bottom">
+        <div class="useit-list">
+          <div class="useit-column">
+            <span>产品</span>
+            <ul>
+              <li><a href="https://qingcloud.com/products/computing">计算</a></li>
+              <li><a href="https://qingcloud.com/products/network">网络 1.0</a></li>
+              <li><a href="https://qingcloud.com/products/vpc">网络 2.0</a></li>
+              <li><a href="https://qingcloud.com/products/storage">存储</a></li>
+              <li><a href="https://qingcloud.com/products/database_cache" >数据库与缓存</a></li>
+              <li><a href="https://qingcloud.com/products/big_data_platform">大数据平台</a></li>
+              <li><a href="https://qingcloud.com/products/security" >安全</a></li>
+              <li><a href="https://qingcloud.com/products/management" >部署与管理</a></li>
+              <li><a href="https://qingcloud.com/products/api" >开放 API</a></li>
+              <li><a href="http://status.qingcloud.com" target="_blank">服务健康状态监控</a></li>
+            </ul>
+          </div>
+
+          <div class="useit-column">
+            <span>客户案例</span>
+            <ul>
+              <li><a href="https://qingcloud.com/customers/finance" >互联网金融</a></li>
+              <li><a href="https://qingcloud.com/customers/education" >在线教育</a></li>
+              <li><a href="https://qingcloud.com/customers/video" >视频</a></li>
+              <li><a href="https://qingcloud.com/customers/game" >游戏</a></li>
+              <li><a href="https://qingcloud.com/customers/e_commerce" >电商</a></li>
+              <li><a href="https://qingcloud.com/customers/platform" >平台</a></li>
+              <li><a href="https://qingcloud.com/customers/devops" >DevOps</a></li>
+              <li><a href="https://qingcloud.com/customers/big_data" >大数据</a></li>
+              <li><a href="https://qingcloud.com/customers/web" >门户</a></li>
+              <li><a href="https://qingcloud.com/customers/mobile">移动 APP</a></li>
+            </ul>
+          </div>
+
+          <div class="useit-column">
+            <span>价格</span>
+            <ul>
+              <li><a href="https://qingcloud.com/pricing/plan" >资源价格</a></li>
+              <li><a href="https://qingcloud.com/pricing/billing" >按秒计费</a></li>
+            </ul>
+          </div>
+
+          <div class="useit-column">
+            <span>文档</span>
+            <ul>
+              <li><a href="https://docs.qingcloud.com/guide/index.html" target="_blank">用户指南</a></li>
+              <li><a href="https://docs.qingcloud.com/faq/index.html" target="_blank">常见问题</a></li>
+              <li><a href="https://docs.qingcloud.com/api/index.html" target="_blank">API 文档</a></li>
+              <li><a href="https://docs.qingcloud.com/cli/index.html" target="_blank">CLI 文档</a></li>
+              <li><a href="https://docs.qingcloud.com/sdk/index.html" target="_blank">SDK 文档</a></li>
+            </ul>
+          </div>
+
+          <div class="useit-column">
+            <span>关于</span>
+            <ul>
+              <li><a href="https://qingcloud.com/about/blog" target="_blank">青云志</a></li>
+              <li><a href="https://www.qingcloud.com/promotion/startups" target="_blank">创业扶持</a></li>
+              <li><a href="https://community.qingcloud.com" target="_blank">青云社区</a></li>
+              <li><a href="https://qingcloud.com/about/media" target="_blank">媒体报道</a></li>
+              <li><a href="https://qingcloud.com/about/join_us" target="_blank">加入我们</a></li>
+              <li><a href="https://qingcloud.com/about/contact_us" target="_blank">联系我们</a></li>
+              <li><a href="https://qingcloud.com/about/tos" target="_blank">服务条款</a></li>
+            </ul>
+          </div>
+
+          <div class="useit-column useit-column-spe">
+            <span>联系我们</span>
+            <ul>
+              <li><a href="https://twitter.com/yunifytech" class="icon-twitter" target="_blank"></a></li>
+              <li><a href="http://weibo.com/u/3563234355" class="icon-twitter icon-weibo" target="_blank"></a></li>
+              <li><a href="mailto:contactus@yunify.com" class="icon-twitter icon-mail" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="useit-copyright">
+            <a href="https://qingcloud.com/" class="icon-qingcloudlogo2"></a>
+            <p>© 青云QingCloud</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="../../js/libs/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="js/cert.js"></script>
 </html>
