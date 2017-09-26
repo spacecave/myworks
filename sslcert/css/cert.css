@@ -131,12 +131,12 @@ body .wrap .sign-in:hover {
 }
 body .wrap .sign-up {
   color: #fff;
-  background: #28af5b;
+  background: #00a971;
   opacity: 1;
   margin-left: 16px;
 }
 body .wrap .sign-up:hover {
-  background: #2abf63;
+  background: #009c68;
 }
 body .wrap .area-title {
   padding-top: 60px;
@@ -256,12 +256,12 @@ body .wrap .leader-bg .leader .leader-bottom .leader-btm-left .leader-ssl-btns .
 }
 body .wrap .leader-bg .leader .leader-bottom .leader-btm-right {
   float: left;
-  margin-top: 46px;
 }
 body .wrap .leader-bg .leader .leader-bottom .leader-btm-right .leader-ssl-img {
-  margin-left: 140px;
-  width: 260px;
-  height: 195px;
+  margin-left: 70px;
+  margin-top: -72px;
+  width: 370px;
+  height: 395px;
   background: url("img/sslbg.svg") no-repeat;
 }
 body .wrap .bright-func {
